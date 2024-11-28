@@ -51,7 +51,7 @@ class ActionAskDynamicQuestions(Action):
         questions = list(state["questions"].keys())
 
         # Save the user's latest response if it's not the initial call
-        if tracker.latest_message.get("text") and current_index > 0:
+        if tracker.latest_message.get("text") and 0 < current_index <= len(questions):
             # Append the latest response to the responses list
             state["responses"][state['questions'][questions[current_index-1]]] = tracker.latest_message["text"]
 
@@ -68,6 +68,12 @@ class ActionAskDynamicQuestions(Action):
             with open(file_path, "w") as file:
                 json.dump(state, file)
             print("state", state)
+            return [ActiveLoop('action_ask_dynamic_questions'), SlotSet("response_list", state["responses"])]
+        elif current_index == len(questions):
+            # Save the updated state back to the JSON file
+            with open(file_path, "w") as file:
+                json.dump(state, file)
+            print("final state", state)
             return [ActiveLoop('action_ask_dynamic_questions'), SlotSet("response_list", state["responses"])]
         else:
             print("Else")
