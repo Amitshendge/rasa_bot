@@ -8,12 +8,12 @@ rules:
   - action: utter_goodbye
 
 - rule: Say 'I am a bot' anytime the user challenges
- steps:
- - intent: bot_challenge
- - action: utter_iamabot
-#
-- rule: deny
- steps:
- - intent: deny
- - action: utter_did_not_get_that
- - action: utter_do_like_to_fill_form
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: deny handler
+  steps:
+  - intent: deny
+  - action: utter_did_not_get_that
+  - action: utter_do_like_to_fill_form
