@@ -31,9 +31,9 @@ class ActionAskDynamicQuestions(Action):
         print("file_path", file_path)
         print(tracker.get_slot("response_list"))
         print("form_name_final", form_name_final)
-        response_list = tracker.get_slot("response_list")[0]
+        response_list = tracker.get_slot("response_list")
         if response_list:
-            response_state = response_list
+            response_state = response_list[0]
         else:
             response_state = {
                 "questions": self.read_json(f"/app/actions/form_feilds_mapping/{form_name_final}.json"),
