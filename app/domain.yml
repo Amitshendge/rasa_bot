@@ -77,3 +77,4 @@ session_config:
 actions:
 - action_ask_dynamic_questions
 - say_form_name
+- all_reset

@@ -101,3 +101,12 @@ class SayFormName(Action):
             dispatcher.utter_message(text="I don't know which form you're filling out!")
         
         return [SlotSet("identified_form_name", final_form_name)]
+    
+class All_reset(Action):
+    def name(self) -> Text:
+        return "all_reset"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        return [AllSlotsReset()]

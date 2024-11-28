@@ -5,6 +5,7 @@ stories:
 - story: happy path
   steps:
   - intent: greet
+  - action: all_reset
   - action: utter_do_like_to_fill_form
   - intent: affirm
   - action: utter_which_form
