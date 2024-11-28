@@ -7,4 +7,4 @@ services:
      - "2005:5005"
      - "2055:5055"
     volumes:
-     - /Users/amitshendge/Downloads/my_rasa/outputs:/app/outputs  # Mount host_dir to container_dir
+     - rasa_bot/outputs:/app/outputs  # Mount host_dir to container_dir

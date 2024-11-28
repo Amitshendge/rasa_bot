@@ -12,5 +12,5 @@ class PDFFormFiller:
 
 # Example usage
 if __name__ == "__main__":
-    pdf_path = '/Users/amitshendge/Downloads/my_rasa/app/actions/form_feilds_NAVAR/Addendum Lease - K1384.pdf'
+    pdf_path = 'rasa_bot/app/actions/form_feilds_NAVAR/Addendum Lease - K1384.pdf'
     output_path = "filled_form.pdf"
