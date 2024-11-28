@@ -81,7 +81,7 @@ class ActionAskDynamicQuestions(Action):
             dispatcher.utter_message(text="Thank you for answering all the questions!")
             dispatcher.utter_message(json_message=f"{form_name_final}_filled.pdf")
             os.remove(file_path)
-            return [AllSlotsReset()]
+            return [ActiveLoop(None),AllSlotsReset()]
 
 
 class SayFormName(Action):
