@@ -1,0 +1,76 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - fill_form
+  - agent_information_request
+  - bot_challenge
+
+entities:
+  - form_name
+  - number
+
+slots:
+  form_name2:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: form_name
+
+  phone:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: number
+
+  response_list:
+    type: list
+    initial_value: []
+    influence_conversation: false
+    mappings:
+    - type: custom
+
+  identified_form_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_ask_phone_number:
+  - text: "Please enter your phone number"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_do_like_to_fill_form:
+  - text: "Do you want to fill a form?"
+
+  utter_which_form:
+  - text: "Which form you want to fill?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+- action_ask_dynamic_questions
+- say_form_name

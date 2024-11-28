@@ -1,0 +1,130 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - perfect
+    - great
+    - amazing
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: fill_form
+  examples: |
+    - [Addendum Lease - K1384](form_name)
+    - form [Addendum Lease - K1384](form_name)
+    - form filling [Addendum Lease - K1384](form_name)
+    - filling [Addendum Lease - K1384](form_name)
+    - fill [Addendum Lease - K1384](form_name)
+    - fill form [Addendum Lease - K1384](form_name)
+    - fill a form [Addendum Lease - K1384](form_name)
+    - I want to fill [Addendum Lease - K1384](form_name)
+    - I want to fill a form [Addendum Lease - K1384](form_name)
+    - I need to fill a form [Addendum Lease - K1384](form_name)
+    - submit [Addendum Lease - K1384](form_name)
+    - I want to submit [Addendum Lease - K1384](form_name)
+    - I need to submit [Addendum Lease - K1384](form_name)
+    - [Addendum Sale - K1117](form_name)
+    - form [Addendum Sale - K1117](form_name)
+    - form filling [Addendum Sale - K1117](form_name)
+    - filling [Addendum Sale - K1117](form_name)
+    - fill [Addendum Sale - K1117](form_name)
+    - fill form [Addendum Sale - K1117](form_name)
+    - fill a form [Addendum Sale - K1117](form_name)
+    - I want to fill [Addendum Sale - K1117](form_name)
+    - I want to fill a form [Addendum Sale - K1117](form_name)
+    - I need to fill a form [Addendum Sale - K1117](form_name)
+    - submit [Addendum Sale - K1117](form_name)
+    - I want to submit [Addendum Sale - K1117](form_name)
+    - I need to submit [Addendum Sale - K1117](form_name)
+    - [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - form [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - form filling [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - filling [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - fill [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - fill form [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - fill a form [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - I want to fill [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - I want to fill a form [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - I need to fill a form [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - submit [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - I want to submit [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - I need to submit [Extension of Review Period for Resale Certificate - K1389](form_name)
+    - [K1388 - Payment Plan Addendum](form_name)
+    - form [K1388 - Payment Plan Addendum](form_name)
+    - form filling [K1388 - Payment Plan Addendum](form_name)
+    - filling [K1388 - Payment Plan Addendum](form_name)
+    - fill [K1388 - Payment Plan Addendum](form_name)
+    - fill form [K1388 - Payment Plan Addendum](form_name)
+    - fill a form [K1388 - Payment Plan Addendum](form_name)
+    - I want to fill [K1388 - Payment Plan Addendum](form_name)
+    - I want to fill a form [K1388 - Payment Plan Addendum](form_name)
+    - I need to fill a form [K1388 - Payment Plan Addendum](form_name)
+    - submit [K1388 - Payment Plan Addendum](form_name)
+    - I want to submit [K1388 - Payment Plan Addendum](form_name)
+    - I need to submit [K1388 - Payment Plan Addendum](form_name)
+
+- intent: agent_information_request
+  examples: |
+    - I need agent information
+    - I need agent details
+    - I need agent info
+    - I need agent license information
+    - I need agent license number
+    - I need agent contact information
+    - I need agent contact details
+    - I need agent contact info
+    - I need agent contact number
+    - I need agent contact phone number
+    - I need agent contact email
+    - I need agent address
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

@@ -1,0 +1,10 @@
+services:
+  rasa_server:
+    build:
+      context: .
+      dockerfile: ./docker/rasa_server/Dockerfile
+    ports:
+     - "2005:5005"
+     - "2055:5055"
+    volumes:
+     - /Users/amitshendge/Downloads/my_rasa/outputs:/app/outputs  # Mount host_dir to container_dir
