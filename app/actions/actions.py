@@ -29,7 +29,7 @@ class ActionAskDynamicQuestions(Action):
         file_path = "/app/actions/questionnaire_state_1.json"
         form_name_final = tracker.get_slot("identified_form_name")
         print("file_path", file_path)
-        print(tracker)
+        print(tracker.get_slot("response_list"))
         print("form_name_final", form_name_final)
         try:
             # Load the state from the JSON file
@@ -66,7 +66,7 @@ class ActionAskDynamicQuestions(Action):
             with open(file_path, "w") as file:
                 json.dump(state, file)
             print("state", state)
-            return [ActiveLoop('action_ask_dynamic_questions')]
+            return [ActiveLoop('action_ask_dynamic_questions'), SlotSet("response_list", state["responses"])]
         else:
             print("Else")
             print("state", state)
