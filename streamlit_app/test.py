@@ -65,8 +65,8 @@ if 'messages' not in st.session_state:
     st.session_state.messages = []
 
 # Streamlit UI
-st.title("Rasa Chatbot")
-
+st.title("Form Filling Chatbot")
+st.write("Available forms now:\n1. Addendum Lease - K1384,\n2. Addendum Sale - K1117, \n3. Extension of Review Period for Resale Certificate - K1389, \n4. K1388 - Payment Plan Addendum")
 # User input text box
 user_message = st.text_input("Say something to the bot:", key="user_message", on_change=clean_text)
 
