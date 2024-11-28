@@ -16,14 +16,14 @@ entities:
 slots:
   form_name2:
     type: text
-    influence_conversation: true
+    influence_conversation: false
     mappings:
     - type: from_entity
       entity: form_name
 
   phone:
     type: text
-    influence_conversation: true
+    influence_conversation: false
     mappings:
     - type: from_entity
       entity: number
