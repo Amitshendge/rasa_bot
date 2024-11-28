@@ -15,5 +15,6 @@ rules:
 - rule: deny handler
   steps:
   - intent: deny
+  - action: all_reset
   - action: utter_did_not_get_that
   - action: utter_do_like_to_fill_form
