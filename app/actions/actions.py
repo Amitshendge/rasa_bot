@@ -31,6 +31,15 @@ class ActionAskDynamicQuestions(Action):
         print("file_path", file_path)
         print(tracker.get_slot("response_list"))
         print("form_name_final", form_name_final)
+        response_list = tracker.get_slot("response_list")[0]
+        if response_list:
+            response_state = response_list
+        else:
+            response_state = {
+                "questions": self.read_json(f"/app/actions/form_feilds_mapping/{form_name_final}.json"),
+                "current_index": 0,
+                "responses": {}
+            }
         try:
             print("opened file state")
             # Load the state from the JSON file
@@ -48,40 +57,31 @@ class ActionAskDynamicQuestions(Action):
         print("state", state)
         # Get current index and questions
         current_index = state["current_index"]
-        print("current state",current_index)
         questions = list(state["questions"].keys())
 
         # Save the user's latest response if it's not the initial call
-        if tracker.latest_message.get("text") and 0 < current_index <= len(questions):
+        if tracker.latest_message.get("text") and current_index > 0:
             # Append the latest response to the responses list
             state["responses"][state['questions'][questions[current_index-1]]] = tracker.latest_message["text"]
-            SlotSet("response_list", state["responses"])
+            response_state['responses'][response_state['questions'][questions[current_index-1]]] = tracker.latest_message["text"]
         # Check if there are more questions to ask
         if current_index < len(questions):
             # Ask the next question
             next_question = questions[current_index]
             dispatcher.utter_message(text=next_question)
-
+            print(list(response_state["questions"].keys())[current_index])
             # Increment the current index
             state["current_index"] += 1
-
+            response_state['current_index'] += 1
             # Save the updated state back to the JSON file
             with open(file_path, "w") as file:
                 json.dump(state, file)
             print("state", state)
-            print(tracker.get_slot("response_list"))
-            return [ActiveLoop('action_ask_dynamic_questions'), SlotSet("response_list", state["responses"])]
-        elif current_index == len(questions):
-            state["current_index"] += 1
-            # Save the updated state back to the JSON file
-            with open(file_path, "w") as file:
-                json.dump(state, file)
-            print("final state", state)
-            print(tracker.get_slot("response_list"))
-            return [ActiveLoop('action_ask_dynamic_questions'), SlotSet("response_list", state["responses"])]
+            return [ActiveLoop('action_ask_dynamic_questions'), SlotSet("response_list", response_state)]
         else:
             print("Else")
             print("state", state)
+            print("response_state", response_state)
             # All questions have been asked
             from actions.form_filling_code.pdf_form import PDFFormFiller
             pdf_path = f'/app/actions/form_feilds_NAVAR/{form_name_final}.pdf'
