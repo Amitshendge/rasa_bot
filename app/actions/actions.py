@@ -11,7 +11,7 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet, ActiveLoop
+from rasa_sdk.events import SlotSet, ActiveLoop, AllSlotsReset
 import json
 import os
 import difflib
@@ -32,11 +32,13 @@ class ActionAskDynamicQuestions(Action):
         print(tracker.get_slot("response_list"))
         print("form_name_final", form_name_final)
         try:
+            print("opened file state")
             # Load the state from the JSON file
             with open(file_path, "r") as file:
                 state = json.load(file)
             print("state", state)
         except FileNotFoundError:
+            print("creating state")
             # Initialize state if the file doesn't exist
             state = {
                 "questions": self.read_json(f"/app/actions/form_feilds_mapping/{form_name_final}.json"),
@@ -79,7 +81,7 @@ class ActionAskDynamicQuestions(Action):
             dispatcher.utter_message(text="Thank you for answering all the questions!")
             dispatcher.utter_message(json_message=f"{form_name_final}_filled.pdf")
             os.remove(file_path)
-            return []
+            return [AllSlotsReset()]
 
 
 class SayFormName(Action):
