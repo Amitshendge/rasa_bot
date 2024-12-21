@@ -91,9 +91,9 @@ if 'buttons_message' not in st.session_state:
 if 'button_clicked' not in st.session_state:
     st.session_state['button_clicked'] = False
 if 'files' not in st.session_state:
-    st.session_state.files = [i[:-5] for i in list(os.listdir("./app/actions/form_feilds_mapping_v2"))]
+    st.session_state.files = [i[:-5] for i in list(os.listdir("/home/amitshendgepro/rasa_bot/app/actions/form_feilds_mapping_v2"))]
 if 'forms' not in st.session_state:
-    st.session_state.forms = json.load(open("./app/actions/form_filling_code/forms_subset.json"))
+    st.session_state.forms = json.load(open("/home/amitshendgepro/rasa_bot/app/actions/form_filling_code/forms_subset.json"))
 
 # Step 1: Select category
 
