@@ -8,10 +8,13 @@ intents:
   - fill_form
   - agent_information_request
   - bot_challenge
+  - mood_unhappy
+  - trigger_action
 
 entities:
   - form_name
   - number
+  - param
 
 slots:
   form_name2:
@@ -27,6 +30,13 @@ slots:
     mappings:
     - type: from_entity
       entity: number
+
+  param:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: param
 
   response_list:
     type: list
@@ -70,6 +80,9 @@ responses:
   utter_did_not_get_that:
   - text: "I am sorry, I did not get that. Let me restart the coversation!"
 
+  utter_did_that_help:
+  - text: "Did that help you?"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -78,3 +91,4 @@ actions:
 - action_ask_dynamic_questions
 - say_form_name
 - all_reset
+- action_trigger_action

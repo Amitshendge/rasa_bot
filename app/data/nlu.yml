@@ -106,6 +106,19 @@ nlu:
     - submit [K1388 - Payment Plan Addendum](form_name)
     - I want to submit [K1388 - Payment Plan Addendum](form_name)
     - I need to submit [K1388 - Payment Plan Addendum](form_name)
+    - [Disclosure of Brokerage Relationship - K1207](form_name)
+    - form [Disclosure of Brokerage Relationship - K1207](form_name)
+    - form filling [Disclosure of Brokerage Relationship - K1207](form_name)
+    - filling [Disclosure of Brokerage Relationship - K1207](form_name)
+    - fill [Disclosure of Brokerage Relationship - K1207](form_name)
+    - fill form [Disclosure of Brokerage Relationship - K1207](form_name)
+    - fill a form [Disclosure of Brokerage Relationship - K1207](form_name)
+    - I want to fill [Disclosure of Brokerage Relationship - K1207](form_name)
+    - I want to fill a form [Disclosure of Brokerage Relationship - K1207](form_name)
+    - I need to fill a form [Disclosure of Brokerage Relationship - K1207](form_name)
+    - submit [Disclosure of Brokerage Relationship - K1207](form_name)
+    - I want to submit [Disclosure of Brokerage Relationship - K1207](form_name)
+    - I need to submit [Disclosure of Brokerage Relationship - K1207](form_name)
 
 - intent: agent_information_request
   examples: |
@@ -128,3 +141,18 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: mood_unhappy
+  examples: |
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+
+- intent: trigger_action
+  examples: |
+    - /trigger_action{"param": "example_value"}
+
+
+

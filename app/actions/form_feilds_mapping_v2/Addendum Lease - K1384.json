@@ -1,0 +1,8 @@
+{
+    "Addendum made on date1": {"Type" : "input_text", "form_feild" : "Text-kzHMlRY_at"},
+    "lease ratified on date": {"Type" : "input_text", "form_feild" : "Text-kZYaiuaRuw"},
+    "Tenant Name": {"Type" : "input_text", "form_feild" : "Text-4DFQAdVBZR"},
+    "Landlord Name": {"Type" : "input_text", "form_feild" : "Text-WxlAxbTDdW"},
+    "lease of premises address": {"Type" : "input_text", "form_feild" : "Text-GAG2V9dFf9"},
+    "lease of premises address2": {"Type" : "input_text", "form_feild" : "Text-2BB3Zqmbsv"}
+}

@@ -1,0 +1,8 @@
+{
+    "Addendum made on date": {"Type" : "input_text", "form_feild" : "Text-hQDE0p4djF"},
+    "Sales contract offered on": {"Type" : "input_text", "form_feild" : "Text-9cBo5eLUTz"},
+    "Buyer Name": {"Type" : "input_text", "form_feild" : "Text-9whyKQzQx-"},
+    "Seller Name": {"Type" : "input_text", "form_feild" : "Text-rBm3BEDnmQ"},
+    "Property address": {"Type" : "input_text", "form_feild" : "Text-aMBPtq-6L5"},
+    "Property address2": {"Type" : "input_text", "form_feild" : "Text-SShEXODWNh"}
+}

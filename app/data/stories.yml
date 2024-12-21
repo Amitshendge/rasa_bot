@@ -19,16 +19,16 @@ stories:
   - action: action_ask_dynamic_questions
 
 
-# - story: form path
-#   steps:
-#   - intent: fill_form
-#     entities:
-#     - form_name: Addendum Lease - K1384
-#   - slot_was_set:
-#     - form_name2: Addendum Lease - K1384
-#   - action: say_form_name
-#   - intent: affirm
-#   - action: action_ask_dynamic_questions
+- story: form path
+  steps:
+  - intent: fill_form
+    entities:
+    - form_name: Addendum Lease - K1384
+  - slot_was_set:
+    - form_name2: Addendum Lease - K1384
+  - action: say_form_name
+  - intent: affirm
+  - action: action_ask_dynamic_questions
 
 # - story: sad path 2
 #   steps:
@@ -37,5 +37,5 @@ stories:
 #   - intent: mood_unhappy
 #   - action: utter_cheer_up
 #   - action: utter_did_that_help
-#   - intent: deny
-#   - action: utter_goodbye
+#   - intent: affirm
+#   - action: utter_do_like_to_fill_form

@@ -1,0 +1,11 @@
+{
+    "Addendum made on date": {"Type" : "input_text", "form_feild" : "Text-Ah80X8bOCy"},
+    "Lease ratified on": {"Type" : "input_text", "form_feild" : "Text-iWerDMW-lz"},
+    "Tenant Name": {"Type" : "input_text", "form_feild" : "Text-mSV4KnNiDR"},
+    "Landlord Name": {"Type" : "input_text", "form_feild" : "Text-5v4hOC4HAS"},
+    "Property address": {"Type" : "input_text", "form_feild" : "Text-jCXWDv35xx"},
+    "Notice Dated": {"Type" : "input_text", "form_feild" : "Text-nayeIEM5AZ"},
+    "MOnthly install ment in $": {"Type" : "input_text", "form_feild" : "Text-hcwKrwWYyH"},
+    "Begining Date": {"Type" : "input_text", "form_feild" : "Text-LV_oL5RNGM"},
+    "Ending Date": {"Type" : "input_text", "form_feild" : "Text-e7miQ0_gnj"}
+}

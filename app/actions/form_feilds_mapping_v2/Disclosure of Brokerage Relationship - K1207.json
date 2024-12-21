@@ -1,0 +1,34 @@
+{
+  "Licensee or Broker Name": {
+    "Type": "input_text",
+    "form_feild": "Text-_J_2EdMWPc"
+  },
+  "Brokarage Firm Name": {
+    "Type": "input_text",
+    "form_feild": "Text-_3JISazqcU"
+  },
+  "Property Address": { "Type": "input_text", "form_feild": "Text-DaXfEpiYth" },
+  "Discolsure Agreement between": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Buyer and Seller": ["CheckBox-giCmNLxaHs", "CheckBox-N8Nc3cmTxU"] ,
+       "Landlord and Tenant": ["CheckBox-PY4e3MwAvk", "CheckBox-3MqsIX_VSR"] 
+      }
+  },
+  "Seller or Landlord Name": {
+    "Type": "input_text",
+    "form_feild": "Text--JaLHLDOmD"
+  },
+  "Buyer or Tenant Name": {
+    "Type": "input_text",
+    "form_feild": "Text-o0gKlTzK5D"
+  },
+  "Seller or Landlord Name 2": {
+    "Type": "input_text",
+    "form_feild": "Text-F-R6FQeJow"
+  },
+  "Buyer or Tenant Name 2": {
+    "Type": "input_text",
+    "form_feild": "Text-8KZ1rsRyH7"
+  }
+}

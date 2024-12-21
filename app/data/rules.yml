@@ -18,3 +18,9 @@ rules:
   - action: all_reset
   - action: utter_did_not_get_that
   - action: utter_do_like_to_fill_form
+
+- rule: Trigger action with parameter
+  steps:
+    - intent: trigger_action
+    - action: action_trigger_action
+
