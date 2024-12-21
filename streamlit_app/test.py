@@ -8,8 +8,8 @@ import json
 
 # URL of the Rasa API (assuming it's running locally on port 5005)
 RASA_URL = "http://localhost:2005/webhooks/rest/webhook"
-# download_foler = "/home/amitshendgepro/rasa_bot/outputs"
-download_foler = "/Users/amitshendge/Documents/rasa_bot/outputs"
+download_foler = "/home/amitshendgepro/rasa_bot/outputs"
+# download_foler = "/Users/amitshendge/Documents/rasa_bot/outputs"
 
 def generate_download_link(file_path, link_text="Download File"):
     """
