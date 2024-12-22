@@ -5,6 +5,7 @@ import base64
 import os
 from functools import partial
 import json
+import uuid
 
 # URL of the Rasa API (assuming it's running locally on port 5005)
 RASA_URL = "http://localhost:2005/webhooks/rest/webhook"
@@ -36,7 +37,7 @@ def generate_download_link(file_path, link_text="Download File"):
 # Function to send user message to Rasa and get the response
 def get_rasa_response(user_message):
     print("user_message", user_message)
-    payload = {"message": user_message}
+    payload = {"sender":st.session_state.session_id,"message": user_message}
     response = requests.post(RASA_URL, json=payload)
     if response.status_code == 200:
         print(response.json())
@@ -94,6 +95,8 @@ if 'files' not in st.session_state:
     st.session_state.files = [i[:-5] for i in list(os.listdir("/home/amitshendgepro/rasa_bot/app/actions/form_feilds_mapping_v2"))]
 if 'forms' not in st.session_state:
     st.session_state.forms = json.load(open("/home/amitshendgepro/rasa_bot/app/actions/form_filling_code/forms_subset.json"))
+if 'session_id' not in st.session_state:
+    st.session_state.session_id = str(uuid.uuid4())
 
 # Step 1: Select category
 

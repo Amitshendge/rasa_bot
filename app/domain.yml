@@ -85,7 +85,7 @@ responses:
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false
 
 actions:
 - action_ask_dynamic_questions
