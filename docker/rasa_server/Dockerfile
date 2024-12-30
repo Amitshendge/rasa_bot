@@ -35,9 +35,5 @@ RUN pip install --root-user-action=ignore --no-cache-dir -r requirements.txt
 COPY app /app
 RUN rasa train
 
-# Expose the default Rasa port
-# EXPOSE 5005
-
-# Command to run the Rasa server
-CMD ["bash", "-c", "rasa run & rasa run actions"]
+CMD ["bash", "-c", "rasa run & rasa run actions & streamlit run streamlit_app/test.py"]
 
