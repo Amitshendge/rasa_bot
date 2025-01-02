@@ -35,5 +35,5 @@ RUN pip install --root-user-action=ignore --no-cache-dir -r requirements.txt
 COPY app /app
 RUN rasa train
 
-CMD ["bash", "-c", "rasa run & rasa run actions & streamlit run streamlit_app/test.py --server.port=8080 --server.address=0.0.0.0"]
+CMD ["bash", "-c", "rasa run & rasa run actions & streamlit run streamlit_app/test.py"]
 
