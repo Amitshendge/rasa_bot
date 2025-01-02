@@ -9,8 +9,8 @@ import uuid
 
 # URL of the Rasa API (assuming it's running locally on port 5005)
 RASA_URL = "http://localhost:2005/webhooks/rest/webhook"
-# download_foler = "/home/amitshendgepro/rasa_bot/outputs"
-download_foler = "/Users/amitshendge/Documents/rasa_bot/outputs"
+download_foler = "/home/amitshendgepro/rasa_bot/outputs"
+# download_foler = "/Users/amitshendge/Documents/rasa_bot/outputs"
 
 def generate_download_link(file_path, link_text="Download File"):
     """
@@ -92,9 +92,9 @@ if 'buttons_message' not in st.session_state:
 if 'button_clicked' not in st.session_state:
     st.session_state['button_clicked'] = False
 if 'files' not in st.session_state:
-    st.session_state.files = [i[:-5] for i in list(os.listdir("/Users/amitshendge/Documents/rasa_bot/app/actions/form_feilds_mapping_v2"))]
+    st.session_state.files = [i[:-5] for i in list(os.listdir("/home/amitshendgepro/rasa_bot/app/actions/form_feilds_mapping_v2"))]
 if 'forms' not in st.session_state:
-    st.session_state.forms = json.load(open("/Users/amitshendge/Documents/rasa_bot/app/actions/form_filling_code/forms_subset.json"))
+    st.session_state.forms = json.load(open("/home/amitshendgepro/rasa_bot/app/actions/form_filling_code/forms_subset.json"))
 if 'session_id' not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
 
