@@ -1,0 +1,94 @@
+{
+    "Agreement made on date": {"Type" : "input_text", "form_feild" : "Text-xVyHFjwN3p"},
+    "Seller Name": {"Type" : "input_text", "form_feild" : "Text-xYbJMhB8fA"},
+    "Firm (Broker) Name": {"Type" : "input_text", "form_feild" : "Text-ELvY8c3ur8"},
+    "Property street Address": {"Type" : "input_text", "form_feild" : "Text-qvw1G_Gxoj"},
+    "Property Unit #": {"Type" : "input_text", "form_feild" : "Text-DrFKPc-46q"},
+    "City": {"Type" : "input_text", "form_feild" : "Text-aEsp6R-ilo"},
+    "Zip Code": {"Type" : "input_text", "form_feild" : "Text-R8zF4YsMZ7"},
+    "TAX Map/Id": {"Type" : "input_text", "form_feild" : "Text-Ccy5gig_88"},
+    "Parking Space": {"Type" : "input_text", "form_feild" : "Text-UQRCufo_eN"},
+    "Storage Unit": {"Type" : "input_text", "form_feild" : "Text-Lk9kkoKLm0"},
+    "MailBox": {"Type" : "input_text", "form_feild" : "Text-mSm9eaWPDI"},
+    "Historic District Designation": {"Type" : "input_text", "form_feild" : "Text-t7rZv2UBP_"},
+    "Legal Description Type": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Lot/Block/Subdivision": ["CheckBox-LnvktLxOIe"] ,
+       "Metes/Bounds": ["CheckBox-3bXvYOHfxE"] 
+      },
+    "questions": {
+      "Lot/Block/Subdivision": {
+        "Lots":{"Type" : "input_text", "form_feild" : "Text-neAbJu0VKV"},
+        "Block/Square":{"Type" : "input_text", "form_feild" : "Text-gvZhnEuhaI"},
+        "section":{"Type" : "input_text", "form_feild" : "Text-BJLczniZyS"},
+        "Phase":{"Type" : "input_text", "form_feild" : "Text-ovooY8JDUu"},
+        "Subdivision or Condominium":{"Type" : "input_text", "form_feild" : "Text-26p5sFmIFZ"},
+        "County/Municipalty":{"Type" : "input_text", "form_feild" : "Text-PHCVxxSL0M"},
+        "Deed Book/Page":{"Type" : "input_text", "form_feild" : "Text-WJgGn66dWd"}
+      }
+    }
+  },
+  "MLS Description No of levels": {"Type" : "input_text", "form_feild" : "Text-e340sCcujj"},
+  "Basement":{
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-t-5IU3aWGH"],
+        "No": ["CheckBox-NbVtceJRou"]
+      },
+    "questions": {
+      "Yes": {
+        "Basement Entrance type": {"Type" : "input_text", "form_feild" : "Text-vq8ffQjaeb"},
+        "Basement Type": {"Type" : "input_text", "form_feild" : "Text-3M7pEa-zYc"}
+      }
+    }
+  },
+  "Attic Type": {"Type" : "input_text", "form_feild" : "Text-EADA1dd079"},
+  "Architectural Style": {"Type" : "input_text", "form_feild" : "Text-zXlcx31WQ_"},
+  "Type of Exterior": {"Type" : "input_text", "form_feild" : "Text-Fa6UTWpYA8"},
+  "Disability Access": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-1J9Z6Zz1Z_"],
+        "No": ["CheckBox-1J9Z6Zz1Z_"]
+      }
+  },
+  "Seller Mailling Address": {"Type" : "input_text", "form_feild" : "Text-hArSuePSHh"},
+  "Seller City, State, Zip": {"Type" : "input_text", "form_feild" : "Text--wiPewjW0e"},
+  "Seller Home Phone": {"Type" : "input_text", "form_feild" : "Text-gp2-_FoR7H"},
+  "Seller Work Phone": {"Type" : "input_text", "form_feild" : "Text-qxWzOMNIM5"},
+  "Seller Cell Phone": {"Type" : "input_text", "form_feild" : "Text-dxZRyFPXeb"},
+  "Seller Email": {"Type" : "input_text", "form_feild" : "Text-gyy1lxbwAI"},
+  "Seller Fax": {"Type" : "input_text", "form_feild" : "Text-gyy1lxbwAI"},
+  "Broker (Firm) Mailling Address": {"Type" : "input_text", "form_feild" : "Text-hArSuePSHh"},
+  "Broker (Firm) City, State, Zip": {"Type" : "input_text", "form_feild" : "Text--wiPewjW0e"},
+  "Broker (Firm) Work Phone": {"Type" : "input_text", "form_feild" : "Text-qxWzOMNIM5"},
+  "Broker (Firm) Cell Phone": {"Type" : "input_text", "form_feild" : "Text-dxZRyFPXeb"},
+  "Broker (Firm) Email": {"Type" : "input_text", "form_feild" : "Text-gyy1lxbwAI"},
+  "Broker (Firm) Fax": {"Type" : "input_text", "form_feild" : "Text-gyy1lxbwAI"},
+  "Aggrement Expiration Date": {"Type" : "input_text", "form_feild" : "Text-YJI0o2qjRw"},
+  "Listing Terms shall go into effect on or before": {"Type" : "input_text", "form_feild" : "Text-GHdWt5ZVT5"},
+  "Seller instructs Broker to offer the property for sale at selling price": {"Type" : "input_text", "form_feild" : "Text-L07lue07N_"},
+  "Seller will pay Broker compansation": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Percentage": ["CheckBox-albImKsXfV"] ,
+       "Amount": ["CheckBox-Mr2RBong1-"],
+       "Percentage and Amount": ["CheckBox-XnMNCh1lhm"] 
+      },
+    "questions": {
+      "Percentage": {"Percentage of gross sale price":{"Type" : "input_text", "form_feild" : "Text-bKsU8dAC4c"}},
+      "Amount": {"Broker Compensation Amount":{"Type" : "input_text", "form_feild" : "Text-7wAuZ8ujBI"}},
+      "Percentage and Amount": {"Percentage of gross sale price":{"Type" : "input_text", "form_feild" : "Text-7wAuZ8ujBI"},
+      "Plus the Compensation Amount":{"Type" : "input_text", "form_feild" : "Text-7wAuZ8ujBI"}}
+    }
+  },
+  "Broker Compansetionis also earned if days after expiration of agreement": {"Type" : "input_text", "form_feild" : "Text-rA2VNwXc5z"},
+  "Additional Losting Broker Compansetion for Underepresented Buyer": 
+  {
+    "Type": "check_list",
+    "form_feild": 
+      { "Additional Losting Broker Compansetion for Underepresented Buyer": ["CheckBox-xew0zv30Wf"]
+      }
+  }
+}

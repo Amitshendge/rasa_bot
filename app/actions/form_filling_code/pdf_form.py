@@ -11,10 +11,13 @@ class PDFFormFiller:
         fillpdfs.flatten_pdf(output_path, output_path.replace(os.path.basename(output_path), "flatten_"+os.path.basename(output_path)))
 
     def get_form_feild(self, question_meta_data):
+        add_questions = None
         if question_meta_data['Type'] == 'input_text':
-            return question_meta_data['form_feild']
+            return question_meta_data['form_feild'], add_questions
         elif question_meta_data['Type'] == 'check_list':
-            return question_meta_data['form_feild']
+            if 'questions' in question_meta_data:
+                add_questions = question_meta_data['questions']
+            return question_meta_data['form_feild'], add_questions
     
     def get_extra_question(self, question_meta_data):
         if question_meta_data['Type'] == 'input_text':
@@ -22,17 +25,27 @@ class PDFFormFiller:
         elif question_meta_data['Type'] == 'check_list':
             return list(question_meta_data['form_feild'].keys())
     
-    def fill_response(self, state_response, form_field, latest_message):
+    def insert_into_dict(self, original_dict, new_entries, index):
+        items = list(original_dict.items())
+        new_items = list(new_entries.items())
+        items[index:index] = new_items
+        print("items", items)
+        return dict(items)
+
+    def fill_response(self, state, form_field, add_questions, latest_message):
         if isinstance(form_field, dict):
-            print("filling form_field", form_field)
             if isinstance(form_field[latest_message], list):
                 for i in form_field[latest_message]:
-                    state_response[i] = 'Yes'
+                    state["responses"][i] = 'Yes'
             else:
-                state_response[form_field] = 'Yes'
+                state["responses"][form_field] = 'Yes'
+            if add_questions:
+                print(add_questions[latest_message])
+                state["questions"] = self.insert_into_dict(state["questions"], add_questions[latest_message], state["current_index"]) 
+            print("state", state)
         elif isinstance(form_field, str):
-            state_response[form_field] = latest_message
-        return state_response
+            state["responses"][form_field] = latest_message
+        return state
 
 # Example usage
 if __name__ == "__main__":

@@ -38,15 +38,20 @@ class ActionAskDynamicQuestions(Action):
                 "current_index": 0,
                 "responses": {}
             }
+        
+        def get_questions(state_questions):
+            return list(state_questions.keys())
         # Get current index and questions
         current_index = state["current_index"]
-        questions = list(state["questions"].keys())
+        questions = get_questions(state["questions"])
 
         # Save the user's latest response if it's not the initial call
-        if tracker.latest_message.get("text") and current_index > 0:
+        if tracker.latest_message.get("text") and current_index > 0 and tracker.latest_message.get("text")!="Skip Question":
             # Append the latest response to the responses list
-            form_feild = PDFFormFiller().get_form_feild(state['questions'][questions[current_index-1]])
-            state["responses"] = PDFFormFiller().fill_response(state["responses"], form_feild, tracker.latest_message["text"])
+            form_feild, add_questions = PDFFormFiller().get_form_feild(state['questions'][questions[current_index-1]])
+            state = PDFFormFiller().fill_response(state, form_feild, add_questions, tracker.latest_message["text"])
+            if add_questions:
+                questions = get_questions(state["questions"])
         # Check if there are more questions to ask
         if current_index < len(questions):
             # Ask the next question
