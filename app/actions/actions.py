@@ -41,6 +41,21 @@ class ActionAskDynamicQuestions(Action):
         
         def get_questions(state_questions):
             return list(state_questions.keys())
+        
+        def get_next_question(state, questions, current_index):
+            if current_index < len(questions):
+                next_question = questions[current_index]
+                if 'skip' in state['questions'][next_question] and state['questions'][next_question]['skip']:
+                    current_index += 1
+                    return get_next_question(state, questions, current_index)
+                if state['questions'][next_question]["Type"] == "autofill":
+                    state = PDFFormFiller().autofill_question(state, state['questions'][next_question])
+                    current_index += 1
+                    return get_next_question(state, questions, current_index)
+            else:
+                return None, state, current_index
+            return next_question, state, current_index
+        
         # Get current index and questions
         current_index = state["current_index"]
         questions = get_questions(state["questions"])
@@ -55,15 +70,26 @@ class ActionAskDynamicQuestions(Action):
         # Check if there are more questions to ask
         if current_index < len(questions):
             # Ask the next question
-            next_question = questions[current_index]
-            extra_question = PDFFormFiller().get_extra_question(state['questions'][questions[current_index]])
-            dispatcher.utter_message(text=next_question)
-            if extra_question:
-                dispatcher.utter_message(json_message={"type":"select_options","payload":[{"title": i} for i in extra_question]})
-            # Increment the current index
-            state["current_index"] += 1
-            # Save the updated state back to the JSON file
-            return [ActiveLoop('action_ask_dynamic_questions'), SlotSet("response_list", state)]
+            next_question, state, current_index = get_next_question(state, questions, current_index)
+            print("next_question", next_question)
+            if next_question:
+                extra_question = PDFFormFiller().get_extra_question(state['questions'][questions[current_index]])
+                dispatcher.utter_message(text=next_question)
+                if extra_question:
+                    dispatcher.utter_message(json_message={"type":"select_options","payload":[{"title": i} for i in extra_question]})
+                # Increment the current index
+                state["current_index"] = current_index + 1
+                # Save the updated state back to the JSON file
+                return [ActiveLoop('action_ask_dynamic_questions'), SlotSet("response_list", state)]
+            else:
+                # All questions have been asked
+                pdf_path = f'/app/actions/form_feilds_NAVAR/{form_name_final}.pdf'
+                output_path = f"/app/outputs/{form_name_final}_filled.pdf"
+                feild_values = state["responses"]
+                PDFFormFiller().fill_pdf(pdf_path, output_path, feild_values)
+                dispatcher.utter_message(text="Thank you for answering all the questions!")
+                dispatcher.utter_message(json_message={"type":"download_file","file_name":f"{form_name_final}_filled.pdf"})
+                return [ActiveLoop(None),AllSlotsReset()]
         else:
             # All questions have been asked
             pdf_path = f'/app/actions/form_feilds_NAVAR/{form_name_final}.pdf'

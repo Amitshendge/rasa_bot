@@ -1,17 +1,18 @@
 {
     "Agreement made on date": {"Type" : "input_text", "form_feild" : "Text-F8jcB_Mm7I"},
-    "Broker or Firm Name": {"Type" : "input_text", "form_feild" : "Text-HqNu6kakZS"},
+    "Buyer Name": {"Type" : "input_text", "form_feild" : "Text-qOAgScQC-m"},
+    "Broker or Firm Name": {"Type" : "autofill", "form_feild" : "Text-HqNu6kakZS", "autofill_type" : "static", "autofill_value" : "Onest Realestate"},
     "Type of property buyer is retaining Broker": {"Type" : "input_text", "form_feild" : "Text-ynppZsgodg"},
     "Buyer Mailing Address": {"Type" : "input_text", "form_feild" : "Text-uaJcvV9O2B"},
     "Buyer State, City, Zip Code": {"Type" : "input_text", "form_feild" : "Text-ZLQF1FaLBA"},
     "Buyer Home Contact Number": {"Type" : "input_text", "form_feild" : "Text-kE3d4iMBWV", "skip": true},
     "Buyer Work Contact Number": {"Type" : "input_text", "form_feild" : "Text-t9iVEWTu0j", "skip": true},
     "Buyer Cell Contact Number": {"Type" : "input_text", "form_feild" : "Text-Z12kBKW1SL"},
-    "Broker Mailing Address": {"Type" : "input_text", "form_feild" : "Text-TaYDElouQH"},
-    "Broker State, City, Zip Code": {"Type" : "input_text", "form_feild" : "Text-pyX1XfuGM9"},
-    "Broker Work Contact Number": {"Type" : "input_text", "form_feild" : "Text-1qlHvOG-SN"},
-    "Broker Cell Contact Number": {"Type" : "input_text", "form_feild" : "Text-h8rmZooWmq"},
-    "Broker Email": {"Type" : "input_text", "form_feild" : "Text-U92-WBcK4N"},
+    "Broker Mailing Address": {"Type" : "autofill", "form_feild" : "Text-TaYDElouQH", "autofill_type" : "static", "autofill_value" : "8280 Willow Oaks Corp Dr Ste 600"},
+    "Broker State, City, Zip Code": {"Type" : "autofill", "form_feild" : "Text-pyX1XfuGM9", "autofill_type" : "static", "autofill_value" : "Fairfax, VA 22031"},
+    "Broker Work Contact Number": {"Type" : "input_text", "form_feild" : "Text-1qlHvOG-SN", "skip": true},
+    "Broker Cell Contact Number": {"Type" : "autofill", "form_feild" : "Text-h8rmZooWmq", "autofill_type" : "static", "autofill_value" : "(833) 663-7803"},
+    "Broker Email": {"Type" : "autofill", "form_feild" : "Text-U92-WBcK4N", "autofill_type" : "static", "autofill_value" : "info@onest.realestate"},
     "Agreement Epiration Date": {"Type" : "input_text", "form_feild" : "Text-vftdh5YzGY"},
     "Early Termination Fee buyer will pay Broker ($)": {"Type" : "input_text", "form_feild" : "Text-FuwCFXqRFc"},
     "Buyer will pay percentage (%) or amount ($)": {
@@ -87,9 +88,30 @@
       }
     },
     "Other Provisions": {"Type" : "input_text", "form_feild" : "Text-SdmLY37s57"},
-    "Broker Name": {"Type" : "input_text", "form_feild" : "Text-pMfCAOPDKv"},
-    "Broker work phone number": {"Type" : "input_text", "form_feild" : "Text-XqKgLxlGge"},
-    "Broker cell phone number": {"Type" : "input_text", "form_feild" : "Text-EotXm2Fjmv"},
-    "Broker email": {"Type" : "input_text", "form_feild" : "Text-KrcBoGya_u"},
-    "Broker fax number": {"Type" : "input_text", "form_feild" : "Text-jtPjM6ZcYq"}
+
+    "Buyer's Agent Name": {"Type" : "autofill", "form_feild" : "Text-SGLZSzdmFL", "autofill_type" : "static", "autofill_value" : "Anjana M Budhathoki"},
+    "Buyer's Agent Team Name (if applicable)": {"Type" : "input_text", "form_feild" : "Text-H2HaMxJWyz", "skip":true},
+    "Buyer's Agent work phone number": {"Type" : "input_text", "form_feild" : "Text-IvPoiTS16G", "skip":true},
+    "Buyer's Agent cell phone number": {"Type" : "autofill", "form_feild" : "Text-e9aHv-ujyR", "autofill_type" : "static", "autofill_value" : "(833) 663-7802"},
+    "Buyer's Agent email": {"Type" : "autofill", "form_feild" : "Text-E7EvOHn_3-", "autofill_type" : "static", "autofill_value" : "info@onest.realestate"},
+    "Buyer's Agent fax number": {"Type" : "input_text", "form_feild" : "Text-62So9g9oth", "skip":true},
+
+    "Broker Name": {"Type" : "autofill", "form_feild" : "Text-pMfCAOPDKv", "autofill_type" : "reference", "autofill_value" : "Text-HqNu6kakZS"},
+    "Broker work phone number": {"Type" : "input_text", "form_feild" : "Text-XqKgLxlGge", "skip":true},
+    "Broker cell phone number": {"Type" : "autofill", "form_feild" : "Text-EotXm2Fjmv", "autofill_type" : "reference", "autofill_value" : "Text-Z12kBKW1SL"},
+    "Broker email": {"Type" : "autofill", "form_feild" : "Text-KrcBoGya_u", "autofill_type" : "reference", "autofill_value" : "Text-U92-WBcK4N"},
+    "Broker fax number": {"Type" : "input_text", "form_feild" : "Text-jtPjM6ZcYq", "skip":true},
+
+    "Broker/Agent Name": {"Type" : "input_text", "form_feild" : "Text-j7bLYiy87Y"},
+    "Client Name": {"Type" : "input_text", "form_feild" : "Text-QKQRfU6fk-"},
+    "Date": {"Type" : "input_text", "form_feild" : "Text-fpiidTTkM2"},
+    "Select client type": {
+    "Type": "check_list",
+    "form_feild": 
+      {
+        "Seller Client": ["CheckBox-oRwdlUP2Wi"],
+        "Buyer Client": ["CheckBox-0aqC_AjmEH"]
+      }
+  },
+  "Address": {"Type" : "input_text", "form_feild" : "Text-RUJeZpgwtS"}
 }

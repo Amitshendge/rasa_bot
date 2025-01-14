@@ -32,6 +32,15 @@ class PDFFormFiller:
         print("items", items)
         return dict(items)
 
+    def autofill_question(self, state, question_meta_data):
+        if question_meta_data['autofill_type'] == 'static':
+            self.fill_response(state, question_meta_data['form_feild'], None, question_meta_data['autofill_value'])
+            # state["responses"][question_meta_data['form_feild']] = question_meta_data['autofill_value']
+        elif question_meta_data['autofill_type'] == 'reference':
+            self.fill_response(state, question_meta_data['form_feild'], None, state["responses"][question_meta_data['autofill_value']])
+            # state["responses"][question_meta_data['form_feild']] = state["responses"][question_meta_data['autofill_value']]
+        return state
+
     def fill_response(self, state, form_field, add_questions, latest_message):
         if isinstance(form_field, dict):
             if isinstance(form_field[latest_message], list):
