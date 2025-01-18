@@ -8,9 +8,11 @@ import json
 import uuid
 from msal import ConfidentialClientApplication
 from dotenv import load_dotenv
+import warnings
+warnings.filterwarnings("ignore")
 
 # URL of the Rasa API (assuming it's running locally on port 5005)
-# RASA_URL = "http://localhost:2005/webhooks/rest/webhook"
+RASA_URL = "http://localhost:2005/webhooks/rest/webhook"
 download_foler = "/home/amitshendgepro/rasa_bot/outputs"
 # download_foler = "/Users/amitshendge/Documents/rasa_bot/outputs"
 
@@ -116,6 +118,7 @@ def get_user_info(code):
         result = app_instance.acquire_token_by_authorization_code(
             code, scopes=SCOPE, redirect_uri=REDIRECT_URI
         )
+        print("result", result)
         if "error" in result:
             return None
         claims = result.get("id_token_claims", {})
@@ -201,7 +204,7 @@ if 'code' in query_params:
         else:
             print("Done")
             st.session_state['user'] = user_info
-            st.query_params = {}
+            st.query_params.clear()
             st.rerun()
     else:
         st.warning("Authentication failed!")
