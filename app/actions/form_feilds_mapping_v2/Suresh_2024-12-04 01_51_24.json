@@ -88,7 +88,273 @@
   {
     "Type": "check_list",
     "form_feild": 
-      { "Additional Losting Broker Compansetion for Underepresented Buyer": ["CheckBox-xew0zv30Wf"]
+      { "Additional Listing Broker Compansetion for Underepresented Buyer": ["CheckBox-xew0zv30Wf"]
+      },
+    "questions": {
+      "Additional Listing Broker Compansetion for Underepresented Buyer": {"Seller will pay Broker additional":{
+        "Type":"check_list",
+        "form_feild": 
+          { "Percentage": ["CheckBox-TI1FHe5uik"] ,
+           "Amount": ["CheckBox-f6y9_GMcoH"],
+           "Percentage and Amount": ["CheckBox-j32Ls8FN2x"] 
+          },
+        "questions": {
+          "Percentage": {"Percentage of gross sale price":{"Type" : "input_text", "form_feild" : "Text-BJSWwlOoMd"}},
+          "Amount": {"Additional Compensation Amount":{"Type" : "input_text", "form_feild" : "Text-vDNp8c7HiM"}},
+          "Percentage and Amount": {"Percentage of gross sale price":{"Type" : "input_text", "form_feild" : "Text-Cg6SqR2d99"},
+          "Plus additional Compensation Amount":{"Type" : "input_text", "form_feild" : "Text-vURuGldRTW"}}
+        }
+      }}
+    }
+  },
+  "If applicable, Variable rate compensation to be paid as follows": {"Type" : "input_text", "form_feild" : "Text-CcDb_vj2An"},
+  "Listing Broker Service Fee Applicable?": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-eqqcH8ojYr"],
+        "No": ["NA"]
+      },
+    "questions": {
+      "Yes": {
+        "Listing Broker Service flat Fee": {"Type" : "input_text", "form_feild" : "Text-9H_XD9hJ5W"}
       }
   }
+  },
+  "Broker acknowledges receipt of retainer fee": {"Type": "input_text", "form_feild": "Text-i3fhNTCxk3"},
+  "This retainer fee will or will not be subtracted from the total commission": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Will be": ["CheckBox-SkM_Bqg_MN"],
+        "Will not be": ["CheckBox-L0JW1mqMG1"]
+    }
+  },
+  "Seller will pay broker Early Termination fee of": {"Type": "input_text", "form_feild": "Text-tVUJAfWT2a"},
+  "Seller authorizes broker to disclose to prospective buyers and brokers representing buyer": {
+    "Type": "check_list",
+    "form_feild": 
+      { "authorizes": ["CheckBox-OrHfMt3Fod"],
+        "does not authorizes": ["CheckBox-5heQDmXZDr"]
+      }
+  },
+  "Alarm System": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-QMoT41EDhJ"],
+        "No": ["NA"]
+      }
+  },
+  "Built-in Microwave": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-uab9uNOcy3"],
+        "No": ["NA"]
+      }
+  },
+  "Ceiling Fans": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-_7aZJCkJFb"],
+        "No": ["NA"]
+      }
+  },
+  "Central Vaccum": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-QXoE_NuPq4"],
+        "No": ["NA"]
+      }
+  },
+  "Cloths Dryer": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-pjP3hQ6J_o"],
+        "No": ["NA"]
+      }
+  },
+  "Cloths Washer": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-ONZ4dHgFoV"],
+        "No": ["NA"]
+      }
+  },
+  "Cooktop": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-myS3PAybuk"],
+        "No": ["NA"]
+      }
+  },
+  "Dishwasher": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-WCJKyi4RXT"],
+        "No": ["NA"]
+      }
+  },
+  "Disposer": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-xLvqiG-wzJ"],
+        "No": ["NA"]
+      }
+  },
+  "Electric Air Filter": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-4LBm6umNe_"],
+        "No": ["NA"]
+      }
+  },
+  "Fire Place screen/door": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-VyI2EVnQWS"],
+        "No": ["NA"]
+      }
+  },
+  "Freezer": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-PEr8C41aB7"],
+        "No": ["NA"]
+      }
+  },
+  "Furnace Humidifier": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-mBo0roITMg"],
+        "No": ["NA"]
+      }
+  },
+  "Garage Opener": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-b1CA8GRinB"],
+        "No": ["NA"]
+      }
+  },
+  "w/ remote": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-5tjZbvcIYp"],
+        "No": ["NA"]
+      }
+  },
+  "Gas Logs": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-e_jAAN7dpJ"],
+        "No": ["NA"]
+      }
+  },
+  "Hot Tub, Equip and cover": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-kzoIJIUr7P"],
+        "No": ["NA"]
+      }
+  },
+  "Intercom": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-Igi2_kkMh2"],
+        "No": ["NA"]
+      }
+  },
+  "Playground Equipment": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-npmteVlVqh"],
+        "No": ["NA"]
+      }
+  },
+  "Pool, Equip and cover": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-BHuUe7aAgV"],
+        "No": ["NA"]
+      }
+  },
+  "Refrigerator": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-h_45zuWoip"],
+        "No": ["NA"]
+      }
+  },
+  "W/ icemaker": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-8wzGKTfcZw"],
+        "No": ["NA"]
+      }
+  },
+  "satellite dish": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-Q5gAMkBPM6"],
+        "No": ["NA"]
+      }
+  },
+  "Storage Shed": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-IBxap0Wmeb"],
+        "No": ["NA"]
+      }
+  },
+  "stove or range": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-SvJdsKioOh"],
+        "No": ["NA"]
+      }
+  },
+  "Wall Oven": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-XXmPDjrDib"],
+        "No": ["NA"]
+      }
+  },
+  "Window Treatment system": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-R1aKuDtDL-"],
+        "No": ["NA"]
+      }
+  },
+  "Window AC Unit": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-mTgtuNX4Lg"],
+        "No": ["NA"]
+      }
+  },
+  "Window Fan": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox--msBWZaibW"],
+        "No": ["NA"]
+      }
+  },
+  "Window Treatments": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-k3I53VmabS"],
+        "No": ["NA"]
+      }
+  },
+  "Wood stove": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-WQZGXMtb4e"],
+        "No": ["NA"]
+      }
+  },
+  "Other conveyances no additional cost": {"Type": "input_text", "form_feild": "Text-XRedv43sRA"},
+  "Does not convey": {"Type": "input_text", "form_feild": "Text-lD10TtvtVY"},
+  "Seller will not warrant the condition of the following": {"Type": "input_text", "form_feild": "Text-SingXMKw18"},
+  
 }

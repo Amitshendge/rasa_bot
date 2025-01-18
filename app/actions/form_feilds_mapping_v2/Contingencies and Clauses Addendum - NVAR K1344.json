@@ -1,0 +1,10 @@
+{
+    "Addendum made on date": {"Type" : "input_text", "form_feild" : "Text-IWTeE5cti7"},
+    "Sales contract offered on": {"Type" : "input_text", "form_feild" : "Text-O12QFnjPoX"},
+    "Buyer Name": {"Type" : "input_text", "form_feild" : "Text-Cyl2zQQPT9"},
+    "Seller Name": {"Type" : "input_text", "form_feild" : "Text-7Z5zsGmyLf"},
+    "Property address": {"Type" : "input_text", "form_feild" : "Text-eXJTrO7SCR"},
+    "This contract is contingement until 9pm of how many days after Date of Ratification": {"Type" : "input_text", "form_feild" : "Text-_KwWhijqPg"},
+    "Buyers Property address": {"Type" : "input_text", "form_feild" : "Text-0GwYl9QeOU"},
+    
+}
