@@ -10,9 +10,9 @@ from msal import ConfidentialClientApplication
 from dotenv import load_dotenv
 
 # URL of the Rasa API (assuming it's running locally on port 5005)
-RASA_URL = "http://localhost:2005/webhooks/rest/webhook"
+# RASA_URL = "http://localhost:2005/webhooks/rest/webhook"
 download_foler = "/home/amitshendgepro/rasa_bot/outputs"
-# download_foler = "/Users/amitshendge/Documents/rasa_bot/outputs"
+download_foler = "/Users/amitshendge/Documents/rasa_bot/outputs"
 
 bas_path = download_foler.replace('outputs', '')
 
@@ -150,6 +150,7 @@ if st.session_state['user'] is None:
     st.title("Please log in to continue")
     login_url = login()
     st.markdown(f'<a href="{login_url}" target="_self">Login with Azure AD</a>', unsafe_allow_html=True)
+    
 else:
     st.title("Form Filling Chatbot")
     category = st.selectbox("Select Form Category", list(st.session_state.forms.keys()))
@@ -187,9 +188,10 @@ else:
                 st.button(message['button'], key=message['button'], on_click=partial(button_callback, message['button']))
             else:
                 st.write(f"Bot: {message['text']}")
-query_params = st.experimental_get_query_params()
+query_params = st.query_params
+print("query_params", query_params)
 if 'code' in query_params:
-    code = query_params['code'][0]
+    code = query_params['code']
     user_info = get_user_info(code)
     print("user_info", user_info)
     if user_info:
@@ -197,8 +199,9 @@ if 'code' in query_params:
             st.session_state['user'] = None
             st.warning("Access Denied: You are not authorized.")
         else:
+            print("Done")
             st.session_state['user'] = user_info
-            st.experimental_set_query_params()
+            st.query_params = {}
             st.rerun()
     else:
         st.warning("Authentication failed!")
