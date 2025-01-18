@@ -14,7 +14,7 @@
     "Legal Description Type": {
     "Type": "check_list",
     "form_feild": 
-      { "Lot/Block/Subdivision": ["CheckBox-LnvktLxOIe"] ,
+      { "Lot/Block/Subdivision": ["CheckBox-LnvktLxOIe"],
        "Metes/Bounds": ["CheckBox-3bXvYOHfxE"] 
       },
     "questions": {
@@ -356,5 +356,14 @@
   "Other conveyances no additional cost": {"Type": "input_text", "form_feild": "Text-XRedv43sRA"},
   "Does not convey": {"Type": "input_text", "form_feild": "Text-lD10TtvtVY"},
   "Seller will not warrant the condition of the following": {"Type": "input_text", "form_feild": "Text-SingXMKw18"},
+  "Seller does or does not authorize Broker to offer entire Property in As-Is condition": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Does": ["CheckBox-da198UIWZa"],
+        "Does not": ["CheckBox-BWI_xt1M6T"]
+      }
+  },
+  "Following is a list of leased items within Property": {"Type": "input_text", "form_feild": "Text-54M7zoSkmP"},
+  "Cost Not to exceed ($)": {"Type" : "input_text", "form_feild" : "Text-ZnmHI90SGg"}
   
 }

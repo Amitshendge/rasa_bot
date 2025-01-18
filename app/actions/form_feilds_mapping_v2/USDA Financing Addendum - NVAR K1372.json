@@ -1,0 +1,65 @@
+{
+    "Addendum is made on": {"Type" : "input_text", "form_feild" : "Text-up0Fluw7r9"},
+    "Contract offered on": {"Type" : "input_text", "form_feild" : "Text-x-ulbgssz0"},
+    "Buyer Name": {"Type" : "input_text", "form_feild" : "Text-rig4BlxxIN"},
+    "Seller Name": {"Type": "input_text", "form_feild": "Text-Idt1Xlrl0N"},
+    "Property address": {"Type" : "input_text", "form_feild" : "Text-Z88hJgn7Zu"},
+    "A. First Trust. Buyer will obtain or assume the rate": {
+        "Type":"check_list",
+        "form_feild": {
+            "Obtain": ["CheckBox-TeQbvcvLJe"],
+            "Assume": ["CheckBox-e9G6b-G7xO"]
+        }
+    },
+    "First Trust type of rate will be": {
+        "Type":"check_list",
+        "form_feild": {
+            "Fixed": ["CheckBox-a073DjtJtE"],
+            "Adjustable": ["CheckBox-H4H1NIos2k"]
+        }
+    },
+    "First Deed of Trust loan amortized over how many years": {"Type" : "input_text", "form_feild" : "Text-sI5VfqMfJL"},
+    "First Deed interest rate for this loan is at an (initial) interest rate not to exceed by (%) per year": {"Type" : "input_text", "form_feild" : "Text-Pq37D_4mwU"},
+    "B. Second Trust. Buyer will obtain or assume the rate": {
+        "Type":"check_list",
+        "form_feild": {
+            "Obtain": ["CheckBox-C8Lqo5b0ht"],
+            "Assume": ["CheckBox-b4Bz9K-xh1"]
+        }
+    },
+    "Second Trust type of rate will be": {
+        "Type":"check_list",
+        "form_feild": {
+            "Fixed": ["CheckBox-hIIP5RhKZm"],
+            "Adjustable": ["CheckBox-p0Dd8oAs3O"]
+        }
+    },
+    "Second Deed of Trust loan amortized over how many years": {"Type" : "input_text", "form_feild" : "Text-1F6LR4wRx4"},
+    "Second Deed interest rate for this loan is at an (initial) interest rate not to exceed by (%) per year": {"Type" : "input_text", "form_feild" : "Text-s9A1SLeP-j"},
+    "Contract are amended to include a Rural Housing Guarantee Fee of ($)": {"Type" : "input_text", "form_feild" : "Text-26VNeKEOFL"},
+    "If Buyer assumes Seller's loan(s), Buyer and Seller will OR will not obtain a release of Seller's liability": {
+        "Type": "check_list",
+        "form_feild": {
+            "Will": ["CheckBox-QNtLOgIjjm"],
+            "Will not": ["CheckBox-SsMoc84kWw"]
+        }
+    },
+    "FINANCING CONTINGENCY (Select A OR B)": {
+        "Type":"check_list",
+        "form_feild": {
+            "A. FINANCING CONTINGENCY WITH AUTOMATIC EXTENSION.": ["CheckBox-2lStSsF_Gp"],
+            "B. FINANCING CONTINGENCY WITH AUTOMATIC EXPIRATION.": ["CheckBox-RFhtI-juQV"]
+        },
+        "questions": {
+            "A. FINANCING CONTINGENCY WITH AUTOMATIC EXTENSION.": {
+                "“Financing Deadline” on this contingency is how many days after date of ratification": {"Type" : "input_text", "form_feild" : "Text-wgQwq-3Xz3"}
+            },
+            "B. FINANCING CONTINGENCY WITH AUTOMATIC EXPIRATION.": {
+                "“Financing Deadline” on this contingency is how many days after date of ratification": {"Type" : "input_text", "form_feild" : "Text-hVOVC7Sa9G"}
+            }
+        }
+    },
+    "It is expressly agreed that, notwithstanding any other provisions of Contract, Buyer shall not be obligated to complete the purchase of Property described herein or incur any penalty by forfeiture of deposit or otherwise unless Buyer has been given in accordance with HUD/USDA or VA requirements a written statement by the Federal Housing Commissioner, the Department of Veterans Affairs, or a Direct Endorsement Lender, setting forth the appraised value of Property of not less than ($)": {"Type" : "input_text", "form_feild" : "Text-tGTf8X4Fa0"},
+    "Negotiation Period. In the event of this sub-Paragraph 4(B)(5), the parties will have how many days after buyers Delivery of Appraisal Contingency Notice": {"Type" : "input_text", "form_feild" : "Text-LvCex4d70P"},
+    "Buyer will have the option to Void Contract by Delivering Notice to Seller by how many days after the Negotiation end Period": {"Type" : "input_text", "form_feild" : "Text-2RWTIIjSoJ"}
+}

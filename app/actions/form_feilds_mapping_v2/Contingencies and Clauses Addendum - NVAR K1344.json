@@ -6,5 +6,80 @@
     "Property address": {"Type" : "input_text", "form_feild" : "Text-eXJTrO7SCR"},
     "This contract is contingement until 9pm of how many days after Date of Ratification": {"Type" : "input_text", "form_feild" : "Text-_KwWhijqPg"},
     "Buyers Property address": {"Type" : "input_text", "form_feild" : "Text-0GwYl9QeOU"},
-    
+    "How many days after Deivery notice or this contract will become void": {"Type" : "input_text", "form_feild" : "Text-eGcSE04I_m"},
+    "Entered into multiple multiple listing service withing howmany days": {"Type" : "input_text", "form_feild" : "Text-S_C-GhV7LL"},
+    "Date of Ratification at price not to exceed ($)": {"Type" : "input_text", "form_feild" : "Text-Dw8bF1YcVR"},
+    "Settlement may not br delayed more than": {"Type" : "input_text", "form_feild" : "Text-xoa-4MR188"},
+    "Seller will or will not accept an assignment of funds": {
+        "Type":"check_list",
+        "form_feild": {
+            "will": ["CheckBox-Qi7eI68ZE4"],
+            "will not": ["CheckBox-T9g8hQlsMy"]
+        }
+    },
+    "buyers property address": {"Type" : "input_text", "form_feild" : "Text-_emdtk5Jiu"},
+    "Settlemet may not be delayed more than": {"Type" : "input_text", "form_feild" : "Text-r1yKbqKFYB"},
+    "Seller will or will not accept an assignment of funds on buyers property": {
+        "Type":"check_list",
+        "form_feild": {
+            "will": ["CheckBox-IlCI_6FYra"],
+            "will not": ["CheckBox-IAcR04cRcp"]
+        }
+    },
+    "Contract is contingent until how many days after deadline": {"Type" : "input_text", "form_feild" : "Text--O_OPq87is"},
+    "This contract is contingent until how many days after deadline": {"Type" : "input_text", "form_feild" : "Text-1JAybXYeLi"},
+    "This contract is contingent upon": {"Type" : "input_text", "form_feild" : "Text-kScZK6y05P"},
+    "This contract is first back-up to another contract dated": {"Type" : "input_text", "form_feild" : "Text-2ajQaNyyun"},
+    "Buyer name": {"Type" : "input_text", "form_feild" : "Text-MGuulTnkI6"},
+    "All deadlines contained in this contract shall be measured from": {
+        "Type":"check_list",
+        "form_feild": {
+            "Date of Ratification": ["CheckBox-oJ-Kg1WdnB"],
+            "Date this contract becomes primary": ["CheckBox-SGK1o7HHzz"]
+        }
+    },
+    "Additionally Settlement Date will be how many days after this contract becomes primary": {"Type" : "input_text", "form_feild" : "Text-Y1gHo8WRK1"},
+    "All clauses pertaining to delivery of Property free and clear of trash and debris and broom clean are deleted": {
+        "Type":"check_list",
+        "form_feild": {
+            "True": ["CheckBox-k9shds8yNj"],
+            "False": ["NA"]
+        }
+    },
+    "Buyer assumes responsibility for compliance with all laws and regulations regarding smoke detectors": {
+        "Type":"check_list",
+        "form_feild": {
+            "True": ["CheckBox-oU4Z6W8VJb"],
+            "False": ["NA"]
+        }
+    },
+    "All clauses pertaining to termites and wood-destroying insects are deleted": {
+        "Type":"check_list",
+        "form_feild": {
+            "True": ["CheckBox-Bm3FU1I9vf"],
+            "False": ["NA"]
+        }
+    },
+    "All clauses pertaining to Seller's compliance with all orders or notices of violation of any country or local authority are deleted": {
+        "Type":"check_list",
+        "form_feild": {
+            "True": ["CheckBox-TUV0QssSQO"],
+            "False": ["NA"]
+        }
+    },
+    "All requirements for Seller to comply with Property Owners or Condominium Owners Associations notices of violations related to the physical condition of Property are deleted": {
+        "Type":"check_list",
+        "form_feild": {
+            "True": ["CheckBox-hNlJkZbhzX"],
+            "False": ["NA"]
+        }
+    },
+    "For IRC Section 1031 tax-deferred this settlement will be coordinated with": {"Type" : "input_text", "form_feild" : "Text-bu9umCWKpN"},
+    "Seller has Delivered or Will Deliver Buyer a required public offering statement": {
+        "Type":"check_list",
+        "form_feild": {
+            "has Delivered": ["CheckBox-t45p_AUjAQ"],
+            "Will Deliver": ["CheckBox-WWl4tgt6Ad"]
+        }
+    }
 }

@@ -102,7 +102,7 @@
     "Broker email": {"Type" : "autofill", "form_feild" : "Text-KrcBoGya_u", "autofill_type" : "reference", "autofill_value" : "Text-U92-WBcK4N"},
     "Broker fax number": {"Type" : "input_text", "form_feild" : "Text-jtPjM6ZcYq", "skip":true},
 
-    "Broker/Agent Name": {"Type" : "input_text", "form_feild" : "Text-j7bLYiy87Y"},
+    "Broker/Agent Name": {"Type" : "autofill", "form_feild" : "Text-j7bLYiy87Y", "autofill_type" : "reference", "autofill_value" : "Text-HqNu6kakZS"},
     "Client Name": {"Type" : "input_text", "form_feild" : "Text-QKQRfU6fk-"},
     "Date": {"Type" : "input_text", "form_feild" : "Text-fpiidTTkM2"},
     "Select client type": {

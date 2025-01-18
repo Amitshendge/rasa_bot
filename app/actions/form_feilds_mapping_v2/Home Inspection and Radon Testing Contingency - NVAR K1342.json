@@ -1,0 +1,40 @@
+{
+    "Addendum is made on": {"Type" : "input_text", "form_feild" : "Text-R3Rq56ENer"},
+    "Contract offered on": {"Type" : "input_text", "form_feild" : "Text-JV51L8bXJ-"},
+    "Buyer Name": {"Type" : "input_text", "form_feild" : "Text-5b-w-MwwmT"},
+    "Seller Name": {"Type": "input_text", "form_feild": "Text-BN9ZU7qTlj"},
+    "Property address": {"Type" : "input_text", "form_feild" : "Text-aBc8DBV17O"},
+    "If, for any reason, the utilities are not in service, Home Inspection Deadline and/or Radon Testing Deadline (as applicable) will be extended untilhow many days buyer receives notice that the utilities are in service": {"Type" : "input_text", "form_feild" : "Text-rSEg0hbA0u"},
+    "HOME INSPECTION CONTINGENCY (Select A OR B)": {
+        "Type":"check_list",
+        "form_feild": {
+            "A. A. HOME INSPECTION WITH OPTION TO NEGOTIATE REPAIRS OR VOID": ["CheckBox-AaH8qVk_70"],
+            "B. HOME INSPECTION WITH OPTION TO VOID ONLY": ["CheckBox-tZZFx47ZxI"]
+        },
+        "questions": {
+            "A. A. HOME INSPECTION WITH OPTION TO NEGOTIATE REPAIRS OR VOID": {
+                "Inspection Period Contract is contingent until how many days after Date of Ratification": {"Type" : "input_text", "form_feild" : "Text-NDR9mQ9-yy"},
+                "The parties will have negotiation period of how many days": {"Type" : "input_text", "form_feild" : "Text-oeODB8evdS"},
+                "Buyer will have the option to Void this Contract by Delivering Notice to Seller by how many days following the end of negotiation period": {"Type" : "input_text", "form_feild" : "Text-Kah8WdvV_P"}
+            },
+            "B. HOME INSPECTION WITH OPTION TO VOID ONLY": {
+                "Inspection Period Contract is contingent until how many days after Date of Ratification": {"Type" : "input_text", "form_feild" : "Text-pMBz3-yYmo"}
+            }
+        }
+    },
+    "Do you want to include RADON TESTING contingency": {
+        "Type":"check_list",
+        "form_feild": {
+            "Yes": ["CheckBox-w629zoZvKU"],
+            "No": ["NA"]
+        },
+        "questions": {
+            "Yes": {
+                "Radon Inspection Period of how many days": {"Type" : "input_text", "form_feild" : "Text-O2B3sU2qdB"},
+                "Random Professional indicate in writing that these requirements have not been met then the Radon Testing Deadline will be extended until how many days after Seller notifies Buyer that these requirements are in place": {"Type" : "input_text", "form_feild" : "Text-IELNw2M4R0"},
+                "Radon Negotiation Period of how many days after Buyer's Delivery of Radon Inspection Addendum": {"Type" : "input_text", "form_feild" : "Text-TdO73DIRIM"},
+                "Buyer's Election Period: Buyer will have the option to Void Contract by Delivering Notice to Seller by of how many days following the end of Radon Negotiation Period": {"Type" : "input_text", "form_feild" : "Text-65-VAN3kGP"}
+            }
+        }
+    }
+}
