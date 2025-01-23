@@ -52,6 +52,7 @@ def generate_download_link(file_path, link_text="Download File"):
             mime_type = "application/octet-stream"  # Generic MIME type for files
             b64_file = base64.b64encode(file_bytes).decode()  # Encode file to Base64
             href = f'<a href="data:{mime_type};base64,{b64_file}" download="{file_name}">{link_text}</a>'
+            print("href", href)
             return href
     except Exception as e:
         return f"Error generating download link: {e}"
@@ -190,7 +191,7 @@ else:
             elif 'button' in message:
                 st.button(message['button'], key=message['button'], on_click=partial(button_callback, message['button']))
             else:
-                st.write(f"Bot: {message['text']}")
+                st.write(f"Bot: {message['text']}", unsafe_allow_html=True)
 query_params = st.query_params
 print("query_params", query_params)
 if 'code' in query_params:

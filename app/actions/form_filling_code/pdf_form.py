@@ -1,15 +1,41 @@
 import json
 from fillpdf import fillpdfs
 import os
+import base64
 
 class PDFFormFiller:
     def __init__(self):
         pass
 
+
+    def generate_download_link(self, file_path, link_text="Download File"):
+        """
+        Generates a hyperlink to download any file.
+        
+        Parameters:
+        - file_path: Path to the file.
+        - link_text: Text to display for the download link.
+        
+        Returns:
+        - str: HTML link for downloading the file.
+        """
+        try:
+            with open(file_path, "rb") as file:
+                file_bytes = file.read()
+                file_name = file_path.split("/")[-1]  # Extract file name from path
+                mime_type = "application/octet-stream"  # Generic MIME type for files
+                b64_file = base64.b64encode(file_bytes).decode()  # Encode file to Base64
+                href = f'<a href="data:{mime_type};base64,{b64_file}" download="{file_name}">{link_text}</a>'
+                print("href", href)
+                return href
+        except Exception as e:
+            return f"Error generating download link: {e}"
+        
     def fill_pdf(self, pdf_path, output_path, feild_values):
         fillpdfs.write_fillable_pdf(pdf_path, output_path, feild_values)
         fillpdfs.flatten_pdf(output_path, output_path.replace(os.path.basename(output_path), "flatten_"+os.path.basename(output_path)))
-
+        return self.generate_download_link(output_path)
+    
     def get_form_feild(self, question_meta_data):
         add_questions = None
         if question_meta_data['Type'] == 'input_text':
