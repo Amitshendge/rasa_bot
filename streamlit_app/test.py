@@ -34,29 +34,6 @@ app_instance = ConfidentialClientApplication(
     CLIENT_ID, authority=AUTHORITY, client_credential=CLIENT_SECRET
 )
 
-def generate_download_link(file_path, link_text="Download File"):
-    """
-    Generates a hyperlink to download any file.
-    
-    Parameters:
-    - file_path: Path to the file.
-    - link_text: Text to display for the download link.
-    
-    Returns:
-    - str: HTML link for downloading the file.
-    """
-    try:
-        with open(file_path, "rb") as file:
-            file_bytes = file.read()
-            file_name = file_path.split("/")[-1]  # Extract file name from path
-            mime_type = "application/octet-stream"  # Generic MIME type for files
-            b64_file = base64.b64encode(file_bytes).decode()  # Encode file to Base64
-            href = f'<a href="data:{mime_type};base64,{b64_file}" download="{file_name}">{link_text}</a>'
-            print("href", href)
-            return href
-    except Exception as e:
-        return f"Error generating download link: {e}"
-
 # Function to send user message to Rasa and get the response
 def get_rasa_response(user_message):
     print("user_message", user_message)
@@ -87,8 +64,7 @@ def clean_text(default_message=None, store_message=True):
         elif 'custom' in message:
             payload = message.get('custom')
             if payload.get('type') == 'download_file':
-                download_link = generate_download_link(os.path.join(download_foler, payload.get('file_name')), link_text="Download File")
-                st.session_state.messages.append({"role": "bot", "download": download_link})
+                st.session_state.messages.append({"role": "bot", "download": payload.get('href')})
             elif payload.get('type') == 'select_options':
                 st.session_state.messages.append({"role": "bot", "text": "Please select one of the following options:"})
                 for option in payload.get('payload'):
