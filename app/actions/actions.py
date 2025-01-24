@@ -97,8 +97,7 @@ class ActionAskDynamicQuestions(Action):
             feild_values = state["responses"]
             href = PDFFormFiller().fill_pdf(pdf_path, output_path, feild_values)
             dispatcher.utter_message(text="Thank you for answering all the questions!")
-            dispatcher.utter_message(text=href)
-            dispatcher.utter_message(json_message={"type":"download_file","file_name":f"{form_name_final}_filled.pdf"})
+            dispatcher.utter_message(json_message={"type":"download_file","href":href})
             return [ActiveLoop(None),AllSlotsReset()]
 
 
