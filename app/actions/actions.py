@@ -74,7 +74,10 @@ class ActionAskDynamicQuestions(Action):
             print("next_question", next_question)
             if next_question:
                 extra_question = PDFFormFiller().get_extra_question(state['questions'][questions[current_index]])
-                dispatcher.utter_message(text=next_question)
+                if 'date' in next_question.lower() or 'offered on' in next_question.lower():
+                    dispatcher.utter_message(json_message={"data_type":"date","text":next_question})
+                else:
+                    dispatcher.utter_message(json_message={"data_type":"char","text":next_question})
                 if extra_question:
                     dispatcher.utter_message(json_message={"type":"select_options","payload":[{"title": i} for i in extra_question]})
                 # Increment the current index
