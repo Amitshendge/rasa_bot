@@ -81,8 +81,3 @@ class PDFFormFiller:
         elif isinstance(form_field, str):
             state["responses"][form_field] = latest_message
         return state
-
-# Example usage
-if __name__ == "__main__":
-    pdf_path = '/home/amitshendgepro/rasa_bot/app/actions/form_feilds_NAVAR/Addendum Lease - K1384.pdf'
-    output_path = "filled_form.pdf"

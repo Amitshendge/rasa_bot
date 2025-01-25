@@ -6,6 +6,3 @@ services:
     ports:
      - "2005:5005"
      - "2055:5055"
-    volumes:
-    #  - /Users/amitshendge/Documents/rasa_bot/outputs:/app/outputs  # Mount host_dir to container_dir
-     - /home/amitshendgepro/rasa_bot/outputs:/home/amitshendgepro/app/outputs  # Mount host_dir to container_dir

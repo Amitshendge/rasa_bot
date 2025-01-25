@@ -13,10 +13,8 @@ warnings.filterwarnings("ignore")
 
 # URL of the Rasa API (assuming it's running locally on port 5005)
 RASA_URL = "http://localhost:2005/webhooks/rest/webhook"
-download_foler = "/home/amitshendgepro/rasa_bot/outputs"
-# download_foler = "/Users/amitshendge/Documents/rasa_bot/outputs"
 
-bas_path = download_foler.replace('outputs', '')
+base_path = os.getcwd()
 
 load_dotenv()
 
@@ -70,6 +68,10 @@ def clean_text(default_message=None, store_message=True):
                 for option in payload.get('payload'):
                     st.session_state.messages.append({"role": "bot", "button": option.get('title')})
                     st.session_state.buttons_message.append({"role": "bot", "button": option.get('title')})
+            elif payload.get('type') == 'date':
+                st.session_state.messages.append({"role": "bot", "text": payload.get('text')})
+            elif payload.get('type') == 'char':
+                st.session_state.messages.append({"role": "bot", "text": payload.get('text')})
         else:
             st.session_state.messages.append({"role": "bot", "text": message.get('text')})
     if not default_message:
@@ -115,9 +117,9 @@ if 'buttons_message' not in st.session_state:
 if 'button_clicked' not in st.session_state:
     st.session_state['button_clicked'] = False
 if 'files' not in st.session_state:
-    st.session_state.files = [i[:-5] for i in list(os.listdir(bas_path + "app/actions/form_feilds_mapping_v2"))]
+    st.session_state.files = [i[:-5] for i in list(os.listdir(base_path + "/app/actions/form_feilds_mapping_v2"))]
 if 'forms' not in st.session_state:
-    st.session_state.forms = json.load(open(bas_path + "app/actions/form_filling_code/forms_subset.json"))
+    st.session_state.forms = json.load(open(base_path + "/app/actions/form_filling_code/forms_subset.json"))
 if 'session_id' not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
 if 'user' not in st.session_state:

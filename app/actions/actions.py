@@ -74,7 +74,7 @@ class ActionAskDynamicQuestions(Action):
             print("next_question", next_question)
             if next_question:
                 extra_question = PDFFormFiller().get_extra_question(state['questions'][questions[current_index]])
-                if 'date' in next_question.lower() or 'offered on' in next_question.lower():
+                if 'date' in next_question.lower() or 'offered on' in next_question.lower() or 'made on' in next_question.lower():
                     dispatcher.utter_message(json_message={"data_type":"date","text":next_question})
                 else:
                     dispatcher.utter_message(json_message={"data_type":"char","text":next_question})
