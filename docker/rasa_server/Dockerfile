@@ -39,5 +39,5 @@ RUN rasa train
 # EXPOSE 5005
 
 # Command to run the Rasa server
-CMD ["bash", "-c", "rasa run & rasa run actions"]
+CMD ["bash", "-c", "rasa run --cors '*' & rasa run actions"]
 
