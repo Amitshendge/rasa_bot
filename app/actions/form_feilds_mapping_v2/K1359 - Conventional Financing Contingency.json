@@ -1,0 +1,74 @@
+{
+    "Addendum is made on": {"Type": "input_text", "form_feild": "page0_field1"},
+    "Contract offered on": {"Type": "input_text", "form_feild": "page0_field2"},
+    "Buyer Name": {"Type": "input_text", "form_feild": "page0_field3"},
+    "Seller Name": {"Type": "input_text", "form_feild": "page0_field4"},
+    "Property": {"Type": "input_text", "form_feild": "page0_field5"},
+    
+    "First Trust Loan Options": {
+        "Type": "check_list",
+        "form_feild": {
+            "Obtain": ["page0_field6"],
+            "Assume": ["page0_field7"]
+        }
+    },
+    "First Trust Interest Rate Type": {
+        "Type": "check_list",
+        "form_feild": {
+            "Fixed Rate": ["page0_field8"],
+            "Adjustable Rate": ["page0_field9"]
+        }
+    },
+    "First Trust Loan Amortization (years)": {"Type": "input_text", "form_feild": "page0_field10"},
+    "First Trust Interest Rate (max %)": {"Type": "input_text", "form_feild": "page0_field11"},
+    
+    "Second Trust Loan Options": {
+        "Type": "check_list",
+        "form_feild": {
+            "Obtain": ["page0_field12"],
+            "Assume": ["page0_field13"]
+        }
+    },
+    "Second Trust Interest Rate Type": {
+        "Type": "check_list",
+        "form_feild": {
+            "Fixed Rate": ["page0_field14"],
+            "Adjustable Rate": ["page0_field15"]
+        }
+    },
+    "Second Trust Loan Amortization (years)": {"Type": "input_text", "form_feild": "page0_field16"},
+    "Second Trust Interest Rate (max %)": {"Type": "input_text", "form_feild": "page0_field17"},
+
+    "Financing Contingency Options": {
+        "Type": "check_list",
+        "form_feild": {
+            "Automatic Extension (A)": ["page0_field18"],
+            "Automatic Expiration (B)": ["page1_field1"]
+        }
+    },
+    "questions": {
+       "Automatic Extension (A)":{"Financing Deadline Details": {"Type": "input_text", "form_feild": "page0_field19" } },
+       "Automatic Expiration (B)": {"Financing Deadline Details": {"Type": "input_text", "form_feild": "page1_field2" }}
+    },
+
+    "Appraisal Contingency Options": {
+        "Type": "check_list",
+        "form_feild": {
+            "Appraisal Contingency (A)": ["page1_field3"],
+            "Appraisal Contingency Plus Gap Guaranty (B)": ["page2_field1"]
+        }
+    },
+    "Questions": {
+       "Appraisal Contingency (A)":{"Appraisal Deadline (Days)": {"Type": "input_text", "form_feild": "page1_field4"},
+                                    "Negotiation Period (Days)": {"Type": "input_text", "form_feild": "page1_field5"},
+                                    "Buyer’s Election Period (Days)": {"Type": "input_text", "form_feild": "page1_field6"} },
+
+       "Appraisal Contingency Plus Gap Guaranty (B)": {"Appraisal Deadline (Days)": {"Type": "input_text", "form_feild": "page2_field2"},
+                                                       "Buyer Gap Guaranty ($)": {"Type": "input_text", "form_feild": "page2_field4"},
+                                                       "Negotiation Period (Days)": {"Type": "input_text", "form_feild": "page2_field5"},
+                                                       "Buyer’s Election Period (Days)": {"Type": "input_text", "form_feild": "page2_field6"}
+                 }
+}}
+
+
+

@@ -1,0 +1,439 @@
+{
+    "Contract Date of Offer": {"Type": "input_text", "form_feild": "page0_field1"},
+    "Buyer Name": {"Type": "input_text", "form_feild": "page0_field3"},
+    "Seller Name": {"Type": "input_text", "form_feild": "page0_field4"},
+    "Listing Brokerage Name": {"Type": "input_text", "form_feild": "page0_field5"},
+    "Buyer’s Brokerage Name": {"Type": "input_text", "form_feild": "page0_field6"},
+    "Tax Map/ID": {"Type": "input_text", "form_feild": "page0_field7"},
+    "Legal Description Lots": {"Type": "input_text", "form_feild": "page0_field8"},
+    "Section": {"Type": "input_text", "form_feild": "page0_field9"},
+    "Subdivision or Condominium": {"Type": "input_text", "form_feild": "page0_field10"},
+    "Parking Space(s) #": {"Type": "input_text", "form_feild": "page0_field11"},
+    "County/Municipality": {"Type": "input_text", "form_feild": "page0_field12"},
+    "Deed Book/Liber #": {"Type": "input_text", "form_feild": "page0_field19"},
+    "Page/Folio #": {"Type": "input_text", "form_feild": "page0_field13"},
+    "Street Address": {"Type": "input_text", "form_feild": "page0_field14"},
+    "Unit #": {"Type": "input_text", "form_feild": "page0_field15"},
+    "City": {"Type": "input_text", "form_feild": "page0_field16"},
+    "ZIP Code": {"Type": "input_text", "form_feild": "page0_field17"},
+    "Sales Price": {"Type": "input_text", "form_feild":"page0_field18"},
+
+    "Down Payment Amount": {"Type": "input_text", "form_feild":"page0_field20"},
+    "Down Payment Percentages": {"Type": "input_text", "form_feild":"page0_field21"},
+
+    "Financing First Trust Amount":{"Type": "input_text", "form_feild":"page0_field22"},
+    "Financing  First Trust Percentages":{"Type": "input_text", "form_feild":"page0_field23"},
+     
+    "Financing First Trust": {
+        "Type": "check_list",
+        "form_feild": {
+            "Conventional": ["page0_field24"],
+            "VA": ["page0_field25"],
+            "FHA": ["page0_field26"],
+            "USDA": ["page0_field27"],
+            "Other":["page0_field28"]
+        }},
+
+        "questions":{"Other":{"Other (Specify)": {"Type": "input_text", "form_feild": "page0_field29"}
+    }},
+    
+    
+    "Financing Second Trust Amount":{"Type": "input_text", "form_feild":"page0_field30"},
+    "Financing  Second Trust Percentages":{"Type": "input_text", "form_feild":"page0_field31"},
+
+    "Financing Seller Held Trust Amount":{"Type": "input_text", "form_feild":"page0_field32"},
+    "Financing  Seller Held TrustPercentages":{"Type": "input_text", "form_feild":"page0_field33"},
+
+    "TOTAL FINANCING Amount":{"Type": "input_text", "form_feild":"page0_field34"},
+    "TOTAL FINANCING Percentages":{"Type": "input_text", "form_feild":"page0_field35"},
+
+    "Seller Subsidy to Buyer Amount":{"Type": "input_text", "form_feild":"page0_field36"},
+    "Seller Subsidy to Buyer Percentages":{"Type": "input_text", "form_feild":"page0_field37"},
+
+    "Seller Payment towards Buyer’s Brokerage Compensation Amount " :{"Type": "input_text", "form_feild":"page0_field38"},
+    "Seller Payment towards Buyer’s Brokerage Compensation Percentages " :{"Type": "input_text", "form_feild":"page0_field39"},
+
+     
+    "Financing Contingency": {
+        "Type": "check_list",
+        "form_feild": {
+            "Is contingent": ["page0_field40"],
+            "Is not contingent": ["page0_field41"]
+        }
+    },
+    "Appraisal Contingency": {
+        "Type": "check_list",
+        "form_feild": {
+            "Is contingent": ["page1_field1"],
+            "Is not contingent": ["page1_field2"]
+        }
+    },
+    "Seller Access for Appraisal": {
+        "Type": "check_list",
+        "form_feild": {
+            "Will provide access": ["page1_field3"],
+            "Will not provide access": ["page0_field45"]
+        }
+    },
+    "Buyer’s Representations": {
+        "Type": "check_list",
+        "form_feild": {
+            "Will occupy as principal residence": ["page1_field5"],
+            "Will not occupy as principal residence": ["page1_field6"]
+        }
+    },
+
+    "Deposit":{
+        "Type": "check_list",
+        "form_feild": {
+            "Check/Bank-Wired Funds ($)":["page1_field8"],
+            "By Note ($)": ["page1_field9"]
+    },
+    "Question":{
+        "Check/Bank-Wired Funds ($)":{"check/bank-wired amount": {"Type": "input_text", "form_feild": "page1_field7" } },
+        "By Note ($)": {"By Note ($) amount": {"Type": "input_text", "form_feild": "page1_field10" }}
+     }},
+
+    "Payable Due Date": {"Type": "input_text", "form_feild": "page1_field11"},
+        
+ 
+    "Escrow Agent": {
+            "Type": "check_list",
+            "form_feild": {
+                "Settlement Agent": ["page1_field12"],
+                "Buyer’s Broker": ["page1_field13"],
+                "Other": ["page1_field14"]
+            },
+            "questions":{"Other":{"Other (Specify)": {"Type": "input_text", "form_feild": "page1_field15"}
+        }
+        }
+    },   
+
+    "Deposit Delivery": {
+            "Type": "check_list",
+            "form_feild": {
+                "Has Delivered Deposit": ["page1_field16"],
+                "Will Deliver Deposit": ["page1_field17"]
+            }},
+    "Delivery Timeline": {"Type": "input_text", "form_feild": "page1_field18"},
+    "Settlement Date": {"Type": "input_text", "form_feild": "page1_field19"},
+    
+    "Settlement Agent": {"Type": "input_text", "form_feild": "page2_field1"},
+
+    "Delivery Methods for Seller": {
+        "Type": "check_list",
+        "form_feild": {
+            "United States Mail Hand Delivery or Courier Service ": ["page2_field2"],
+            "Fax": ["page3_field1"],
+            "Email": ["page3_field2"]
+        }
+    },
+    "Seller Delivery Address": {"Type": "input_text", "form_feild": "page3_field4"},
+
+    "Delivery Methods for Buyer": {
+        "Type": "check_list",
+        "form_feild": {
+            "United States Mail Hand Delivery or Courier Service ": ["page3_field5"],
+            "Fax": ["page3_field6"],
+            "Email": ["page3_field7"]
+        }
+    },
+    "Buyer Delivery Address": {"Type": "input_text", "form_feild": "page3_field8"},
+
+    "Property Subject to POAA": {
+            "Type": "check_list",
+            "form_feild": {
+                "Is Subject to POAA": ["page3_field9"],
+                "Is Not Subject to POAA": ["page3_field10"]
+            }
+        },
+        "Property Subject to Condo Act": {
+            "Type": "check_list",
+            "form_feild": {
+                "Is Subject to Condo Act": ["page3_field11"],
+                "Is Not Subject to Condo Act": ["page3_field12"]
+            }
+        },
+    "Cancellation Within Days After Ratification": {"Type": "input_text", "form_feild": "page3_field13"},
+    "Cancellation Within Days After Receiving Resale Certificate": {"Type": "input_text", "form_feild": "page3_field14"},
+    "Electronic Delivery Address": {"Type": "input_text", "form_feild": "page3_field15"},
+    "Hard Copy Delivery Address": {"Type": "input_text", "form_feild": "page3_field16"},
+    
+    "Property Delivery Condition": {
+    "Type": "check_list",
+    "form_feild": {
+        "Date of Offer": ["page3_field17"],
+        "Date of Inspection": ["page3_field18"],
+        "Other": ["page4_field2"]
+    }},
+
+    "Questions": {
+        "Other": {
+            "Specify Other Date": {"Type": "input_text", "form_feild": "page4_field1"}
+        }
+    },
+
+   "Home Inspection Contingency": {
+    "Type": "check_list",
+    "form_feild": {
+        "Contract is contingent upon inspection(s)": ["page4_field3"],
+        "Buyer waives inspection contingency": ["page4_field4"]
+    }
+},
+
+"Water Supply": {
+        "Type": "check_list",
+        "form_feild": {
+            "Public": ["page4_field8"],
+            "Private Well": ["page4_field9"],
+            "Community Well": ["page4_field10"]
+        },
+"Hot Water": {
+        "Type": "check_list",
+        "form_feild": {
+            "Oil": ["page4_field11"],
+            "Gas": ["page4_field12"],
+            "Electric": ["page4_field14"],
+            "Other": ["page4_field15"]
+        },
+        "questions": {
+            "Other": {
+                "Specify Other": {"Type": "input_text", "form_feild": "page4_field13"}
+            }
+        }
+    },
+    "Air Conditioning": {
+        "Type": "check_list",
+        "form_feild": {
+            "Oil": ["page4_field17"],
+            "Gas": ["page4_field18"],
+            "Electric": ["page4_field19"],
+            "Heat Pump": ["page4_field20"],
+            "Other": ["page4_field21"],
+            "Zones":["page4_field23"]
+        },
+        "questions": {
+            "Other": {
+                "Specify Other": {"Type": "input_text", "form_feild": "page4_field22"}
+            },
+            "Zones": {"Specify Zones":{"Type": "input_text", "form_feild": "page4_field16"}}
+        }
+    },
+    "Heating": {
+        "Type": "check_list",
+        "form_feild": {
+            "Oil": ["page4_field24"],
+            "Gas": ["page4_field25"],
+            "Electric": ["page4_field26"],
+            "Heat Pump": ["page4_field27"],
+            "Other": ["page4_field28"],
+            "Zones":["page4_field30"]
+        },
+        "questions": {
+            "Other": {
+                "Specify Other": {"Type": "input_text", "form_feild": "page4_field29"}
+            },
+           "Zones": {"Specify Zones":{"Type": "input_text", "form_feild": "page4_field29"}}
+        }
+    },
+    "Sewage Disposal": {
+        "Type": "check_list",
+        "form_feild": {
+            "Public": ["page4_field32"],
+            "Septic for # BR": ["page4_field33"],
+            "Community Septic": ["page4_field34"],
+            "Alternative Septic for # BR": ["page4_field35"]
+        },
+        "questions": {
+            "Septic for # BR": {
+                "Specify Bedrooms": {"Type": "input_text", "form_feild": "page4_field7"}
+            },
+            "Alternative Septic for # BR": {
+                "Specify Bedrooms": {"Type": "input_text", "form_feild": "page4_field36"}
+            }
+        }
+    },
+    "Conveyance Items": {
+    "Type": "check_list",
+    "form_feild": {
+        "Alarm System": ["page5_field4"],
+        "Built-in Microwave": ["page5_field10"],
+        "Ceiling Fan": ["page5_field16"],
+        "Central Vacuum": ["page5_field22"],
+        "Clothes Dryer": ["page5_field28"],
+        "Clothes Washer": ["page5_field34"],
+        "Cooktop": ["page5_field40"],
+        "Dishwasher": ["page5_field46"],
+        "Disposer": ["page5_field52"],
+        "Electronic Air Filter": ["page5_field58"],
+        "Fireplace Screen/Door": ["page5_field62"],
+        "Freezer": ["page5_field6"],
+        "Furnace Humidifier": ["page5_field12"],
+        "Garage Opener": ["page5_field18"],
+        "Garage Opener with Remote": ["page5_field24"],
+        "Gas Log": ["page5_field30"],
+        "Hot Tub, Equip & Cover": ["page5_field36"],
+        "Intercom": ["page5_field42"],
+        "Playground Equipment": ["page5_field48"],
+        "Pool, Equip & Cover": ["page5_field54"],
+        "Refrigerator": ["page5_field60"],
+        "Refrigerator with Ice Maker": ["page5_field64"],
+        "Satellite Dish": ["page5_field8"],
+        "Storage Shed": ["page5_field14"],
+        "Stove or Range": ["page5_field20"],
+        "Wall Oven": ["page5_field26"],
+        "Water Treatment System": ["page5_field32"],
+        "Window A/C Unit": ["page5_field38"],
+        "Window Fan": ["page5_field44"],
+        "Window Treatments": ["page5_field50"],
+        "Wood Stove": ["page5_field56"]
+    }
+},
+"OTHER CONVEYANCES": {"Type": "input_text", "form_feild": "page5_field67"},
+"DOES NOT CONVEY": {"Type": "input_text", "form_feild": "page5_field69"},
+"Fuel Tanks": {
+    "Type": "check_list",
+    "form_feild": {
+        "Leased": ["page5_field71"],
+        "Owned": ["page5_field72"]
+    },
+    "questions": {
+        "Leased": {"Number of Tanks": {"Type": "input_text", "form_feild": "page5_field70"}},
+        "Owned": {"Number of Tanks": {"Type": "input_text", "form_feild": "page5_field73"}}
+    }
+},
+"IRS/FIRPTA": {
+    "Type": "check_list",
+    "form_feild": {
+        "Is a Foreign Person": ["page5_field76"],
+        "Is Not a Foreign Person": ["page5_field77"]
+    }
+},
+"Target Lead-Based Paint Housing": {
+        "Type": "check_list",
+        "form_feild": {
+            "Were Constructed Before 1978": ["page5_field78"],
+            "Were Not Constructed Before 1978": ["page5_field79"]
+        }
+    },
+
+      "Lead-Based Paint": {
+        "Type": "check_list",
+        "form_feild": {
+            "Does Waive Risk Assessment": ["page6_field1"],
+            "Does Not Waive Risk Assessment": ["page6_field2"]
+        }
+    },
+    "Wood-Destroying Insect Inspection": {
+        "Type": "check_list",
+        "form_feild": {
+            "None": ["page6_field3"],
+            "Buyer at Buyer's Expense": ["page6_field4"],
+            "Seller at Seller's Expense": ["page6_field5"]
+        }
+    },
+
+    "Home Warranty": {
+        "Type": "check_list",
+        "form_feild": {
+            "Yes": ["page6_field6"],
+            "No": ["page6_field7"]
+        }},
+        "Warranty Provider": {
+            "Type": "check_list",
+            "form_feild": {
+                "Buyer": ["page6_field8"],
+                "Seller": ["page6_field9"]
+            }},
+            "Settlement By": {
+            "Type": "check_list",
+            "form_feild": {
+                "Buyer": ["page6_field10"],
+                "Seller": ["page6_field11"]
+            }},
+
+        "Cost Not to Exceed": {"Type": "input_text", "form_feild": "page6_field12"},
+        "Warranty Provider Name": {"Type": "input_text", "form_feild": "page6_field13"},
+        "Real Estate Licensed Parties": {"Type": "input_text", "form_feild": "page9_field1"},
+        "License Status": {
+            "Type": "check_list",
+            "form_feild": {
+                "Active": ["page9_field2"],
+                "Inactive": ["page9_field3"]
+            }
+        },
+        "License Location": {
+            "Type": "check_list",
+            "form_feild": {
+                "Virginia": ["page9_field4"],
+                "Other": ["page9_field5"]
+            },
+            "questions": {
+                "Other": {
+                    "Specify Location": {"Type": "input_text", "form_feild": "page9_field6"}
+                }
+            }
+        },
+        "Party Relation": {
+            "Type": "check_list",
+            "form_feild": {
+                "Buyer": ["page9_field7"],
+                "Seller": ["page9_field8"],
+                "Related to a Party": ["page9_field9"]
+            }
+        },
+        "Additions": {
+        "Type": "check_list",
+        "form_feild": {
+            "Home Inspection/Radon Testing Contingency": ["page9_field10"],
+            "Lead-Based Paint Inspection Contingency": ["page9_field12"],
+            "Contingencies/Clauses": ["page9_field14"],
+            "Pre-Settlement Occupancy": ["page9_field16"],
+            "Residential Property Disclosure Statement": ["page9_field18"],
+            "FHA Home Inspection Notice": ["page9_field20"],
+            "Conventional Financing": ["page9_field22"],
+            "Extension of Review Period for Common Interest Community Resale Certificate": ["page9_field24"],
+            "New Home Sales Addendum": ["page9_field11"],
+            "Escalation Addendum": ["page9_field13"],
+            "Private Well and/or Septic Inspection": ["page9_field15"],
+            "Post-Settlement Occupancy": ["page9_field17"],
+            "Lead-Based Paint Disclosure": ["page9_field19"],
+            "VA/FHA/USDA Financing": ["page9_field21"],
+            "Addendum: Sale": ["page9_field23"],
+            "Solar Panel Addendum": ["page9_field25"],
+            "Other": ["page9_field26"]
+        },
+        "questions": {
+            "Other": {
+                "Specify": {"Type": "input_text", "form_feild": "page9_field27"}
+            }
+        }
+    },
+    "Date of Ratification": {"Type": "input_text", "form_feild": "page9_field28"},
+
+    " Listing Brokerage Name and Address": {"Type": "input_text", "form_feild": "page10_field17"},
+        "Brokerage Phone": {"Type": "input_text", "form_feild": "page10_field21"},
+        "Bright MLS Broker Code": {"Type": "input_text", "form_feild": "page10_field23"},
+        "VA Firm License #": {"Type": "input_text", "form_feild": "page10_field25"},
+        "Agent Name": {"Type": "input_text", "form_feild": "page10_field27"},
+        "Agent Email": {"Type": "input_text", "form_feild": "page10_field29"},
+        "Agent Phone": {"Type": "input_text", "form_feild": "page10_field31"},
+        "MLS Agent ID #": {"Type": "input_text", "form_feild": "page10_field33"},
+        "VA Agent License #": {"Type": "input_text", "form_feild": "page10_field35"},
+        "Team Name": {"Type": "input_text", "form_feild": "page10_field37"},
+        "Team Business Entity License #": {"Type": "input_text", "form_feild": "page10_field39"},
+
+        "Buyer’s Name and Address": {"Type": "input_text", "form_feild": "page10_field18"},
+        " Buyer’sBrokerage Phone": {"Type": "input_text", "form_feild": "page10_field22"},
+        " Buyer’sBright MLS Broker Code": {"Type": "input_text", "form_feild": "page10_field24"},
+        "Buyer’s VA Firm License #": {"Type": "input_text", "form_feild": "page10_field26"},
+        "Buyer’s Agent Name": {"Type": "input_text", "form_feild": "page10_field28"},
+        " Buyer’sAgent Email": {"Type": "input_text", "form_feild": "page10_field30"},
+        "Buyer’s Agent Phone": {"Type": "input_text", "form_feild": "page10_field32"},
+        "Buyer’s MLS Agent ID #": {"Type": "input_text", "form_feild": "page10_field34"},
+        "Buyer’sVA Agent License #": {"Type": "input_text", "form_feild": "page10_field36"},
+        "Buyer’s Team Name": {"Type": "input_text", "form_feild": "page10_field38"},
+        "Buyer’sTeam Business Entity License #": {"Type": "input_text", "form_feild": "page10_field40"}
+
+
+    }}

@@ -1,0 +1,1239 @@
+{
+    "Agreement made on date": {"Type" : "input_text", "form_feild" : "Text-xVyHFjwN3p"},
+    "Seller Name": {"Type" : "input_text", "form_feild" : "Text-xYbJMhB8fA"},
+    "Firm (Broker) Name": {"Type" : "input_text", "form_feild" : "Text-ELvY8c3ur8"},
+    "Property street Address": {"Type" : "input_text", "form_feild" : "Text-qvw1G_Gxoj"},
+    "Property Unit #": {"Type" : "input_text", "form_feild" : "Text-DrFKPc-46q"},
+    "City": {"Type" : "input_text", "form_feild" : "Text-aEsp6R-ilo"},
+    "Zip Code": {"Type" : "input_text", "form_feild" : "Text-R8zF4YsMZ7"},
+    "TAX Map/Id": {"Type" : "input_text", "form_feild" : "Text-Ccy5gig_88"},
+    "Parking Space": {"Type" : "input_text", "form_feild" : "Text-UQRCufo_eN"},
+    "Storage Unit": {"Type" : "input_text", "form_feild" : "Text-Lk9kkoKLm0"},
+    "MailBox": {"Type" : "input_text", "form_feild" : "Text-mSm9eaWPDI"},
+    "Historic District Designation": {"Type" : "input_text", "form_feild" : "Text-t7rZv2UBP_"},
+    "Legal Description Type": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Lot/Block/Subdivision": ["CheckBox-LnvktLxOIe"],
+       "Metes/Bounds": ["CheckBox-3bXvYOHfxE"] 
+      },
+    "questions": {
+      "Lot/Block/Subdivision": {
+        "Lots":{"Type" : "input_text", "form_feild" : "Text-neAbJu0VKV"},
+        "Block/Square":{"Type" : "input_text", "form_feild" : "Text-gvZhnEuhaI"},
+        "section":{"Type" : "input_text", "form_feild" : "Text-BJLczniZyS"},
+        "Phase":{"Type" : "input_text", "form_feild" : "Text-ovooY8JDUu"},
+        "Subdivision or Condominium":{"Type" : "input_text", "form_feild" : "Text-26p5sFmIFZ"},
+        "County/Municipalty":{"Type" : "input_text", "form_feild" : "Text-PHCVxxSL0M"},
+        "Deed Book/Page":{"Type" : "input_text", "form_feild" : "Text-WJgGn66dWd"}
+      }
+    }
+  },
+  "MLS Description No of levels": {"Type" : "input_text", "form_feild" : "Text-e340sCcujj"},
+  "Basement":{
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-t-5IU3aWGH"],
+        "No": ["CheckBox-NbVtceJRou"]
+      },
+    "questions": {
+      "Yes": {
+        "Basement Entrance type": {"Type" : "input_text", "form_feild" : "Text-vq8ffQjaeb"},
+        "Basement Type": {"Type" : "input_text", "form_feild" : "Text-3M7pEa-zYc"}
+      }
+    }
+  },
+  "Attic Type": {"Type" : "input_text", "form_feild" : "Text-EADA1dd079"},
+  "Architectural Style": {"Type" : "input_text", "form_feild" : "Text-zXlcx31WQ_"},
+  "Type of Exterior": {"Type" : "input_text", "form_feild" : "Text-Fa6UTWpYA8"},
+  "Disability Access": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-1J9Z6Zz1Z_"],
+        "No": ["CheckBox-1J9Z6Zz1Z_"]
+      }
+  },
+  "Seller Mailling Address": {"Type" : "input_text", "form_feild" : "Text-hArSuePSHh"},
+  "Seller City, State, Zip": {"Type" : "input_text", "form_feild" : "Text--wiPewjW0e"},
+  "Seller Home Phone": {"Type" : "input_text", "form_feild" : "Text-gp2-_FoR7H"},
+  "Seller Work Phone": {"Type" : "input_text", "form_feild" : "Text-qxWzOMNIM5"},
+  "Seller Cell Phone": {"Type" : "input_text", "form_feild" : "Text-dxZRyFPXeb"},
+  "Seller Email": {"Type" : "input_text", "form_feild" : "Text-gyy1lxbwAI"},
+  "Seller Fax": {"Type" : "input_text", "form_feild" : "Text-gyy1lxbwAI"},
+  "Broker (Firm) Mailling Address": {"Type" : "input_text", "form_feild" : "Text-hArSuePSHh"},
+  "Broker (Firm) City, State, Zip": {"Type" : "input_text", "form_feild" : "Text--wiPewjW0e"},
+  "Broker (Firm) Work Phone": {"Type" : "input_text", "form_feild" : "Text-qxWzOMNIM5"},
+  "Broker (Firm) Cell Phone": {"Type" : "input_text", "form_feild" : "Text-dxZRyFPXeb"},
+  "Broker (Firm) Email": {"Type" : "input_text", "form_feild" : "Text-gyy1lxbwAI"},
+  "Broker (Firm) Fax": {"Type" : "input_text", "form_feild" : "Text-gyy1lxbwAI"},
+  "Aggrement Expiration Date": {"Type" : "input_text", "form_feild" : "Text-YJI0o2qjRw"},
+  "Listing Terms shall go into effect on or before": {"Type" : "input_text", "form_feild" : "Text-GHdWt5ZVT5"},
+  "Seller instructs Broker to offer the property for sale at selling price": {"Type" : "input_text", "form_feild" : "Text-L07lue07N_"},
+  "Seller will pay Broker compansation": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Percentage": ["CheckBox-albImKsXfV"] ,
+       "Amount": ["CheckBox-Mr2RBong1-"],
+       "Percentage and Amount": ["CheckBox-XnMNCh1lhm"] 
+      },
+    "questions": {
+      "Percentage": {"Percentage of gross sale price":{"Type" : "input_text", "form_feild" : "Text-bKsU8dAC4c"}},
+      "Amount": {"Broker Compensation Amount":{"Type" : "input_text", "form_feild" : "Text-7wAuZ8ujBI"}},
+      "Percentage and Amount": {"Percentage of gross sale price":{"Type" : "input_text", "form_feild" : "Text-7wAuZ8ujBI"},
+      "Plus the Compensation Amount":{"Type" : "input_text", "form_feild" : "Text-7wAuZ8ujBI"}}
+    }
+  },
+  "Broker Compansetionis also earned if days after expiration of agreement": {"Type" : "input_text", "form_feild" : "Text-rA2VNwXc5z"},
+  "Additional Losting Broker Compansetion for Underepresented Buyer": 
+  {
+    "Type": "check_list",
+    "form_feild": 
+      { "Additional Listing Broker Compansetion for Underepresented Buyer": ["CheckBox-xew0zv30Wf"]
+      },
+    "questions": {
+      "Additional Listing Broker Compansetion for Underepresented Buyer": {"Seller will pay Broker additional":{
+        "Type":"check_list",
+        "form_feild": 
+          { "Percentage": ["CheckBox-TI1FHe5uik"] ,
+           "Amount": ["CheckBox-f6y9_GMcoH"],
+           "Percentage and Amount": ["CheckBox-j32Ls8FN2x"] 
+          },
+        "questions": {
+          "Percentage": {"Percentage of gross sale price":{"Type" : "input_text", "form_feild" : "Text-BJSWwlOoMd"}},
+          "Amount": {"Additional Compensation Amount":{"Type" : "input_text", "form_feild" : "Text-vDNp8c7HiM"}},
+          "Percentage and Amount": {"Percentage of gross sale price":{"Type" : "input_text", "form_feild" : "Text-Cg6SqR2d99"},
+          "Plus additional Compensation Amount":{"Type" : "input_text", "form_feild" : "Text-vURuGldRTW"}}
+        }
+      }}
+    }
+  },
+  "If applicable, Variable rate compensation to be paid as follows": {"Type" : "input_text", "form_feild" : "Text-CcDb_vj2An"},
+  "Listing Broker Service Fee Applicable?": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-eqqcH8ojYr"],
+        "No": ["NA"]
+      },
+    "questions": {
+      "Yes": {
+        "Listing Broker Service flat Fee": {"Type" : "input_text", "form_feild" : "Text-9H_XD9hJ5W"}
+      }
+  }
+  },
+  "Broker acknowledges receipt of retainer fee": {"Type": "input_text", "form_feild": "Text-i3fhNTCxk3"},
+  "This retainer fee will or will not be subtracted from the total commission": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Will be": ["CheckBox-SkM_Bqg_MN"],
+        "Will not be": ["CheckBox-L0JW1mqMG1"]
+    }
+  },
+  "Seller will pay broker Early Termination fee of": {"Type": "input_text", "form_feild": "Text-tVUJAfWT2a"},
+  "Seller authorizes broker to disclose to prospective buyers and brokers representing buyer": {
+    "Type": "check_list",
+    "form_feild": 
+      { "authorizes": ["CheckBox-OrHfMt3Fod"],
+        "does not authorizes": ["CheckBox-5heQDmXZDr"]
+      }
+  },
+  "Alarm System": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-QMoT41EDhJ"],
+        "No": ["NA"]
+      }
+  },
+  "Built-in Microwave": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-uab9uNOcy3"],
+        "No": ["NA"]
+      }
+  },
+  "Ceiling Fans": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-_7aZJCkJFb"],
+        "No": ["NA"]
+      }
+  },
+  "Central Vaccum": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-QXoE_NuPq4"],
+        "No": ["NA"]
+      }
+  },
+  "Cloths Dryer": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-pjP3hQ6J_o"],
+        "No": ["NA"]
+      }
+  },
+  "Cloths Washer": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-ONZ4dHgFoV"],
+        "No": ["NA"]
+      }
+  },
+  "Cooktop": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-myS3PAybuk"],
+        "No": ["NA"]
+      }
+  },
+  "Dishwasher": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-WCJKyi4RXT"],
+        "No": ["NA"]
+      }
+  },
+  "Disposer": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-xLvqiG-wzJ"],
+        "No": ["NA"]
+      }
+  },
+  "Electric Air Filter": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-4LBm6umNe_"],
+        "No": ["NA"]
+      }
+  },
+  "Fire Place screen/door": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-VyI2EVnQWS"],
+        "No": ["NA"]
+      }
+  },
+  "Freezer": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-PEr8C41aB7"],
+        "No": ["NA"]
+      }
+  },
+  "Furnace Humidifier": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-mBo0roITMg"],
+        "No": ["NA"]
+      }
+  },
+  "Garage Opener": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-b1CA8GRinB"],
+        "No": ["NA"]
+      }
+  },
+  "w/ remote": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-5tjZbvcIYp"],
+        "No": ["NA"]
+      }
+  },
+  "Gas Logs": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-e_jAAN7dpJ"],
+        "No": ["NA"]
+      }
+  },
+  "Hot Tub, Equip and cover": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-kzoIJIUr7P"],
+        "No": ["NA"]
+      }
+  },
+  "Intercom": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-Igi2_kkMh2"],
+        "No": ["NA"]
+      }
+  },
+  "Playground Equipment": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-npmteVlVqh"],
+        "No": ["NA"]
+      }
+  },
+  "Pool, Equip and cover": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-BHuUe7aAgV"],
+        "No": ["NA"]
+      }
+  },
+  "Refrigerator": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-h_45zuWoip"],
+        "No": ["NA"]
+      }
+  },
+  "W/ icemaker": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-8wzGKTfcZw"],
+        "No": ["NA"]
+      }
+  },
+  "satellite dish": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-Q5gAMkBPM6"],
+        "No": ["NA"]
+      }
+  },
+  "Storage Shed": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-IBxap0Wmeb"],
+        "No": ["NA"]
+      }
+  },
+  "stove or range": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-SvJdsKioOh"],
+        "No": ["NA"]
+      }
+  },
+  "Wall Oven": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-XXmPDjrDib"],
+        "No": ["NA"]
+      }
+  },
+  "Window Treatment system": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-R1aKuDtDL-"],
+        "No": ["NA"]
+      }
+  },
+  "Window AC Unit": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-mTgtuNX4Lg"],
+        "No": ["NA"]
+      }
+  },
+  "Window Fan": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox--msBWZaibW"],
+        "No": ["NA"]
+      }
+  },
+  "Window Treatments": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-k3I53VmabS"],
+        "No": ["NA"]
+      }
+  },
+  "Wood stove": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Yes": ["CheckBox-WQZGXMtb4e"],
+        "No": ["NA"]
+      }
+  },
+  "Other conveyances no additional cost": {"Type": "input_text", "form_feild": "Text-XRedv43sRA"},
+  "Does not convey": {"Type": "input_text", "form_feild": "Text-lD10TtvtVY"},
+  "Seller will not warrant the condition of the following": {"Type": "input_text", "form_feild": "Text-SingXMKw18"},
+  "Seller does or does not authorize Broker to offer entire Property in As-Is condition": {
+    "Type": "check_list",
+    "form_feild": 
+      { "Does": ["CheckBox-da198UIWZa"],
+        "Does not": ["CheckBox-BWI_xt1M6T"]
+      }
+  },
+  "Following is a list of leased items within Property": {"Type": "input_text", "form_feild": "Text-54M7zoSkmP"},
+  "Cost Not to exceed ($)": {"Type" : "input_text", "form_feild" : "Text-ZnmHI90SGg"},
+  "Warranty provider to be": {"Type" : "input_text", "form_feild" : "Text-PgjY2D7FIO"},
+  "Hot Water": {
+            "Type": "check_list",
+            "form_feild": {
+                "Oil": ["CheckBox-2P1dKNume8"],
+                "Gas": ["CheckBox-QUcsHTsjyr"],
+                "Electric": ["CheckBox-kvrFSqK9P8"],
+                "Other": ["CheckBox--CqGpQJIiJ"]
+            },
+            "questions": {
+                "Other": {
+                    "Specify": {"Type": "input_text", "form_feild": "Text-kYVyYLjEpw"}
+                },
+                "Number of Gallons": {"Type": "input_text", "form_feild": "Text-jSzPceldFC"}
+            }
+        },
+        "Air Conditioning": {
+            "Type": "check_list",
+            "form_feild": {
+                "Oil": ["CheckBox-RRUsrJsVOJ"],
+                "Gas": ["CheckBox-5TRUM4_Tyz"],
+                "Electric": ["CheckBox-26ecGf8Q0E"],
+                "Heat Pump": ["CheckBox-x6xcZAvE22"],
+                "Other": ["CheckBox-IoOxWEA8Wq"],
+                "Zones":["CheckBox-BLNN3qHt8I"]
+            },
+            "questions": {
+                "Other": {
+                    "Specify": {"Type": "input_text", "form_feild": "Text-EgIF0c7zNk"}
+                },
+                "Zones": {"Specify Zones":{"Type": "input_text", "form_feild": "Text-7FtvCKKAzl"}}
+            }
+        },
+        "Heating": {
+            "Type": "check_list",
+            "form_feild": {
+                "Oil": ["CheckBox-5R3oA73XTr"],
+                "Gas": ["CheckBox-wCbguDw9Si"],
+                "Electric": ["CheckBox-WlOYxOZAYS"],
+                "Heat Pump": ["CheckBox-qhJoOFKydv"],
+                "Other": ["CheckBox-pwqrK9nrt4"],
+                "Zones":["CheckBox-H3csu6lc4K"]
+            },
+            "questions": {
+                "Other": {
+                    "Specify": {"Type": "input_text", "form_feild": "Text-vUQWCDABUp"}
+                },
+               "Zones": {"Specify Zones":{"Type": "input_text", "form_feild": "Text-3RaD6Y79c0"}}
+            }
+        },
+        "Water Supply": {
+            "Type": "check_list",
+            "form_feild": {
+                "Public": ["CheckBox-sKcHzJNZuY"],
+                "Private Well": ["CheckBox-1X-sUnDPED"],
+                "Community Well": ["CheckBox-B4OxhA6HIg"]
+            }
+        },
+        "Sewage Disposal": {
+            "Type": "check_list",
+            "form_feild": {
+                "Public": ["CheckBox-f9FqYh86v9"],
+                "Septic": ["CheckBox-DOi5SL0cKu"]
+            },
+            "questions": {
+                "Septic": {
+                    "Approved for # Bedrooms": {"Type": "input_text", "form_feild": "Text-mA8JG3JUjw"}
+                }
+            }
+        },
+        "Type of Septic System": {
+            "Type": "check_list",
+            "form_feild": {
+                "Community": ["CheckBox-rb5WiZp9Ac"],
+                "Conventional": ["CheckBox-GvOe5TsVQZ"],
+                "Alternative": ["CheckBox-bLwK-e3N8W"],
+                "Experimental": ["CheckBox-Q821vkFFdV"]
+            }
+        },
+        "Septic System Waiver": {
+            "Type": "check_list",
+            "form_feild": {
+                "Is Operating": ["CheckBox-1v1yX-q4m9"],
+                "Is Not Operating": ["CheckBox-50sNZXfwff"]
+            }
+        },
+        " Broker Showing Instructions": {"Type": "input_text", "form_feild": "Text-rzIBhqpB0C"},
+        "Electronic Lockbox": {
+            "Type": "check_list",
+            "form_feild": {
+                "Will Install": ["CheckBox-iEJBXbeEHX"],
+                "Will Not Install": ["CheckBox-QlWt-6ZCGB"]
+            }
+        },
+        "For Sale Signs": {
+            "Type": "check_list",
+            "form_feild": {
+                "Will Install": ["CheckBox-NwVZx3D9Aw"],
+                "Will Not Install": ["CheckBox-3eo3Vb3t7S"]
+            }
+        },
+        "MLS Marketing": {
+        "Type": "check_list",
+        "form_feild": {
+            "Seller Authorizes": ["CheckBox-J40ZTcA6-_"],
+            "Seller Does Not Authorize": ["CheckBox-xdVEX6NMVv"]
+        }},
+        "Third-Party Websites": {
+        "Type": "check_list",
+        "form_feild": {
+            "Seller Authorizes": ["CheckBox-KGqbLcUGgo"],
+            "Seller Does Not Authorize": ["CheckBox-DL-EbE-g7-"]
+        }},
+        "Display of Property Address": {
+            "Type": "check_list",
+            "form_feild": {
+                "Seller Authorizes": ["CheckBox-HJj6YCU23_"],
+                "Seller Does Not Authorize": ["CheckBox-6vcCDn6I2J"]
+            }
+        },
+        "Display of Unedited Comments or Reviews": {
+            "Type": "check_list",
+            "form_feild": {
+                "Seller Authorizes": ["CheckBox-j-WJG_Jtz4"],
+                "Seller Does Not Authorize": ["CheckBox-6GRii0uXvl"]
+            }
+        },
+        "Display of Automated Estimate of Market Value": {
+            "Type": "check_list",
+            "form_feild": {
+                "Seller Authorizes": ["CheckBox-Dj9ey2KBp5"],
+                "Seller Does Not Authorize": ["CheckBox-tJY4y6UBj2"]
+            }
+        },
+        "Coming Soon": {
+        "Type": "check_list",
+        "form_feild": {
+            "Seller Authorizes": ["CheckBox-LP8I1W-pG1"],
+            "Seller Does Not Authorize": ["CheckBox-xBEuVbkhFB"]
+        }
+    },
+
+  "Designated Representation": {
+        "Type": "check_list",
+        "form_feild": {
+            "Seller Does Not Consent": ["CheckBox-Jdd4MB9fph"],
+            "Seller Consents": ["CheckBox-M8zjoRi8lJ"]
+        }
+    },
+    "Dual Representation": {
+        "Type": "check_list",
+        "form_feild": {
+            "Seller Does Not Consent": ["CheckBox-CAACIYGtLy"],
+            "Seller Consents": ["CheckBox-TxbGx1DbtW"]
+        }
+    },
+    "Authorization Disclosure": {
+      "Type": "check_list",
+      "form_feild": {
+          "Seller Does Authorize": ["CheckBox-gSfwqs_QOB"],
+          "Seller Does Not Authorize": ["CheckBox-nsdkZ_k5rO"]
+      }
+  },
+
+  "Relocation Program": {
+        "Type": "check_list",
+        "form_feild": {
+            "Yes": ["CheckBox-gZEkuTBLrB"],
+            "No": ["CheckBox-V6xB1a1tx1"]
+        },
+        "questions": {
+            "Yes": {
+                "Program Name": {"Type": "input_text", "form_feild": "Text-1s94kXTRWW"},
+                "Contact Name": {"Type": "input_text", "form_feild": "Text-xIWlkEA05-"},
+                "Contact Info": {"Type": "input_text", "form_feild": "Text-MDIN-OKnCW"},
+                "Program Terms": {"Type": "input_text", "form_feild": "Text-zHu8DGxkfv"}
+            }
+        }
+      },
+      " Condominium Association Property Location": {
+            "Type": "check_list",
+            "form_feild": {
+                "Is Located": ["CheckBox-CRlUq4A9Uw"],
+                "Is Not Located": ["CheckBox-QvibYL0tuU"]
+            }
+        },
+        "Disclosure Document Ordering": {
+            "Type": "check_list",
+            "form_feild": {
+                "Seller Will Order": ["CheckBox-zqP56HKcmT"],
+                "Broker Will Order": ["CheckBox-1nYTbRayk_"]
+            }},
+            "Timing": {
+                "Type": "check_list",
+                "form_feild": {
+                    "At the Time of Listing": ["CheckBox-sRI5QfbHID"],
+                    "Within 3 Days of Contract Ratification": ["CheckBox-EfscEeGuVg"],
+                    "Other": ["CheckBox-kwG0n1l5tE"]
+                },
+                "questions": {
+                "Other": {
+                "Other (Specify)": {"Type": "input_text", "form_feild": "Text-4xZjnRtJgK"}}
+            }
+        },
+
+      "Condominium or Cooperative Dues": {"Type": "input_text", "form_feild": "Text-EuXkL9WtnJ"},
+      "Frequency of Payment": {"Type": "input_text", "form_feild": "Text-Nhiy8-0yB5"},
+      "Special Assessment Amount": {"Type": "input_text", "form_feild": "Text-L2xTj38CTS"},
+      "Purpose": {"Type": "input_text", "form_feild": "Text--XChbi7ooJ"},
+      "Condominium or Cooperative Association Name": {"Type": "input_text","form_feild": "Text-3e1yRM9cEa"},
+      "Management Company Name": {"Type": "input_text", "form_feild": "Text-GsW8aNE0Y4"},
+      " Management CompanyPhone Number": {"Type": "input_text", "form_feild": "Text-AUijlMCSY0"},
+
+      "Seller Payment Status Condominium Association": {
+            "Type": "check_list",
+            "form_feild": {
+                "Is Current": ["CheckBox--SrdzjtK0W"],
+                "Is Not Current": ["CheckBox-FMON1jEKIB"]
+            }
+        },
+
+        " Property Owners’ Association Property Location": {
+          "Type": "check_list",
+          "form_feild": {
+              "Is Located": ["CheckBox-CRlUq4A9Uw"],
+              "Is Not Located": ["CheckBox-QvibYL0tuU"]
+          }
+      },
+      "Property Owners’ Association Disclosure Document Ordering": {
+          "Type": "check_list",
+          "form_feild": {
+              "Seller Will Order": ["CheckBox-lDHR0p2T0D"],
+              "Broker Will Order": ["CheckBox-TZd7NSDlFS"]
+          }},
+          "Property Owners Timing": {
+              "Type": "check_list",
+              "form_feild": {
+                  "At the Time of Listing": ["CheckBox-6wTtIu4ZKd"],
+                  "Within 3 Days of Contract Ratification": ["CheckBox-PE59GpSWa6"],
+                  "Other": ["CheckBox-aZKoNb9yau"]
+              },
+              "questions": {
+              "Other": {
+              "Other (Specify)": {"Type": "input_text", "form_feild": "Text-A7CMkRTDdk"}}
+          }
+      },
+
+    "Association Dues": {"Type": "input_text", "form_feild": "Text-8EqXbmin58"},
+    "Property Owners Frequency of Payment": {"Type": "input_text", "form_feild": "Text-JWe2jCs5j9"},
+    " Property Owners Special Assessment Amount": {"Type": "input_text", "form_feild": "Text-FWbd09hmNI"},
+    "Property Owners Purpose": {"Type": "input_text", "form_feild": "Text-4NuCqytpWj"},
+    " Association Name": {"Type": "input_text","form_feild": "Text-7ocpPVC8tN"},
+    " Property OwnersManagement Company Name": {"Type": "input_text", "form_feild": "Text-jqn4IrLBV6"},
+    " Property Owners Management CompanyPhone Number": {"Type": "input_text", "form_feild": "Text-Cmskt_02K-"},
+
+    "Seller Payment Status Association": {
+          "Type": "check_list",
+          "form_feild": {
+              "Is Current": ["CheckBox-Yu99Y3JFk5"],
+              "Is Not Current": ["CheckBox-mVA4TzgzQ1"]
+          }
+      }, 
+
+      " Property Condition Disclosure Act Compliance": {
+            "Type": "check_list",
+            "form_feild": {
+                "Is Exempt": ["CheckBox-24xvY_X8aH"],
+                "Is Not Exempt": ["CheckBox-H9iYcDEv5w"]
+            }
+        },
+        " Lead-Based Paint DisclosureProperty Construction": {
+            "Type": "check_list",
+            "form_feild": {
+                "Were Constructed Before 1978": ["CheckBox-5LrfBGOAv-"],
+                "Were Not Constructed Before 1978": ["CheckBox-bzOopAAqvh"]
+            }
+        },
+        "Current Liens Encumbrance Status": {
+            "Type": "check_list",
+            "form_feild": {
+                "Property Is Not Encumbered": ["CheckBox-i1WnEj0xIh"],
+                "Property Is Security for First Mortgage": ["CheckBox-SJLE-tqSW_"],
+                "Property Is Security for Second Mortgage": ["CheckBox-wujt4k0EzJ"],
+                "Property Is Security for Line of Credit": ["CheckBox-BhAObDPm1T"],
+                "Seller Is Current on Payments": ["CheckBox-_pC5Of9raF"],
+                "Seller Has Not Received Default Notices": ["CheckBox-8eGF7KHCmG"],
+                "No Federal or Local Liens Secured": ["CheckBox-GGeHPh3JgV"],
+                "No Judgments Filed Against Seller": ["CheckBox-yKU1YMxKsS"],
+                "Seller Has Not Filed for Bankruptcy": ["CheckBox-QdNUrDsIOg"]
+            },
+            "Question":{
+            "Property Is Security for First Mortgages": {
+            "Lender Name": {"Type": "input_text", "form_feild": "Text-oqeIQozmqX"},
+            "Approximate Balance": {"Type": "input_text", "form_feild": "Text-R_ek3mwL-I"},
+            "Loan Type": {
+                "Type": "check_list",
+                "form_feild": {
+                    "Conventional": ["CheckBox-zgcia3lkZt"],
+                    "FHA": ["CheckBox-qg_-REQSw-"],
+                    "VA": ["CheckBox-BRr7a3pDvQ"],
+                    "Other": ["CheckBox-m25avatqU-"]
+                }
+            }
+          },
+          "Property Is Security for Second Mortgage": {
+            "Lender Name": {"Type": "input_text", "form_feild": "Text-XmKxz-h7Rf"},
+            "Approximate Balance": {"Type": "input_text", "form_feild": "Text-Fxe4lorWGQ"}
+        },
+        "Property Is Security for Line of Credit": {
+            "Lender Name": {"Type": "input_text", "form_feild": "Text-NXUFK8rC4Z"},
+            "Approximate Balance": {"Type": "input_text", "form_feild": "Text-HxCQhF2JG4"}
+        }
+
+        },
+        "Seller Financing Agreement": {
+            "Type": "check_list",
+            "form_feild": {
+                "Does Agree": ["CheckBox-HpeNLRYOVz"],
+                "Does Not Agree": ["CheckBox-Db5tbmIQOM"]
+            }},
+            "Deed of Trust Loan Type": {"Type": "input_text", "form_feild":"Text-IneIskl0g2"},
+            "Loan Amount": {"Type": "input_text", "form_feild": "Text-yaY_idiCmt"},
+        "Seller’s Estimated Cost of Settlemen": {
+          "Type": "check_list",
+          "form_feild": {
+              "Is attached": ["CheckBox-mOd-HJqezs"],
+              "Is not attached": ["CheckBox-UO-XqfmvRF"]
+          }},
+            
+        "IRS/FIRPTA Foreign Person Status": {
+            "Type": "check_list",
+            "form_feild": {
+                "Is a Foreign Person": ["CheckBox-M7EUaNOK-l"],
+                "Is Not a Foreign Person": ["CheckBox-ldnrA3tarX"]
+            }
+        },
+        "Seller Real Estate License Status": {
+        "Type": "check_list",
+        "form_feild": {
+            "Is a licensed real estate agent/broker": ["CheckBox-G9HASXNtsY"],
+            "Is not a licensed real estate agent/broker": ["CheckBox-pFkwLVJriT"]
+        }
+    },
+    "Underground Storage Tank Knowledge": {
+        "Type": "check_list",
+        "form_feild": {
+            "Has knowledge of underground storage tank": ["CheckBox-o_i9lE5rXs"],
+            "Has no knowledge of underground storage tank": ["CheckBox-niB9qU12rR"]
+        }
+    },
+    "Property Tenant Status": {
+        "Type": "check_list",
+        "form_feild": {
+            "Is tenant-occupied": ["CheckBox-VKFo_O3vHv"],
+            "Is not tenant-occupied": ["CheckBox--IAEC2zfqT"]
+        }
+    },
+    "Surveillance System": {
+        "Type": "check_list",
+        "form_feild": {
+            "Has a surveillance system": ["CheckBox-Nk0d03uCBG"],
+            "Does not have a surveillance system": ["CheckBox-vrKOaZzWbm"]
+        }
+    },
+    "Additions": {
+        "Type": "check_list",
+        "form_feild": {
+            "Short Sale Addendum": ["CheckBox-QkYL8CdtUl"],
+            "Solar Panel Addendum": ["CheckBox-U4ZC1-lI2C"],
+            "Addendum – Optional Buyer’s Broker Compensation": ["CheckBox-8iG6IN91od"],
+            "Other": ["CheckBox-hH88zzk26N"]
+        },
+        "questions": {
+            "Other": {
+                "Specify": {
+                    "Type": "input_text",
+                    "form_feild": "Text-7vRmKYtoGm"
+                }
+            }
+        }
+    },
+    "Additional Terms": {
+        "Type": "input_text",
+        "form_feild": "Text-qAvBJJ_cZI"
+    },
+    "Sales Associate (Listing Agent)": {"Type": "input_text", "form_feild": "Text-v1xky82D36"},
+            "Team Name (if applicable)": {"Type": "input_text", "form_feild": "Text-tBJjZCULwk"},
+            "Phone (Work)": {"Type": "input_text", "form_feild": "Text-d98xs7T5Ma"},
+            "Phone (Cell)": {"Type": "input_text", "form_feild": "Text-ciRVi23aPy"},
+            "Email": {"Type": "input_text", "form_feild": "Text-4ns4RP4tqD"},
+            "Fax": {"Type": "input_text", "form_feild": "Text-Jvl_ua1Y1u"},
+
+            "Supervising Broker Name": {"Type": "input_text", "form_feild": "Text-60vCtkpwNv"},
+            "Supervising Broker Phone (Work)": {"Type": "input_text", "form_feild": "Text-cGqSVgVeZf"},
+            " Supervising Broker Phone (Cell)": {"Type": "input_text", "form_feild": "Text-zJRmLnwRyx"},
+            "Supervising Broker Email": {"Type": "input_text", "form_feild": "Text-OPduPneD27"},
+            "Supervising Broker Fax": {"Type": "input_text", "form_feild": "Text--FqW1YhH_-"},
+            
+            "SELLER'S Name": {"Type": "input_text", "form_feild": "Text-iIvpZ5oDbI"
+    },
+    "Preferred Delivery": {
+        "Type": "check_list",
+        "form_feild": {
+            "Mailing Address": ["CheckBox-pJUpBFiRnM"],
+            "Fax": ["CheckBox-P_TlG2b9iD"],
+            "Email": ["CheckBox-t77jlbkPfk"]
+        }
+    },
+    "FIRPTA": {
+        "Type": "check_list",
+        "form_feild": {
+            "IS": ["CheckBox-DNPn3l6D6i"],
+            "IS NOT": ["CheckBox-7O60GmSbki"]
+        }
+    },
+    "1031 Exchange": {
+        "Type": "check_list",
+        "form_feild": {
+            "Yes": ["CheckBox-0eKbEel6dQ"],
+            "No": ["CheckBox-viBMbPoD2R"]
+        }
+    },
+
+    "Real Estate Licensed/Related Parties": {
+        "Type": "check_list",
+        "form_feild": {
+            "Seller": ["CheckBox-v86M6_L_6O"],
+            "Listing Broker/Agent is related to Seller": ["CheckBox-egto9huUyI"]
+        },
+        "conditions": {
+            "Seller": {
+                "License Status": {
+                    "Type": "check_list",
+                    "form_feild": {
+                        "an active licensed real estate agent": ["CheckBox-cNc4OlFIea"],
+                        "an inactive licensed real estate agent": ["CheckBox-Cj_QSs70W9"]
+                    }
+                },
+                "License Location": {
+                    "Type": "check_list",
+                    "form_feild": {
+                        "in Virginia": ["CheckBox-003UQKoqLC"],
+                        "in Other": ["CheckBox-3yZRr7iSzG"]
+                    }
+                }
+            }
+        }
+    },
+
+    "Tax Map/ID #": {"Type": "input_text", "form_field": "Text-Ebn-my4z7a"},
+        "Legal Description: Lot(s)": {"Type": "input_text", "form_field": "Text-DPkQ_P0oyw"},
+        "Section": {"Type": "input_text", "form_field": "Text-NRskB037cv"},
+        "Subdivision or Condominium": {"Type": "input_text", "form_field": "Text-Yk2d1RXCao"},
+        "Parking Space(s) #": {"Type": "input_text", "form_field": "Text-tgSpioGuiT"},
+        "County/Municipality": {"Type": "input_text", "form_field": "Text-fZZneDfIne"},
+        "Deed Book/Liber #": {"Type": "input_text", "form_field": "Text-QneccahbbH"},
+        "Page/Folio #": {"Type": "input_text", "form_field": "Text-EK_9JJAGD1"},
+        "Street Address": {"Type": "input_text", "form_field": "Text-ybRGsdxKgm"},
+        "Unit #": {"Type": "input_text", "form_field": "Text-Bax-rwAnuF"},
+        "City": {"Type": "input_text", "form_field": "Text-fsbkDoQCQh"},
+        "ZIP Code": {"Type": "input_text", "form_field": "Text-Ptf88pmidr"},
+        "Mailbox Number": {"Type": "input_text", "form_field": "Text-3x50RsxPQ2"},
+        "Storage Unit Number(s)": {"Type": "input_text", "form_field": "Text-g24U-CnssH"},
+
+        "Property Subject to": {
+            "Type": "check_list",
+            "form_field": {
+                "Condominium Association": ["CheckBox-HsiLLFIy3J"],
+                "Cooperative Association": ["CheckBox-h7dnXySfuv"],
+                "Property Owners Association": ["CheckBox-6MPoHzCya5"]
+            }
+        },
+
+        "Association Name": {"Type": "input_text", "form_field": "Text-MjP6qhkOdA"},
+        "Association Phone #": {"Type": "input_text", "form_field": "Text-Ikkpq99uN2"},
+        "Management Company": {"Type": "input_text", "form_field": "Text-2EW0OdiB9k"},
+        "Management Phone #": {"Type": "input_text", "form_field": "Text-a9HbPox5yw"},
+
+        "Lead-Based Paint": {
+            "Type": "check_list",
+            "form_field": {
+                "were constructed before 1978": ["CheckBox-thgfWELekC"],
+                "were not constructed before 1978": ["CheckBox-h-eNvvXZ0J"]
+            }
+        },
+
+        "Other": {"Type": "input_text", "form_field": "Text-kof9p52xWX"},
+
+        "Water Supply": {
+            "Type": "check_list",
+            "form_feild": {
+                "Public": ["CheckBox-OSMFtArBHA"],
+                "Private Well": ["CheckBox-a-B09H0VE6"],
+                "Community Well": ["CheckBox-NsYZC0FKRY"]
+            }
+        },
+
+
+        "Hot Water": {
+            "Type": "check_list",
+            "form_feild": {
+                "Oil": ["CheckBox-GbqaFfTkc6"],
+                "Gas": ["CheckBox-pSBNPSgiuC"],
+                "Electric": ["CheckBox-yEh-kz2sgx"],
+                "Other": ["CheckBox-MEkENB79Gl"]
+            },
+            "questions": {
+                "Other": {
+                    "Specify": {"Type": "input_text", "form_feild": "Text-2QFaaiPL6l"}
+                }
+                
+            }
+        },
+
+        "Air Conditioning": {
+            "Type": "check_list",
+            "form_feild": {
+                "Oil": ["CheckBox-bwbpFVdH4B"],
+                "Gas": ["CheckBox-M-SS7JPvi2"],
+                "Electric": ["CheckBox-G2Nnc9QNPO"],
+                "Heat Pump": ["CheckBox-Ou7GVbvYT_"],
+                "Other": ["CheckBox-K-7iod02gT"],
+                "Zones":["CheckBox-XRSDwxtIWm"]
+            },
+            "questions": {
+                "Other": {
+                    "Specify": {"Type": "input_text", "form_feild": "Text-Bb8V7pLXCr"}
+                },
+                "Zones": {"Specify Zones":{"Type": "input_text", "form_feild": "Text-rn30d1fqxh"}}
+            }
+        },
+        "Heating": {
+            "Type": "check_list",
+            "form_feild": {
+                "Oil": ["CheckBox--I8ndClRsJ"],
+                "Gas": ["CheckBox-FhpAwRe_ZR"],
+                "Electric": ["CheckBox-JwyZxi_tkN"],
+                "Heat Pump": ["CheckBox-A86U2qu4nP"],
+                "Other": ["CheckBox-w6vdb1YXAi"],
+                "Zones":["CheckBox-LnDVQumnmP"]
+            },
+            "questions": {
+                "Other": {
+                    "Specify": {"Type": "input_text", "form_feild": "Text-TB5mUY8lm1"}
+                },
+               "Zones": {"Specify Zones":{"Type": "input_text", "form_feild": "Text-5SKbF2-Uvp"}}
+            }
+        },
+        "Sewage Disposal": {
+        "Type": "check_list",
+        "form_field": {
+            "Public": ["CheckBox-mEZyvI97lo"],
+            "Septic for # BR": ["CheckBox-DiDxPKFTZ_"],
+            "Community Septic": ["CheckBox-9zGuH_okFq"],
+            "Alternative Septic for # BR": ["CheckBox-pnFroj5qkC"]
+        },
+        "questions": {
+            "Septic for # BR": {
+                "Type": "input_text",
+                "form_field": "Text-gSfucCAxGg"
+            },
+            "Alternative Septic for # BR": {
+                "Type": "input_text",
+                "form_field": "Text-wdJwNEk47r"
+            }
+        }
+    },
+    "other": {"Type": "input_text", "form_field": "Text-TXVLKzZf3I"},
+    "Electric Companies/Name ": {"Type": "input_text", "form_field": "Text-_0_Z7ySLdM"},
+        "Gas/Oil Companies/Name": {"Type": "input_text", "form_field": "Text-5GDOTkxdUf"},
+        "Water Companies/Name ": {"Type": "input_text", "form_field": "Text-xczOkYMdnN"},
+        "Trash Companies/Name": {
+            "Type": "input_text",
+            "form_field": "Text-ueTLrk6U_s"},
+            
+            "Pick-up Day(s)": {
+                    "Type": "input_text", "form_field": "Text-edw23tau5r"},
+
+      "Alarm System": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-98Pn8XP9u-"],
+                "No": ["CheckBox-PyS1PA69ph"]
+            }
+        },
+        "Built-in Microwave": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-GJRJj0CFl5"],
+                "No": ["CheckBox-NPt6AcNYW0"]
+            }
+        },
+        "Ceiling Fan": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-cMo9aO8Zbh"],
+                "No": ["CheckBox-ZHfpayIfF2"]
+            }
+        },
+        "Central Vacuum": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-Qxw4zP_iy5"],
+                "No": ["CheckBox-p-3pX-MOh3"]
+            }
+        },
+        "Clothes Dryer": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-z0txm1tWmx"],
+                "No": ["CheckBox-ecoLJhGkQN"]
+            }
+        },
+        "Clothes Washer": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-tkes2lI1D6"],
+                "No": ["CheckBox-8JmXo7N5HC"]
+            }
+        },
+        "Cooktop": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-zjZlZc1q9n"],
+                "No": ["CheckBox-EgvbEYgEHQ"]
+            }
+        },
+        "Dishwasher": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-XlrPNTrxsL"],
+                "No": ["CheckBox-9LOnYhD8uH"]
+            }
+        },
+        "Disposer": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-Fw6EgPm1cc"],
+                "No": ["CheckBox-2-WNktBESz"]
+            }
+        },
+        "Electronic Air Filter": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox--aZu7J5YxD"],
+                "No": ["CheckBox-MizOBY0ah8"]
+            }
+        },
+        "Fireplace Screen/Door": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-6C3gWxJZd9"],
+                "No": ["CheckBox-LYnCsmtwyg"]
+            }
+        },
+        "Freezer": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-jn0XUdTgk4"],
+                "No": ["CheckBox-3TbbuJTJeQ"]
+            }
+        },
+        "Furnace Humidifier": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-dth7nh06CL"],
+                "No": ["CheckBox-ZgvAoJ5T12"]
+            }
+        },
+        "Garage Opener": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-ecH5lbqhw6"],
+                "No": ["CheckBox-9Af_EBvRkY"]
+            }
+        },
+        "Garage Opener with remote": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-K_hyLU5Hz4"],
+                "No": ["CheckBox-DqsIZOc_K-"]
+            }
+        },
+        "Gas Logs": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-YubVP-yGUl"],
+                "No": ["CheckBox--ASctz6RfG"]
+            }
+        },
+        "Hot Tub, Equip & Cover": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-eT_8sW7qjX"],
+                "No": ["CheckBox-Z7DRlhYvyA"]
+            }
+        },
+        "Intercom": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-ZSleatiIwT"],
+                "No": ["CheckBox-k9ht36Y-9x"]
+            }
+        },
+        "Playground Equipment": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-Sbak0MPIvo"],
+                "No": ["CheckBox-3hWhmwkc3x"]
+            }
+        },
+        "Pool, Equip & Cover": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-KDUMonjK6u"],
+                "No": ["CheckBox-oQ2iKlniK4"]
+            }
+        },
+        "Refrigerator": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-oSe6PutzMn"],
+                "No": ["CheckBox-xT77ifLe5g"]
+            }
+        },
+        "Refrigerator with ice maker": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-1GExs6LEY8"],
+                "No": ["CheckBox-s7rX8gF79_"]
+            }
+        },
+        "Satellite Dish": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-06tu3zJXe-"],
+                "No": ["CheckBox-RWCncDQ_nf"]
+            }
+        },
+        "Storage Shed": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-QYNdoFMdpU"],
+                "No": ["CheckBox-9NqyrdlTQq"]
+            }
+        },
+        "Stove or Range": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-pbojGQ70lX"],
+                "No": ["CheckBox-IYTUic7rNY"]
+            }
+        },
+        "Trash Compactor": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-yXhAUcuRFY"],
+                "No": ["CheckBox-mltsCJYvUF"]
+            }
+        },
+        "Wall Oven": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-2WXhOXs3jT"],
+                "No": ["CheckBox-svZ3_AC3C2"]
+            }
+        },
+        "Water Treatment System": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-WI7Z9AQN9A"],
+                "No": ["CheckBox-vMBsTHBkIG"]
+            }
+        },
+        "Window A/C Unit": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-OtS3gZtHJa"],
+                "No": ["CheckBox-NY_nK3_BmI"]
+            }
+        },
+        "Window Fan": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-IoNZdXRdt_"],
+                "No": ["CheckBox-kAC_350ERN"]
+            }
+        },
+        "Window Treatments": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-rlfd55-5mt"],
+                "No": ["CheckBox-Hj8dYp4Q8p"]
+            }
+        },
+        "Wood Stove": {
+            "Type": "check_list",
+            "form_field": {
+                "Yes": ["CheckBox-QqesXY5JJg"],
+                "No": ["CheckBox-tmKbx3bBGs"]
+            }
+        },
+                    
+     "Fuel Tanks Leased": {
+            "Type": "input_text",
+            "form_field":"Text-cbYVeSiqlx"},
+
+     "Fuel Tanks owned": {
+            "Type": "input_text",
+            "form_field":"Text-aokjMFD8fp"}, 
+
+      "Leased Items": {
+            "Type": "input_text",
+            "form_field": "Text-yVZ8XLYGUZ"
+        },
+      "Listing Brokerage's Name and Address": {"Type": "input_text", "form_field": "Text-u9J6r7SG3S"},
+    "Brokerage Phone #": {"Type": "input_text", "form_field": "Text-a_XLSvr2cv"},
+    "VA Firm License #": {"Type": "input_text", "form_field": "Text-VCD3AXIY2W"},
+    "Agent Email": {"Type": "input_text", "form_field": "Text-Q0JEYtPTeV"},
+    "MLS Agent ID #": {"Type": "input_text", "form_field": "Text-o92UeJL4_X"},
+    "Team Name": {"Type": "input_text", "form_field": "Text-BI8xcIyITs"},
+    "Bright MLS Broker Code": {"Type": "input_text", "form_field": "Text-S_Rf5os-j_"},
+    "Agent Name": {"Type": "input_text", "form_field": "Text-fpF33VFFcV"},
+    "Agent Phone #": {"Type": "input_text", "form_field": "Text-aTdF8mJoHP"},
+    "VA Agent License #": {"Type": "input_text", "form_field": "Text-fjTh4zlTi6"},
+    "Team Business Entity License #": {"Type": "input_text", "form_field": "Text-T3UKwSUabe"},
+
+    "Seller Preferred Settlement Timing": {"Type": "input_text", "form_field": "Text-Y7EWuuOP9l"},
+    "Seller Requests Post-Settlement Occupancy": {
+        "Type": "check_list",
+        "form_field": {
+            "Yes": ["CheckBox-iXzLvbu_St"],
+            "No": ["CheckBox-fk4o696j_b"]
+        }
+    },
+    "Other Settlement Preferences/Requests": {"Type": "input_text", "form_field": "Text-g5p_yoBUi2"},
+    "Seller Preferred Septic Inspector (if applicable)": {"Type": "input_text", "form_field": "Text-w15OY5BDn2"},
+    "Others": {"Type": "input_text", "form_field": "Text-e_cEKLMo-0"},
+
+    "Property Address/Legal Description": {"Type": "input_text", "form_field": "Text-tMy9mOHdku"},
+
+    "For the sale of the Property at": {"Type": "input_text", "form_field": "Text-d5kACcYuzl"},
+    "Presence of Lead-Based Paint Hazards": {
+      "Type": "check_list",
+      "form_field": {
+        "Known Lead-Based Paint Hazards Present": ["CheckBox-ZbJBign06S"],
+        "No Knowledge of Lead-Based Paint Hazards": ["CheckBox-fV7T3qJQ_V"]
+      }
+    },
+
+    "Records and Reports Available": {
+      "Type": "check_list",
+      "form_field": {
+        "Provided All Records": ["CheckBox-GbAXbSXNjS"],
+        "No Reports or Records": ["CheckBox-CtaZJwsnKs"]
+      }
+    },
+
+    "Purchaser Opportunity for Risk Assessment": {
+    "Type": "check_list",
+    "form_field": {
+        "Received 10-day Opportunity": ["CheckBox-hIVdsxelBQ"],
+        "Waived Opportunity": ["CheckBox-mnutXX6jOp"]
+    }
+}
+
+
+
+        
+    }
+  
+}

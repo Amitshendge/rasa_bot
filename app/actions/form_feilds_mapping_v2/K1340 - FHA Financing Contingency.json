@@ -1,0 +1,69 @@
+{
+    "Addendum is made on": {"Type": "input_text", "form_feild": "page0_field1"},
+    "Contract offered on": {"Type": "input_text", "form_feild": "page0_field3"},
+    "Buyer Name": {"Type": "input_text", "form_feild": "page0_field4"},
+    "Seller Name": {"Type": "input_text", "form_feild": "page0_field6"},
+    "Property": {"Type": "input_text", "form_feild": "page0_field7"},
+    "First Trust Loan Options": {
+        "Type": "check_list",
+        "form_feild": {
+            "Obtain": ["page0_field8"],
+            "Assume": ["page0_field9"]
+        }
+    },
+    "First Trust Interest Rate Type": {
+        "Type": "check_list",
+        "form_feild": {
+            "Fixed Rate": ["page0_field10"],
+            "Adjustable Rate": ["page0_field11"]
+        }
+    },
+    "First Trust Loan Amortization (years)": {"Type": "input_text", "form_feild": "page0_field12"},
+    "First Trust Interest Rate (max %)": {"Type": "input_text", "form_feild": "page0_field13"},
+    "Second Trust Loan Options": {
+        "Type": "check_list",
+        "form_feild": {
+            "Obtain": ["page0_field14"],
+            "Assume": ["page0_field15"]
+        }
+    },
+    "Second Trust Interest Rate Type": {
+        "Type": "check_list",
+        "form_feild": {
+            "Fixed Rate": ["page0_field16"],
+            "Adjustable Rate": ["page0_field17"]
+        }
+    },
+    "Second Trust Loan Amortization (years)": {"Type": "input_text", "form_feild": "page0_field18"},
+    "Second Trust Interest Rate (max %)": {"Type": "input_text", "form_feild": "page0_field19"},
+
+    "Release of Seller’s Liability": {
+        "Type": "check_list",
+        "form_feild": {
+            "Will Obtain Release": ["page0_field20"],
+            "Will Not Obtain Release": ["page0_field21"]
+        }
+    },
+
+    "Buyer Initials1": {"Type": "input_text","form_feild": "page0_field22"},
+    "Buyer Initials2": {"Type": "input_text","form_feild": "page0_field23"},
+    "Buyer Initials3": {"Type": "input_text","form_feild": "page0_field24"},
+    "Buyer Initials4": {"Type": "input_text","form_feild": "page0_field25"},
+
+    "Financing Contingency Options": {
+        "Type": "check_list",
+        "form_feild": {
+            "Automatic Extension (A)": ["page1_field1"],
+            "Automatic Expiration (B)": ["page1_field4"]
+        }
+    },
+    "questions": {
+       "Automatic Extension (A)":{"Financing Deadline Details": {"Type": "input_text", "form_feild": "page1_field2" } },
+       "Automatic Expiration (B)": {"Financing Deadline Details": {"Type": "input_text", "form_feild": "page1_field5" }}
+    },
+
+    "Buyer shall not be obligated to complete the purchase unless the appraised value of Property is not less than": {"Type": "input_text", "form_feild": "page1_field6"},
+    "Negotiation Period (Days)": {"Type": "input_text", "form_feild": "page2_field1" },
+    "Buyers Election Period (Days)": {"Type": "input_text", "form_feild": "page2_field2"}
+
+}
