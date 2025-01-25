@@ -14,7 +14,7 @@ warnings.filterwarnings("ignore")
 # URL of the Rasa API (assuming it's running locally on port 5005)
 RASA_URL = "http://localhost:2005/webhooks/rest/webhook"
 
-base_path = os.getcwd()
+base_path = '/'.join(os.path.abspath(__file__).split('/')[:-2])
 
 load_dotenv()
 
@@ -68,9 +68,9 @@ def clean_text(default_message=None, store_message=True):
                 for option in payload.get('payload'):
                     st.session_state.messages.append({"role": "bot", "button": option.get('title')})
                     st.session_state.buttons_message.append({"role": "bot", "button": option.get('title')})
-            elif payload.get('type') == 'date':
+            elif payload.get('data_type') == 'date':
                 st.session_state.messages.append({"role": "bot", "text": payload.get('text')})
-            elif payload.get('type') == 'char':
+            elif payload.get('data_type') == 'char':
                 st.session_state.messages.append({"role": "bot", "text": payload.get('text')})
         else:
             st.session_state.messages.append({"role": "bot", "text": message.get('text')})

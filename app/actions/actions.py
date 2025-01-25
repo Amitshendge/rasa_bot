@@ -87,7 +87,7 @@ class ActionAskDynamicQuestions(Action):
             else:
                 # All questions have been asked
                 pdf_path = f'/app/actions/form_feilds_NAVAR/{form_name_final}.pdf'
-                output_path = f"/app/outputs/{form_name_final}_filled.pdf"
+                output_path = f"/app/actions/form_feilds_mapping/{form_name_final}_filled.pdf"
                 feild_values = state["responses"]
                 href = PDFFormFiller().fill_pdf(pdf_path, output_path, feild_values)
                 dispatcher.utter_message(text="Thank you for answering all the questions!")
@@ -96,7 +96,7 @@ class ActionAskDynamicQuestions(Action):
         else:
             # All questions have been asked
             pdf_path = f'/app/actions/form_feilds_NAVAR/{form_name_final}.pdf'
-            output_path = f"/app/outputs/{form_name_final}_filled.pdf"
+            output_path = f"/app/actions/form_feilds_mapping/{form_name_final}_filled.pdf"
             feild_values = state["responses"]
             href = PDFFormFiller().fill_pdf(pdf_path, output_path, feild_values)
             dispatcher.utter_message(text="Thank you for answering all the questions!")

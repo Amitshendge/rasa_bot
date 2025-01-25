@@ -32,8 +32,11 @@ class PDFFormFiller:
             return f"Error generating download link: {e}"
         
     def fill_pdf(self, pdf_path, output_path, feild_values):
+        print("MMMM")
         fillpdfs.write_fillable_pdf(pdf_path, output_path, feild_values)
+        print("MMMM")
         fillpdfs.flatten_pdf(output_path, output_path.replace(os.path.basename(output_path), "flatten_"+os.path.basename(output_path)))
+        print("GGGG")
         return self.generate_download_link(output_path)
     
     def get_form_feild(self, question_meta_data):
