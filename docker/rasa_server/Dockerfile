@@ -40,7 +40,6 @@ RUN rasa train
 COPY ssl /ssl
 
 # Expose the ports for HTTPS
-EXPOSE 5005 5055
 
 # Command to run the Rasa server with SSL enabled
 CMD ["bash", "-c", "rasa run --cors '*' --ssl-certificate /ssl/rasa.crt --ssl-key /ssl/rasa.key & rasa run actions"]
