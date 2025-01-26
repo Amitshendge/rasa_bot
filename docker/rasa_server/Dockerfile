@@ -36,9 +36,6 @@ RUN pip install --root-user-action=ignore --no-cache-dir -r requirements.txt
 COPY app /app
 RUN rasa train
 
-# Copy SSL certificates into the container
-COPY ssl /ssl
-
 # Expose the ports for HTTPS
 EXPOSE 5005 5055
 
