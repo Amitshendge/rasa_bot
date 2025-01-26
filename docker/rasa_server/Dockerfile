@@ -37,9 +37,8 @@ COPY app /app
 COPY ssl /ssl
 RUN rasa train
 
-# Copy SSL certificates into the container
-
 # Expose the ports for HTTPS
+EXPOSE 5005
 
 # Command to run the Rasa server with SSL enabled
 CMD ["bash", "-c", "rasa run --cors '*' --ssl-certificate /ssl/rasa.crt --ssl-key /ssl/rasa.key & rasa run actions"]

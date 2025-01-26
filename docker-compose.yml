@@ -1,8 +1,14 @@
+version: '3.8'
 services:
   rasa_server:
     build:
       context: .
       dockerfile: ./docker/rasa_server/Dockerfile
     ports:
-     - "2005:5005"
-     - "2055:5055"
+      - "2005:5005"  # HTTPS port for Rasa server
+      - "2055:5055"  # Optional: Admin API port
+    volumes:
+      - ./ssl:/ssl  # Mount the SSL certificates directory
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
