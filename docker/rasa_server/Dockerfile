@@ -33,7 +33,8 @@ RUN python3.10 -m pip install --upgrade pip setuptools wheel
 RUN pip install --root-user-action=ignore --no-cache-dir -r requirements.txt
 
 COPY app /app
-COPY ssl /ssl
+COPY rasa.crt /
+COPY rasa.key /
 
 RUN rasa train
 
@@ -41,5 +42,7 @@ RUN rasa train
 # EXPOSE 5005
 
 # Command to run the Rasa server
+# CMD ["bash", "-c", "rasa run --cors '*' --ssl-certificate /ssl/rasa.crt --ssl-key /ssl/rasa.key & rasa run actions"]
+
 CMD ["bash", "-c", "rasa run --cors '*' & rasa run actions"]
 
