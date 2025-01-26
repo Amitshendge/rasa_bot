@@ -33,6 +33,8 @@ RUN python3.10 -m pip install --upgrade pip setuptools wheel
 RUN pip install --root-user-action=ignore --no-cache-dir -r requirements.txt
 
 COPY app /app
+COPY ssl /ssl
+
 RUN rasa train
 
 # Expose the default Rasa port
