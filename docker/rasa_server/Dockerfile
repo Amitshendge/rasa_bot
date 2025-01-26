@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libffi-dev \
     libssl-dev \
     libsqlite3-dev \
+    openssl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -35,9 +36,11 @@ RUN pip install --root-user-action=ignore --no-cache-dir -r requirements.txt
 COPY app /app
 RUN rasa train
 
-# Expose the default Rasa port
-# EXPOSE 5005
+# Copy SSL certificates into the container
+COPY ssl /ssl
 
-# Command to run the Rasa server
-CMD ["bash", "-c", "rasa run --cors '*' & rasa run actions"]
+# Expose the ports for HTTPS
+EXPOSE 5005 5055
 
+# Command to run the Rasa server with SSL enabled
+CMD ["bash", "-c", "rasa run --cors '*' --ssl-certificate rasa.crt --ssl-key rasa.key & rasa run actions"]
