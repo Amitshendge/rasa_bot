@@ -1,0 +1,71 @@
+{
+  "Are you representing the Buyer or the Seller": {
+    "Type": "check_list_form",
+    "form_feild": {
+      "Buyer": ["Buyer"],
+      "Seller": ["Residential Sales Contract - K1321"]
+    },
+    "next_action": {
+      "Buyer": {
+        "question": {
+          "If you are representing the Buyer, please select the type of offer": {
+            "Type": "check_list_form",
+            "form_feild": {
+              "Financed Offer": ["page0_field3"],
+              "Cash Offer": ["page0_field4"]
+            },
+            "next_action": {
+              "Financed Offer": {
+                "question": {
+                  "Select Type of Loan Financing": {
+                    "Type": "check_list_form",
+                    "form_feild": {
+                      "VA Financing": ["page0_field7"],
+                      "FHA Financing": ["page0_field8"],
+                      "Conventional Financing": ["page0_field9"]
+                    },
+                    "next_action": {
+                      "VA Financing": {
+                        "form": "VA Financing Contingency - NVAR K1339"
+                      },
+                      "FHA Financing": {
+                        "form": "K1340 - FHA Financing Contingency"
+                      },
+                      "Conventional Financing": {
+                        "form": "K1359 - Conventional Financing Contingency"
+                      }
+                    }
+                  }
+                }
+              },
+              "Cash Offer": {}
+            }
+          }
+        }
+      },
+      "Seller": { "form": "Residential Sales Contract - K1321" }
+    }
+  },
+  "Are you including Home Inspection Contingency": {
+    "Type": "check_list_form",
+    "form_feild": {
+      "Yes": ["page0_field5"],
+      "No": ["page0_field6"]
+    },
+    "next_action": {
+      "Yes": { "form": "Home Inspection and Radon Testing Contingency - NVAR K1342" },
+      "No": {}
+    }
+  },
+  "Are there any additional Contingencies or Clauses": {
+    "Type": "check_list_form",
+    "form_feild": {
+      "Yes": ["page0_field10"],
+      "No": ["page0_field11"]
+    },
+    "next_action": {
+      "Yes": { "form": "Escalation Addendum - NVAR K1306" },
+      "No": {}
+    }
+  }
+}

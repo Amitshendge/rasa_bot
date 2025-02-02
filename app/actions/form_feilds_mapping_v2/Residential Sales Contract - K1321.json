@@ -434,6 +434,4 @@
         "Buyer’sVA Agent License #": {"Type": "input_text", "form_feild": "page10_field36"},
         "Buyer’s Team Name": {"Type": "input_text", "form_feild": "page10_field38"},
         "Buyer’sTeam Business Entity License #": {"Type": "input_text", "form_feild": "page10_field40"}
-
-
     }}

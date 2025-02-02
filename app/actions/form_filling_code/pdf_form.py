@@ -6,7 +6,12 @@ import base64
 class PDFFormFiller:
     def __init__(self):
         pass
-
+    
+    def read_json_form(self, file_path):
+        with open(file_path, "r") as file:
+            main_json = json.load(file)
+            main_json['last_question'] = {"Type":"LAST"}
+        return main_json
 
     def generate_download_link(self, file_path, link_text="Download File"):
         """
@@ -26,7 +31,6 @@ class PDFFormFiller:
                 mime_type = "application/octet-stream"  # Generic MIME type for files
                 b64_file = base64.b64encode(file_bytes).decode()  # Encode file to Base64
                 href = f'<a href="data:{mime_type};base64,{b64_file}" download="{file_name}">{link_text}</a>'
-                print("href", href)
                 return href
         except Exception as e:
             return f"Error generating download link: {e}"
@@ -47,11 +51,17 @@ class PDFFormFiller:
             if 'questions' in question_meta_data:
                 add_questions = question_meta_data['questions']
             return question_meta_data['form_feild'], add_questions
+        elif question_meta_data['Type'] == 'check_list_form':
+            if 'next_action' in question_meta_data:
+                add_questions = question_meta_data['next_action']
+            return None, add_questions
     
     def get_extra_question(self, question_meta_data):
         if question_meta_data['Type'] == 'input_text':
             return None
         elif question_meta_data['Type'] == 'check_list':
+            return list(question_meta_data['form_feild'].keys())
+        elif question_meta_data['Type'] == 'check_list_form':
             return list(question_meta_data['form_feild'].keys())
     
     def insert_into_dict(self, original_dict, new_entries, index):
@@ -71,6 +81,7 @@ class PDFFormFiller:
         return state
 
     def fill_response(self, state, form_field, add_questions, latest_message):
+        form_name_change = None
         if isinstance(form_field, dict):
             if isinstance(form_field[latest_message], list):
                 for i in form_field[latest_message]:
@@ -83,4 +94,17 @@ class PDFFormFiller:
             print("state", state)
         elif isinstance(form_field, str):
             state["responses"][form_field] = latest_message
-        return state
+        elif form_field == None:
+            add_questions = add_questions[latest_message]
+            if add_questions:
+                print("add_questions", add_questions)
+                if add_questions:
+                    if 'question' in add_questions:
+                        state["questions"] = self.insert_into_dict(state["questions"], add_questions['question'], state["current_index"])
+                    elif 'form':
+                        form_name_change = add_questions['form']
+                        state["questions"] = self.insert_into_dict(state["questions"], self.read_json_form(f"/app/actions/form_feilds_mapping_v2/{form_name_change}.json"), state["current_index"])
+                    print("state", state)
+            else:
+                pass
+        return state, form_name_change

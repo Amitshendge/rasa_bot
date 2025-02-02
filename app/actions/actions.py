@@ -64,7 +64,10 @@ class ActionAskDynamicQuestions(Action):
         if tracker.latest_message.get("text") and current_index > 0 and tracker.latest_message.get("text")!="Skip Question":
             # Append the latest response to the responses list
             form_feild, add_questions = PDFFormFiller().get_form_feild(state['questions'][questions[current_index-1]])
-            state = PDFFormFiller().fill_response(state, form_feild, add_questions, tracker.latest_message["text"])
+            state, form_name_change = PDFFormFiller().fill_response(state, form_feild, add_questions, tracker.latest_message["text"])
+            if form_name_change:
+                form_name_final = form_name_change
+                
             if add_questions:
                 questions = get_questions(state["questions"])
         # Check if there are more questions to ask
@@ -72,6 +75,18 @@ class ActionAskDynamicQuestions(Action):
             # Ask the next question
             next_question, state, current_index = get_next_question(state, questions, current_index)
             print("next_question", next_question)
+            if next_question == "last_question":
+                pdf_path = f'/app/actions/form_feilds_NAVAR/{form_name_final}.pdf'
+                output_path = f"/app/actions/form_feilds_mapping/{form_name_final}_filled.pdf"
+                feild_values = state["responses"]
+                href = PDFFormFiller().fill_pdf(pdf_path, output_path, feild_values)
+                dispatcher.utter_message(text="Thank you for answering all the questions!")
+                dispatcher.utter_message(json_message={"type":"download_file","href":href})
+                state['responses'] = {}
+                del state['questions']['last_question']
+                questions = get_questions(state["questions"])
+                next_question, state, current_index = get_next_question(state, questions, current_index)
+
             if next_question:
                 extra_question = PDFFormFiller().get_extra_question(state['questions'][questions[current_index]])
                 if 'date' in next_question.lower() or 'offered on' in next_question.lower() or 'made on' in next_question.lower():
@@ -83,7 +98,7 @@ class ActionAskDynamicQuestions(Action):
                 # Increment the current index
                 state["current_index"] = current_index + 1
                 # Save the updated state back to the JSON file
-                return [ActiveLoop('action_ask_dynamic_questions'), SlotSet("response_list", state)]
+                return [ActiveLoop('action_ask_dynamic_questions'), SlotSet("response_list", state), SlotSet("identified_form_name", form_name_final)]
             else:
                 # All questions have been asked
                 pdf_path = f'/app/actions/form_feilds_NAVAR/{form_name_final}.pdf'
@@ -94,13 +109,16 @@ class ActionAskDynamicQuestions(Action):
                 dispatcher.utter_message(json_message={"type":"download_file","href":href})
                 return [ActiveLoop(None),AllSlotsReset()]
         else:
-            # All questions have been asked
-            pdf_path = f'/app/actions/form_feilds_NAVAR/{form_name_final}.pdf'
-            output_path = f"/app/actions/form_feilds_mapping/{form_name_final}_filled.pdf"
-            feild_values = state["responses"]
-            href = PDFFormFiller().fill_pdf(pdf_path, output_path, feild_values)
-            dispatcher.utter_message(text="Thank you for answering all the questions!")
-            dispatcher.utter_message(json_message={"type":"download_file","href":href})
+            if state['responses']:
+                # All questions have been asked
+                pdf_path = f'/app/actions/form_feilds_NAVAR/{form_name_final}.pdf'
+                output_path = f"/app/actions/form_feilds_mapping/{form_name_final}_filled.pdf"
+                feild_values = state["responses"]
+                href = PDFFormFiller().fill_pdf(pdf_path, output_path, feild_values)
+                dispatcher.utter_message(text="Thank you for answering all the questions!")
+                dispatcher.utter_message(json_message={"type":"download_file","href":href})
+            else:
+                dispatcher.utter_message(text="You have answered all the questions.")
             return [ActiveLoop(None),AllSlotsReset()]
 
 
