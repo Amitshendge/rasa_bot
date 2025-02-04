@@ -64,6 +64,17 @@
       "No": ["page0_field11"]
     },
     "next_action": {
+      "Yes": { "form": "Contingencies and Clauses Addendum - NVAR K1344" },
+      "No": {}
+    }
+  },
+  "Will an Escalation Clause be used in this offer?": {
+    "Type": "check_list_form",
+    "form_feild": {
+      "Yes": ["page0_field10"],
+      "No": ["page0_field11"]
+    },
+    "next_action": {
       "Yes": { "form": "Escalation Addendum - NVAR K1306" },
       "No": {}
     }
