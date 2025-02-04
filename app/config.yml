@@ -46,3 +46,6 @@ policies: null
 #     max_history: 5
 #     epochs: 100
 #     constrain_similarities: true
+session_config:
+  session_expiration_time: 5  # in minutes
+  carry_over_slots_to_new_session: false
