@@ -44,11 +44,11 @@
         "form_feild": {
             "Automatic Extension (A)": ["page0_field18"],
             "Automatic Expiration (B)": ["page1_field1"]
+        },
+        "questions": {
+           "Automatic Extension (A)":{"Financing Deadline Details": {"Type": "input_text", "form_feild": "page0_field19" } },
+           "Automatic Expiration (B)": {"Financing Deadline Details": {"Type": "input_text", "form_feild": "page1_field2" }}
         }
-    },
-    "questions": {
-       "Automatic Extension (A)":{"Financing Deadline Details": {"Type": "input_text", "form_feild": "page0_field19" } },
-       "Automatic Expiration (B)": {"Financing Deadline Details": {"Type": "input_text", "form_feild": "page1_field2" }}
     },
 
     "Appraisal Contingency Options": {
@@ -56,19 +56,19 @@
         "form_feild": {
             "Appraisal Contingency (A)": ["page1_field3"],
             "Appraisal Contingency Plus Gap Guaranty (B)": ["page2_field1"]
-        }
-    },
-    "Questions": {
-       "Appraisal Contingency (A)":{"Appraisal Deadline (Days)": {"Type": "input_text", "form_feild": "page1_field4"},
-                                    "Negotiation Period (Days)": {"Type": "input_text", "form_feild": "page1_field5"},
-                                    "Buyer’s Election Period (Days)": {"Type": "input_text", "form_feild": "page1_field6"} },
-
-       "Appraisal Contingency Plus Gap Guaranty (B)": {"Appraisal Deadline (Days)": {"Type": "input_text", "form_feild": "page2_field2"},
-                                                       "Buyer Gap Guaranty ($)": {"Type": "input_text", "form_feild": "page2_field4"},
-                                                       "Negotiation Period (Days)": {"Type": "input_text", "form_feild": "page2_field5"},
-                                                       "Buyer’s Election Period (Days)": {"Type": "input_text", "form_feild": "page2_field6"}
-                 }
-}}
+        },
+        "questions": {
+           "Appraisal Contingency (A)":{"Appraisal Deadline (Days)": {"Type": "input_text", "form_feild": "page1_field4"},
+                                        "Negotiation Period (Days)": {"Type": "input_text", "form_feild": "page1_field5"},
+                                        "Buyer’s Election Period (Days)": {"Type": "input_text", "form_feild": "page1_field6"} },
+    
+           "Appraisal Contingency Plus Gap Guaranty (B)": {"Appraisal Deadline (Days)": {"Type": "input_text", "form_feild": "page2_field2"},
+                                                           "Buyer Gap Guaranty ($)": {"Type": "input_text", "form_feild": "page2_field4"},
+                                                           "Negotiation Period (Days)": {"Type": "input_text", "form_feild": "page2_field5"},
+                                                           "Buyer’s Election Period (Days)": {"Type": "input_text", "form_feild": "page2_field6"}
+                     }
+    }
+    }}
 
 
 
