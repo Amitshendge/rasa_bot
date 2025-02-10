@@ -91,8 +91,11 @@ class PDFFormFiller:
                 if i != 'NA' or i != '':
                     state["responses"][form_field] = 'Yes'
             if add_questions:
-                print(add_questions[latest_message])
-                state["questions"] = self.insert_into_dict(state["questions"], add_questions[latest_message], state["current_index"]) 
+                try:
+                    print(add_questions[latest_message])
+                    state["questions"] = self.insert_into_dict(state["questions"], add_questions[latest_message], state["current_index"]) 
+                except:
+                    pass
             print("state", state)
         elif isinstance(form_field, str):
             state["responses"][form_field] = latest_message
