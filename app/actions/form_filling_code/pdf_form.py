@@ -2,11 +2,38 @@ import json
 from fillpdf import fillpdfs
 import os
 import base64
+import sqlite3
+import datetime
 
 class PDFFormFiller:
     def __init__(self):
-        pass
+        self.static_maping = self.read_json_form('/app/actions/form_filling_code/autofill_static_mapping.json')
+        self.user_maping = self.read_json_form('/app/actions/form_filling_code/autofill_user_mapping.json')
+        self.user_data = self.sqlite_query('/app/actions/form_filling_code/real_estate_onboarding.db', 'onboarding', 'bimal@onest.realestate')
     
+    def sqlite_query(self, db_path, table_name, email):
+        try:
+            # Connect to SQLite database
+            conn = sqlite3.connect(db_path)
+            cursor = conn.cursor()
+            
+            # Execute query to fetch user data
+            cursor.execute(f"SELECT * FROM {table_name} WHERE email = ?", (email,))
+            row = cursor.fetchone()
+            
+            # Get column names
+            column_names = [description[0] for description in cursor.description]
+            
+            # Convert to dictionary
+            user_info = dict(zip(column_names, row)) if row else None
+            return user_info
+        except sqlite3.Error as e:
+            print(f"Error: {e}")
+            return None
+        finally:
+            if conn:
+                conn.close()
+
     def read_json_form(self, file_path):
         with open(file_path, "r") as file:
             main_json = json.load(file)
@@ -78,6 +105,14 @@ class PDFFormFiller:
         elif question_meta_data['autofill_type'] == 'reference':
             self.fill_response(state, question_meta_data['form_feild'], None, state["responses"][question_meta_data['autofill_value']])
             # state["responses"][question_meta_data['form_feild']] = state["responses"][question_meta_data['autofill_value']]
+        elif question_meta_data['autofill_type'] == 'static_mapping':
+            self.fill_response(state, question_meta_data['form_feild'], None, self.static_maping[question_meta_data['autofill_value']])
+        elif question_meta_data['autofill_type'] == 'user_mapping':
+            self.fill_response(state, question_meta_data['form_feild'], None, self.user_data[question_meta_data['autofill_value']])
+        elif question_meta_data['autofill_type'] == 'date_today':
+            self.fill_response(state, question_meta_data['form_feild'], None, datetime.datetime.now().strftime("%d-%m-%Y"))
+        elif question_meta_data['autofill_type'] == 'date_offset':
+            self.fill_response(state, question_meta_data['form_feild'], None, (datetime.datetime.now() + datetime.timedelta(days=question_meta_data['autofill_value'])).strftime("%d-%m-%Y"))
         return state
 
     def fill_response(self, state, form_field, add_questions, latest_message):

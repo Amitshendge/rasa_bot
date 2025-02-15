@@ -34,11 +34,9 @@ app_instance = ConfidentialClientApplication(
 
 # Function to send user message to Rasa and get the response
 def get_rasa_response(user_message):
-    print("user_message", user_message)
     payload = {"sender":st.session_state.session_id,"message": user_message}
     response = requests.post(RASA_URL, json=payload)
     if response.status_code == 200:
-        print(response.json())
         return response.json()
     else:
         return [{"text": "Sorry, I couldn't get a response from the bot."}]
@@ -47,14 +45,12 @@ def clean_text(default_message=None, store_message=True):
     user_message = st.session_state['user_message']
     if default_message:
         user_message = default_message
-    print("user_message", user_message)
     if user_message:
         # Append user's message to the session state
         if store_message:
             st.session_state.messages.append({"role": "user", "text": user_message})
         # Get response from Rasa
         bot_response = get_rasa_response(user_message)
-    print("bot_response", bot_response)
     # Append bot's response to the session state
     for message in bot_response:
         if 'image' in message:
@@ -97,7 +93,6 @@ def get_user_info(code):
         result = app_instance.acquire_token_by_authorization_code(
             code, scopes=SCOPE, redirect_uri=REDIRECT_URI
         )
-        print("result", result)
         if "error" in result:
             return None
         claims = result.get("id_token_claims", {})
@@ -128,7 +123,6 @@ if 'user' not in st.session_state:
 # Step 1: Select category
 
 if st.session_state['user'] is None:
-    print(st.session_state['user'])
     st.title("Please log in to continue")
     login_url = login()
     st.markdown(f'<a href="{login_url}" target="_self">Login with Azure AD</a>', unsafe_allow_html=True)
@@ -146,7 +140,6 @@ else:
     # option = st.selectbox("Choose an option:", ["Select Form here"] + st.session_state.get('files'), key="option")
     def button_action():
         if selected_form != "Select Form here":
-            print("option", f'/trigger_action{{"param": "{selected_form}"}}')
             response = clean_text(default_message=f'/trigger_action{{"param": "{selected_form}"}}', store_message=False)
     st.button("Submit", on_click=button_action)
     # if option != "None":
@@ -171,11 +164,9 @@ else:
             else:
                 st.write(f"Bot: {message['text']}", unsafe_allow_html=True)
 query_params = st.query_params
-print("query_params", query_params)
 if 'code' in query_params:
     code = query_params['code']
     user_info = get_user_info(code)
-    print("user_info", user_info)
     if user_info:
         if ALLOWED_GROUP_ID not in user_info['groups']:
             st.session_state['user'] = None

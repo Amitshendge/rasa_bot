@@ -1,8 +1,8 @@
 {
-    "Addendum made on date": {"Type" : "input_text", "form_feild" : "Text-kzHMlRY_at"},
-    "lease ratified on date": {"Type" : "input_text", "form_feild" : "Text-kZYaiuaRuw"},
+    "Addendum made on date": {"Type" : "autofill", "form_feild" : "Text-kzHMlRY_at", "autofill_type" : "date_offset", "autofill_value" : 10},
+    "lease ratified on date": {"Type" : "autofill", "form_feild" : "Text-kZYaiuaRuw", "autofill_type" : "date_today"},
     "Tenant Name": {"Type" : "input_text", "form_feild" : "Text-4DFQAdVBZR"},
     "Landlord Name": {"Type" : "input_text", "form_feild" : "Text-WxlAxbTDdW"},
-    "lease of premises address": {"Type" : "input_text", "form_feild" : "Text-GAG2V9dFf9"},
-    "lease of premises address2": {"Type" : "input_text", "form_feild" : "Text-2BB3Zqmbsv"}
+    "lease of premises address": {"Type" : "autofill", "form_feild" : "Text-GAG2V9dFf9", "autofill_type" : "static_mapping", "autofill_value" : "mailing_address"},
+    "lease of premises address2": {"Type" : "autofill", "form_feild" : "Text-2BB3Zqmbsv", "autofill_type" : "user_mapping", "autofill_value" : "s_address"}
 }
