@@ -20,13 +20,7 @@
     },
     "First Trust Loan Amortization (years)": {"Type": "input_text", "form_feild": "page0_field12"},
     "First Trust Interest Rate (max %)": {"Type": "input_text", "form_feild": "page0_field13"},
-    "Second Trust Loan Options": {
-        "Type": "check_list",
-        "form_feild": {
-            "Obtain": ["page0_field14"],
-            "Assume": ["page0_field15"]
-        }
-    },
+    
     
 
     "Release of Seller’s Liability": {
