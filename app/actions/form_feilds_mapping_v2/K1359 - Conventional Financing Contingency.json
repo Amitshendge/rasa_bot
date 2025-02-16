@@ -1,6 +1,6 @@
 {
-    "Addendum is made on": {"Type": "input_text", "form_feild": "page0_field1"},
-    "Contract offered on": {"Type": "input_text", "form_feild": "page0_field2"},
+    "Addendum is made on": {"Type": "autofill", "form_feild": "page0_field1", "autofill_type" : "date_today"},
+    "Contract offered on": {"Type":  "autofill", "form_feild": "page0_field2", "autofill_type" : "date_today"},
     "Buyer Name": {"Type": "input_text", "form_feild": "page0_field3"},
     "Seller Name": {"Type": "input_text", "form_feild": "page0_field4"},
     "Property": {"Type": "input_text", "form_feild": "page0_field5"},
@@ -22,22 +22,7 @@
     "First Trust Loan Amortization (years)": {"Type": "input_text", "form_feild": "page0_field10"},
     "First Trust Interest Rate (max %)": {"Type": "input_text", "form_feild": "page0_field11"},
     
-    "Second Trust Loan Options": {
-        "Type": "check_list",
-        "form_feild": {
-            "Obtain": ["page0_field12"],
-            "Assume": ["page0_field13"]
-        }
-    },
-    "Second Trust Interest Rate Type": {
-        "Type": "check_list",
-        "form_feild": {
-            "Fixed Rate": ["page0_field14"],
-            "Adjustable Rate": ["page0_field15"]
-        }
-    },
-    "Second Trust Loan Amortization (years)": {"Type": "input_text", "form_feild": "page0_field16"},
-    "Second Trust Interest Rate (max %)": {"Type": "input_text", "form_feild": "page0_field17"},
+    
 
     "Financing Contingency Options": {
         "Type": "check_list",
