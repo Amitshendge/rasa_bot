@@ -1,6 +1,6 @@
 {
-    "Addendum is made on": {"Type" : "input_text", "form_feild" : "Text-up0Fluw7r9"},
-    "Contract offered on": {"Type" : "input_text", "form_feild" : "Text-x-ulbgssz0"},
+    "Addendum is made on": {"Type" : "autofill", "form_feild" : "Text-up0Fluw7r9", "autofill_type" : "date_today"},
+    "Contract offered on": {"Type" : "autofill", "form_feild" : "Text-x-ulbgssz0", "autofill_type" : "date_today"},
     "Buyer Name": {"Type" : "input_text", "form_feild" : "Text-rig4BlxxIN"},
     "Seller Name": {"Type": "input_text", "form_feild": "Text-Idt1Xlrl0N"},
     "Property address": {"Type" : "input_text", "form_feild" : "Text-Z88hJgn7Zu"},
@@ -20,22 +20,9 @@
     },
     "First Deed of Trust loan amortized over how many years": {"Type" : "input_text", "form_feild" : "Text-sI5VfqMfJL"},
     "First Deed interest rate for this loan is at an (initial) interest rate not to exceed by (%) per year": {"Type" : "input_text", "form_feild" : "Text-Pq37D_4mwU"},
-    "B. Second Trust. Buyer will obtain or assume the rate": {
-        "Type":"check_list",
-        "form_feild": {
-            "Obtain": ["CheckBox-C8Lqo5b0ht"],
-            "Assume": ["CheckBox-b4Bz9K-xh1"]
-        }
-    },
-    "Second Trust type of rate will be": {
-        "Type":"check_list",
-        "form_feild": {
-            "Fixed": ["CheckBox-hIIP5RhKZm"],
-            "Adjustable": ["CheckBox-p0Dd8oAs3O"]
-        }
-    },
-    "Second Deed of Trust loan amortized over how many years": {"Type" : "input_text", "form_feild" : "Text-1F6LR4wRx4"},
-    "Second Deed interest rate for this loan is at an (initial) interest rate not to exceed by (%) per year": {"Type" : "input_text", "form_feild" : "Text-s9A1SLeP-j"},
+
+
+    
     "Contract are amended to include a Rural Housing Guarantee Fee of ($)": {"Type" : "input_text", "form_feild" : "Text-26VNeKEOFL"},
     "If Buyer assumes Seller's loan(s), Buyer and Seller will OR will not obtain a release of Seller's liability": {
         "Type": "check_list",
