@@ -27,7 +27,7 @@
       "Amount": {"Broker Compensation Amount":{"Type" : "input_text", "form_feild" : "Text-7wAuZ8ujBI"}}
     }
     },
-    "Days after expiration or trmination Broker Comminssion will be earned ": {"Type" : "input_text", "form_feild" : "Text-_LmWhyikuG","autofill_type" : "static", "autofill_value" : "30"},
+    "Days after expiration or trmination Broker Comminssion will be earned ": {"Type" : "input_text", "form_feild" : "Text-_LmWhyikuG","autofill_type" : "static", "autofill_value" : 30},
     "Retainer Fee": {
     "Type": "check_list",
     "form_feild": 
@@ -49,7 +49,7 @@
       { "Broker Service Fee": ["CheckBox-5ns7h60BXQ"]
       },
     "questions": {
-        "Broker Service Fee": {"Buyer will pay additional flat fee ($)":{"Type" : "input_text", "form_feild" : "Text-SqpkZrKXqq","autofill_type" : "static", "autofill_value" : "395"}}
+        "Broker Service Fee": {"Buyer will pay additional flat fee ($)":{"Type" : "input_text", "form_feild" : "Text-SqpkZrKXqq","autofill_type" : "static", "autofill_value" : 395}}
         }
     },
     "Participation in Relocation Program or not": {
