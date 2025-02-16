@@ -1,5 +1,5 @@
 {
-    "Addendum made on date": {"Type" : "autofill", "form_feild" : "Text-kzHMlRY_at", "autofill_type" : "date_offset", "autofill_value" : 10},
+    "Addendum made on date": {"Type" : "autofill", "form_feild" : "Text-kzHMlRY_at", "autofill_type" : "date_today"},
     "lease ratified on date": {"Type" : "autofill", "form_feild" : "Text-kZYaiuaRuw", "autofill_type" : "date_today"},
     "Tenant Name": {"Type" : "input_text", "form_feild" : "Text-4DFQAdVBZR"},
     "Landlord Name": {"Type" : "input_text", "form_feild" : "Text-WxlAxbTDdW"},
