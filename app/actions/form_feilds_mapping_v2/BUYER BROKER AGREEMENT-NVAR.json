@@ -1,5 +1,5 @@
 {
-    "Agreement made on date": {"Type" : "input_text", "form_feild" : "Text-F8jcB_Mm7I","autofill_type" : "date_today"},
+    "Agreement made on date": {"Type" : "autofill", "form_feild" : "Text-F8jcB_Mm7I","autofill_type" : "date_today"},
     "Buyer Name": {"Type" : "input_text", "form_feild" : "Text-qOAgScQC-m"},
     "Broker or Firm Name": {"Type" : "autofill", "form_feild" : "Text-HqNu6kakZS", "autofill_type" : "static", "autofill_value" : "Onest Realestate"},
     "Type of property buyer is retaining Broker": {"Type" : "input_text", "form_feild" : "Text-ynppZsgodg"},
@@ -13,7 +13,7 @@
     "Broker Work Contact Number": {"Type" : "input_text", "form_feild" : "Text-1qlHvOG-SN", "skip": true},
     "Broker Cell Contact Number": {"Type" : "autofill", "form_feild" : "Text-h8rmZooWmq", "autofill_type" : "static", "autofill_value" : "(833) 663-7803"},
     "Broker Email": {"Type" : "autofill", "form_feild" : "Text-U92-WBcK4N", "autofill_type" : "static", "autofill_value" : "info@onest.realestate"},
-    "Agreement Epiration Date": {"Type" : "input_text", "form_feild" : "Text-vftdh5YzGY","autofill_type" : "date_offset", 
+    "Agreement Epiration Date": {"Type" : "autofill", "form_feild" : "Text-vftdh5YzGY","autofill_type" : "date_offset", 
 "autofill_value" : 90},
     "Early Termination Fee buyer will pay Broker ($)": {"Type" : "input_text", "form_feild" : "Text-FuwCFXqRFc"},
     "Buyer will pay percentage (%) or amount ($)": {
@@ -27,7 +27,7 @@
       "Amount": {"Broker Compensation Amount":{"Type" : "input_text", "form_feild" : "Text-7wAuZ8ujBI"}}
     }
     },
-    "Days after expiration or trmination Broker Comminssion will be earned ": {"Type" : "input_text", "form_feild" : "Text-_LmWhyikuG","autofill_type" : "static", "autofill_value" : 30},
+    "Days after expiration or trmination Broker Comminssion will be earned ": {"Type" : "autofill", "form_feild" : "Text-_LmWhyikuG","autofill_type" : "static", "autofill_value" : 30},
     "Retainer Fee": {
     "Type": "check_list",
     "form_feild": 
