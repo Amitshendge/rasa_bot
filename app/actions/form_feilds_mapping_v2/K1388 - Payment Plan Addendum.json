@@ -1,6 +1,6 @@
 {
-    "Addendum made on date": {"Type" : "input_text", "form_feild" : "Text-Ah80X8bOCy"},
-    "Lease ratified on": {"Type" : "input_text", "form_feild" : "Text-iWerDMW-lz"},
+    "Addendum made on date": {"Type" : "autofill", "form_feild" : "Text-Ah80X8bOCy", "autofill_type" : "date_today"},
+    "Lease ratified on": {"Type" : "autofill",  "form_feild" : "Text-iWerDMW-lz", "autofill_type" : "date_today"},
     "Tenant Name": {"Type" : "input_text", "form_feild" : "Text-mSV4KnNiDR"},
     "Landlord Name": {"Type" : "input_text", "form_feild" : "Text-5v4hOC4HAS"},
     "Property address": {"Type" : "input_text", "form_feild" : "Text-jCXWDv35xx"},
