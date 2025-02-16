@@ -1,5 +1,5 @@
 {
-    "Contract Date of Offer": {"Type": "input_text", "form_feild": "page0_field1"},
+    "Contract Date of Offer": {"Type": "autofill", "form_feild": "page0_field1", "autofill_type" : "date_today"},
     "Buyer Name": {"Type": "input_text", "form_feild": "page0_field3"},
     "Seller Name": {"Type": "input_text", "form_feild": "page0_field4"},
     "Listing Brokerage Name": {"Type": "input_text", "form_feild": "page0_field5"},
