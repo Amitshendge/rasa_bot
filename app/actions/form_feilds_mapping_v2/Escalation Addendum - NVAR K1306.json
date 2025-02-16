@@ -1,6 +1,6 @@
 {
-    "Addendum is made on": {"Type" : "input_text", "form_feild" : "Text-e7-Uq29_VF"},
-    "Contract dated on": {"Type" : "input_text", "form_feild" : "Text-MJrqaAcJjD"},
+    "Addendum is made on": {"Type" : "autofill", "form_feild" : "Text-e7-Uq29_VF","autofill_type" : "date_today"},
+    "Contract dated on": {"Type" : "autofill", "form_feild" : "Text-MJrqaAcJjD","autofill_type" : "date_today"},
     "Purchaser Name": {"Type" : "input_text", "form_feild" : "Text-_1K0OsUIy1"},
     "Seller Name": {"Type": "input_text", "form_feild": "Text-0iiZqgp1Rd"},
     "Property address": {"Type" : "input_text", "form_feild" : "Text-opOOUhbAx5"},
@@ -15,7 +15,7 @@
     },
     "Escalated Sales Price": {"Type" : "input_text", "form_feild" : "Text-VIxZNTz4A-"},
     "Purchaser": {"Type" : "input_text", "form_feild" : "Text-kj6_jceMhp"},
-    "Offer Date": {"Type" : "input_text", "form_feild" : "Text-jlxHR-h511"},
+    "Offer Date": {"Type" : "autofill", "form_feild" : "Text-jlxHR-h511","autofill_type" : "date_today"},
     "Buyers Brokerage": {"Type" : "autofill", "form_feild" : "Text-rsHeyTZo0H", "autofill_type" : "static", "autofill_value" : "Onest Realestate"},
     "Buyers Agent": {"Type" : "input_text", "form_feild" : "Text-_ptMC9UvEX"},
     "Sales Price": {"Type" : "input_text", "form_feild" : "Text-IxoDZjtk-S"},
