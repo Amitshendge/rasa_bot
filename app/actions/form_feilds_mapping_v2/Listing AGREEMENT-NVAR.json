@@ -1,5 +1,5 @@
 {
-    "Agreement made on date": {"Type" : "input_text", "form_feild" : "Text-xVyHFjwN3p"},
+    "Agreement made on date": {"Type" :"autofill",  "form_feild" : "Text-xVyHFjwN3p", "autofill_type" : "date_today"},
     "Seller Name": {"Type" : "input_text", "form_feild" : "Text-xYbJMhB8fA"},
     "Firm (Broker) Name": {"Type" : "input_text", "form_feild" : "Text-ELvY8c3ur8"},
     "Property street Address": {"Type" : "input_text", "form_feild" : "Text-qvw1G_Gxoj"},
