@@ -1,6 +1,6 @@
 {
-    "Addendum is made on": {"Type" : "input_text", "form_feild" : "Text-R3Rq56ENer"},
-    "Contract offered on": {"Type" : "input_text", "form_feild" : "Text-JV51L8bXJ-"},
+    "Addendum is made on": {"Type" : "autofill", "form_feild" : "Text-R3Rq56ENer", "autofill_type" : "date_today"},
+    "Contract offered on": {"Type" : "autofill", "form_feild" : "Text-JV51L8bXJ-", "autofill_type" : "date_today"},
     "Buyer Name": {"Type" : "input_text", "form_feild" : "Text-5b-w-MwwmT"},
     "Seller Name": {"Type": "input_text", "form_feild": "Text-BN9ZU7qTlj"},
     "Property address": {"Type" : "input_text", "form_feild" : "Text-aBc8DBV17O"},
