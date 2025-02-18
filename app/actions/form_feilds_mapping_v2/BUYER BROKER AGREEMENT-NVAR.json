@@ -90,11 +90,11 @@
     },
     "Other Provisions": {"Type" : "input_text", "form_feild" : "Text-SdmLY37s57"},
 
-    "Buyer's Agent Name": {"Type" : "autofill", "form_feild" : "Text-SGLZSzdmFL", "autofill_type" : "static", "autofill_value" : "Anjana M Budhathoki"},
+    "Buyer's Agent Name": {"Type" : "autofill", "form_feild" : "Text-SGLZSzdmFL", "autofill_type" : "user_mapping", "autofill_value" : "f_name m_name l_name"},
     "Buyer's Agent Team Name (if applicable)": {"Type" : "input_text", "form_feild" : "Text-H2HaMxJWyz", "skip":true},
     "Buyer's Agent work phone number": {"Type" : "input_text", "form_feild" : "Text-IvPoiTS16G", "skip":true},
-    "Buyer's Agent cell phone number": {"Type" : "autofill", "form_feild" : "Text-e9aHv-ujyR", "autofill_type" : "static", "autofill_value" : "(833) 663-7802"},
-    "Buyer's Agent email": {"Type" : "autofill", "form_feild" : "Text-E7EvOHn_3-", "autofill_type" : "static", "autofill_value" : "info@onest.realestate"},
+    "Buyer's Agent cell phone number": {"Type" : "autofill", "form_feild" : "Text-e9aHv-ujyR", "autofill_type" :"user_mapping", "autofill_value" : "h_number"},
+    "Buyer's Agent email": {"Type" : "autofill", "form_feild" : "Text-E7EvOHn_3-", "autofill_type" : "user_mapping", "autofill_value" : "email"},
     "Buyer's Agent fax number": {"Type" : "input_text", "form_feild" : "Text-62So9g9oth", "skip":true},
 
     "Broker Name": {"Type" : "autofill", "form_feild" : "Text-pMfCAOPDKv", "autofill_type" : "reference", "autofill_value" : "Text-HqNu6kakZS"},
@@ -104,8 +104,8 @@
     "Broker fax number": {"Type" : "input_text", "form_feild" : "Text-jtPjM6ZcYq", "skip":true},
 
     "Broker/Agent Name": {"Type" : "autofill", "form_feild" : "Text-j7bLYiy87Y", "autofill_type" : "reference", "autofill_value" : "Text-HqNu6kakZS"},
-    "Client Name": {"Type" : "input_text", "form_feild" : "Text-QKQRfU6fk-"},
-    "Date": {"Type" : "input_text", "form_feild" : "Text-fpiidTTkM2"},
+    "Client Name": {"Type" : "input_text", "form_feild" : "Text-QKQRfU6fk-", "autofill_type" : "reference", "autofill_value" : "Text-qOAgScQC-m"},
+    "Date": {"Type" : "input_text", "form_feild" : "Text-fpiidTTkM2", "autofill_type" : "date_today"},
     "Select client type": {
     "Type": "check_list",
     "form_feild": 
