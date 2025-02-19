@@ -103,16 +103,16 @@
     "Broker email": {"Type" : "autofill", "form_feild" : "Text-KrcBoGya_u", "autofill_type" : "reference", "autofill_value" : "Text-U92-WBcK4N"},
     "Broker fax number": {"Type" : "input_text", "form_feild" : "Text-jtPjM6ZcYq", "skip":true},
 
-    "Client Name": {"Type" : "input_text", "form_feild" : "Text-sa0IZEL33p", "autofill_type" : "reference", "autofill_value" : "Text-_Z2x5ZOF8m"},
-    "Client Name": {"Type" : "input_text", "form_feild" : "Text-sa0IZEL33p", "autofill_type" : "reference", "autofill_value" : "Text-dA5fCqnRFq"},
-    "Client Name": {"Type" : "input_text", "form_feild" : "Text-sa0IZEL33p", "autofill_type" : "reference", "autofill_value" : "Text-We5DRiiSx3"},
+    "Client Name": {"Type" : "autofill", "form_feild" : "Text-_Z2x5ZOF8m", "autofill_type" : "reference", "autofill_value" : "Text-qOAgScQC-m"},
+    "Client Name": {"Type" : "autofill", "form_feild" : "Text-dA5fCqnRFq", "autofill_type" : "reference", "autofill_value" : "Text-qOAgScQC-m"},
+    "Client Name": {"Type" : "autofill", "form_feild" : "Text-We5DRiiSx3", "autofill_type" : "reference", "autofill_value" : "Text-qOAgScQC-m"},
 
-    "Client Name": {"Type" : "input_text", "form_feild" : "Text-sa0IZEL33p", "autofill_type" : "reference", "autofill_value" : "Text-qOAgScQC-m"},
-    "Date": {"Type" : "input_text", "form_feild" : "Text-q9-OjCaZk-", "autofill_type" : "date_today"},
+    "Client Name": {"Type" : "autofill", "form_feild" : "Text-sa0IZEL33p", "autofill_type" : "reference", "autofill_value" : "Text-qOAgScQC-m"},
+    "Date": {"Type" : "autofill", "form_feild" : "Text-q9-OjCaZk-", "autofill_type" : "date_today"},
 
     "Broker/Agent Name": {"Type" : "autofill", "form_feild" : "Text-j7bLYiy87Y", "autofill_type" : "reference", "autofill_value" : "Text-HqNu6kakZS"},
-    "Client Name": {"Type" : "input_text", "form_feild" : "Text-QKQRfU6fk-", "autofill_type" : "reference", "autofill_value" : "Text-qOAgScQC-m"},
-    "Date": {"Type" : "input_text", "form_feild" : "Text-fpiidTTkM2", "autofill_type" : "date_today"},
+    "Client Name": {"Type" : "autofill", "form_feild" : "Text-QKQRfU6fk-", "autofill_type" : "reference", "autofill_value" : "Text-qOAgScQC-m"},
+    "Date": {"Type" : "autofill", "form_feild" : "Text-fpiidTTkM2", "autofill_type" : "date_today"},
     "Select client type": {
     "Type": "check_list",
     "form_feild": 
