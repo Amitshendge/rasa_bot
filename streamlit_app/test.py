@@ -98,6 +98,7 @@ def get_user_info(code):
         claims = result.get("id_token_claims", {})
         return {
             "name": claims.get("name"),
+            "preferred_username": claims.get("preferred_username"),
             "groups": claims.get("groups", [])
         }
     except Exception as e:
@@ -167,6 +168,7 @@ query_params = st.query_params
 if 'code' in query_params:
     code = query_params['code']
     user_info = get_user_info(code)
+    print(user_info)
     if user_info:
         if ALLOWED_GROUP_ID not in user_info['groups']:
             st.session_state['user'] = None

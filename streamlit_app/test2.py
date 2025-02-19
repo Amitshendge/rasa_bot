@@ -45,6 +45,7 @@ def get_user_info(code):
 
     # Get ID token claims
     claims = result.get("id_token_claims", {})
+    print(claims)
     user_info = {
         "name": claims.get("name"),
         "groups": claims.get("groups", [])
