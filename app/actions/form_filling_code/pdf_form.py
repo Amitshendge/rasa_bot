@@ -6,11 +6,13 @@ import sqlite3
 import datetime
 
 class PDFFormFiller:
-    def __init__(self):
+    def __init__(self, email = None):
         self.static_maping = self.read_json_form('/app/actions/form_filling_code/autofill_static_mapping.json')
         self.user_maping = self.read_json_form('/app/actions/form_filling_code/autofill_user_mapping.json')
-        self.user_data = self.sqlite_query('/app/actions/form_filling_code/real_estate_onboarding.db', 'onboarding', 'bimal@onest.realestate')
-    
+        try:
+            self.user_data = self.sqlite_query('/app/actions/form_filling_code/real_estate_onboarding.db', 'onboarding', email)
+        except:
+            self.user_data = None
     def sqlite_query(self, db_path, table_name, email):
         try:
             # Connect to SQLite database
@@ -108,7 +110,10 @@ class PDFFormFiller:
         elif question_meta_data['autofill_type'] == 'static_mapping':
             self.fill_response(state, question_meta_data['form_feild'], None, self.static_maping[question_meta_data['autofill_value']])
         elif question_meta_data['autofill_type'] == 'user_mapping':
-            self.fill_response(state, question_meta_data['form_feild'], None, self.user_data[question_meta_data['autofill_value']])
+            if self.user_data:
+                self.fill_response(state, question_meta_data['form_feild'], None, self.user_data[question_meta_data['autofill_value']])
+            else:
+                self.fill_response(state, question_meta_data['form_feild'], None, 'Email Not found in database')
         elif question_meta_data['autofill_type'] == 'date_today':
             self.fill_response(state, question_meta_data['form_feild'], None, datetime.datetime.now().strftime("%d-%m-%Y"))
         elif question_meta_data['autofill_type'] == 'date_offset':
