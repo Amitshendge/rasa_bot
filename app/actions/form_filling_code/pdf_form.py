@@ -100,7 +100,7 @@ class PDFFormFiller:
         print("items", items)
         return dict(items)
 
-    def autofill_question(self, state, question_meta_data):
+    def autofill_question(self, state, question_meta_data, next_question = None):
         if question_meta_data['autofill_type'] == 'static':
             self.fill_response(state, question_meta_data['form_feild'], None, question_meta_data['autofill_value'])
             # state["responses"][question_meta_data['form_feild']] = question_meta_data['autofill_value']
@@ -113,7 +113,11 @@ class PDFFormFiller:
             if self.user_data:
                 self.fill_response(state, question_meta_data['form_feild'], None, self.user_data[question_meta_data['autofill_value']])
             else:
-                self.fill_response(state, question_meta_data['form_feild'], None, 'Email Not found in database')
+                question_meta_data['Type'] = 'input_text'
+                print('User not found in database')
+                print(next_question)
+                state["questions"] = self.insert_into_dict(state["questions"], {next_question+" input" : question_meta_data}, state["current_index"]+2)
+                # self.fill_response(state, question_meta_data['form_feild'], None, 'Email Not found in database')
         elif question_meta_data['autofill_type'] == 'date_today':
             self.fill_response(state, question_meta_data['form_feild'], None, datetime.datetime.now().strftime("%d-%m-%Y"))
         elif question_meta_data['autofill_type'] == 'date_offset':

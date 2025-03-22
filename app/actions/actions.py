@@ -49,8 +49,9 @@ class ActionAskDynamicQuestions(Action):
                     current_index += 1
                     return get_next_question(state, questions, current_index)
                 if state['questions'][next_question]["Type"] == "autofill":
-                    state = PDFFormFiller(email=tracker.sender_id).autofill_question(state, state['questions'][next_question])
+                    state = PDFFormFiller(email=tracker.sender_id).autofill_question(state, state['questions'][next_question], next_question)
                     current_index += 1
+                    print(tracker.sender_id)
                     return get_next_question(state, questions, current_index)
             else:
                 return None, state, current_index
